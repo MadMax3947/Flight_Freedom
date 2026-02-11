@@ -1663,7 +1663,7 @@ function wesnoth.wml_actions.handle_orb(cfg)
 			end
 		end
 		if wml.variables["automata_notification_state"] == 1 and #orb_colors > 1 then
-			wesnoth.wml_actions.message({x=x,y=y,message=_"This time the machine did not activate. There must be a way to safely break the orbs!"})
+			wesnoth.wml_actions.message({x=x,y=y,message=_"This time the machine did not activate.\nThere must be a way to safely break the orbs!"})
 			wml.variables["automata_notification_state"] = 2
 		end
 	end
@@ -1838,7 +1838,7 @@ function wesnoth.wml_actions.engine_activation_sequence(cfg)
 	wesnoth.audio.sources["engine_start"] = {id="engine_start", sounds="dark-2.ogg", delay=0, chance=100, loop=-1, range=999, locations={machine_x, machine_y}}
 	wesnoth.wml_actions.redraw{}
 	wesnoth.interface.delay(1000)
-	wesnoth.wml_actions.message({id="Malakar",message=_"The machine is active! By Gar-Alagar... no..."})
+	wesnoth.wml_actions.message({id="Malakar",message=_"The machine is active!\nBy Gar-Alagar... no..."})
 	wesnoth.interface.delay(500)
 	-- central orb enlarges
 	for i = 1, 5 do
