@@ -102,7 +102,7 @@ local function show_journal_dialog(text, font)
 			text_font = "Oldania ADF Std"
 		end
 	end
-	function pre_show(self)
+	local function pre_show(self)
 		self.text.label = "<span font_family='" .. text_font .. "' size='xx-large' color='#000000'>" .. text .. "</span>"
 	end
 	local dialog_wml = wml.load("~add-ons/Flight_Freedom/gui/journal_dialog.cfg")
@@ -1022,7 +1022,7 @@ local function place_corridors(current_rooms)
 	local map_size_y = wesnoth.current.map.playable_height
 	-- build graph of all rooms
 	local num_rooms = #current_rooms
-	graph = Graph:new()
+	local graph = Graph:new()
 	graph:init_unconnected(num_rooms)
 	-- until graph is fully connected, i.e. all rooms are accessible:
 	---- pick random room
@@ -1287,7 +1287,7 @@ end
 -- remove any bookshelves that would visually block off a corridor
 local function remove_library_bookshelves(library_room)
 	local library_x , library_y = table.unpack(library_room:left_corner())
-	q, r, s = table.unpack(get_cubic({library_x + 2, library_y}))
+	local q, r, s = table.unpack(get_cubic({library_x + 2, library_y}))
 	for i = 1, 10 do
 		local hex = from_cubic(q, r, s)
 		local hex_to_check = from_cubic(q - 1, r, s + 1)

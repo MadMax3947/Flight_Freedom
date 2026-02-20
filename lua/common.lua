@@ -362,7 +362,7 @@ function wesnoth.wml_actions.fading_message(cfg)
 end
 
 function show_image_dialog(image_path)
-	function pre_show(self)
+	local function pre_show(self)
 		self.image.label = image_path
 	end
 	local dialog_wml = wml.load("~add-ons/Flight_Freedom/gui/image_dialog.cfg")
@@ -381,7 +381,7 @@ function wesnoth.wml_actions.show_image_dialog(cfg)
 end
 
 function show_text_box_dialog(text)
-	function pre_show(self)
+	local function pre_show(self)
 		self.text.label = text
 	end
 	local dialog_wml = wml.load("~add-ons/Flight_Freedom/gui/text_box_dialog.cfg")
@@ -389,7 +389,7 @@ function show_text_box_dialog(text)
 end
 
 function show_text_box_borderless_dialog(text)
-	function pre_show(self)
+	local function pre_show(self)
 		self.text.label = text
 	end
 	local dialog_wml = wml.load("~add-ons/Flight_Freedom/gui/text_box_dialog_borderless.cfg")
