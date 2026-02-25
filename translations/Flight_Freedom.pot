@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-02-16 23:34 UTC\n"
+"POT-Creation-Date: 2026-02-25 01:37 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,14 +104,14 @@ msgstr ""
 msgid "(for Wesnoth v1.19.9 or later)"
 msgstr ""
 
-#. [achievement]: id=ftf_desperate_defense
+#. [achievement]: id=ftf_last_stand
 #: Flight_Freedom/achievements.cfg:8
-msgid "Desperate Defense"
+msgid "Last Stand"
 msgstr ""
 
-#. [achievement]: id=ftf_desperate_defense
+#. [achievement]: id=ftf_last_stand
 #: Flight_Freedom/achievements.cfg:9
-msgid "Kill at least 4 human units level 3 or above in Scenario 1 (Survival)."
+msgid "Kill at least 4 human units level 3 or above in Scenario 1 (Desperate Defense)."
 msgstr ""
 
 #. [achievement]: id=ftf_tribe_mother
@@ -151,7 +151,7 @@ msgstr ""
 
 #. [achievement]: id=ftf_forest_friend
 #: Flight_Freedom/achievements.cfg:37
-msgid "Complete Scenario 4A (Caravan) without attacking any of the elves."
+msgid "Complete Scenario 4A (Capturing the Caravan) without attacking any of the elves."
 msgstr ""
 
 #. [achievement]: id=ftf_light_fog
@@ -849,7 +849,7 @@ msgstr ""
 
 #. [message]: speaker=Malakar
 #: Flight_Freedom/macros/deaths.cfg:60
-#: Flight_Freedom/scenarios/01_Survival.cfg:616
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:616
 msgid "RrrRRARGH!"
 msgstr ""
 
@@ -1098,10 +1098,10 @@ msgstr ""
 #. [else]
 #: Flight_Freedom/macros/objectives.cfg:18
 #: Flight_Freedom/macros/objectives.cfg:43
-#: Flight_Freedom/scenarios/01_Survival.cfg:197
-#: Flight_Freedom/scenarios/01_Survival.cfg:381
-#: Flight_Freedom/scenarios/01_Survival.cfg:428
-#: Flight_Freedom/scenarios/01_Survival.cfg:477
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:197
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:381
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:428
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:477
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:904
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:915
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:1011
@@ -1110,7 +1110,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:129
 #: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:18
 #: Flight_Freedom/scenarios/03a_The_Manor.cfg:87
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:161
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:161
 #: Flight_Freedom/scenarios/04b_Forest_of_Nightmares.cfg:87
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:213
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:304
@@ -1118,7 +1118,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:563
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:81
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:545
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:742
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:745
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:67
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:361
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:754
@@ -1146,9 +1146,9 @@ msgstr ""
 #. [event]
 #. [then]
 #: Flight_Freedom/macros/objectives.cfg:30
-#: Flight_Freedom/scenarios/01_Survival.cfg:198
-#: Flight_Freedom/scenarios/01_Survival.cfg:382
-#: Flight_Freedom/scenarios/01_Survival.cfg:429
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:198
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:382
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:429
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:249
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:346
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:408
@@ -1165,7 +1165,7 @@ msgstr ""
 #. [scenario]: id=Battle_Temple
 #: Flight_Freedom/macros/objectives.cfg:81
 #: Flight_Freedom/macros/objectives.cfg:89
-#: Flight_Freedom/scenarios/01_Survival.cfg:196
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:196
 #: Flight_Freedom/scenarios/05a_Blue_River.cfg:272
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:212
 #: Flight_Freedom/scenarios/10b_Freezing_Foothills.cfg:277
@@ -3320,35 +3320,35 @@ msgstr ""
 msgid "bombard"
 msgstr ""
 
-#. [scenario]: id=Survival
-#: Flight_Freedom/scenarios/01_Survival.cfg:4
-msgid "Survival"
+#. [scenario]: id=Desperate_Defense
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:4
+msgid "Desperate Defense"
 msgstr ""
 
 #. [side]: type=General, id=Oddryn
-#: Flight_Freedom/scenarios/01_Survival.cfg:22
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:22
 msgid "Oddryn"
 msgstr ""
 
 #. [side]: type=General, id=Oddryn
 #. [side]: type=Grand Marshal, id=Yrynyc
 #. [side]: type=General, id=Dacayan
-#: Flight_Freedom/scenarios/01_Survival.cfg:30
-#: Flight_Freedom/scenarios/01_Survival.cfg:57
-#: Flight_Freedom/scenarios/01_Survival.cfg:84
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:30
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:57
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:84
 msgid "Elite Royal Infantry"
 msgstr ""
 
 #. [side]: type=Grand Marshal, id=Yrynyc
 #. [unit]: type=Grand Marshal, id=Yrynyc
-#: Flight_Freedom/scenarios/01_Survival.cfg:49
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:49
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1754
 #: Flight_Freedom/scenarios/20_Battle_of_the_Temple.cfg:165
 msgid "Yrynyc"
 msgstr ""
 
 #. [side]: type=General, id=Dacayan
-#: Flight_Freedom/scenarios/01_Survival.cfg:76
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:76
 msgid "Dacayan"
 msgstr ""
 
@@ -3360,16 +3360,16 @@ msgstr ""
 #. [unit]: type=Drake Lord, id=Malakar
 #. [unit]: type=Drake Chieftain, id=Malakar
 #. [unit]: type=Avatar of Ending, id=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:102
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:102
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:31
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:296
 #: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:25
 #: Flight_Freedom/scenarios/03a_The_Manor.cfg:17
 #: Flight_Freedom/scenarios/03b_Council_of_War.cfg:18
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:20
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:443
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:480
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:513
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:20
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:443
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:480
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:513
 #: Flight_Freedom/scenarios/04b_Forest_of_Nightmares.cfg:29
 #: Flight_Freedom/scenarios/05a_Blue_River.cfg:19
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:25
@@ -3401,10 +3401,10 @@ msgstr ""
 #. [side]: type=Drake Chieftain, id=Malakar
 #. [side]: type=Drake Worker Malakar, id=Malakar
 #. [modify_side]
-#: Flight_Freedom/scenarios/01_Survival.cfg:111
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:111
 #: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:36
 #: Flight_Freedom/scenarios/03b_Council_of_War.cfg:26
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:28
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:28
 #: Flight_Freedom/scenarios/04b_Forest_of_Nightmares.cfg:38
 #: Flight_Freedom/scenarios/05a_Blue_River.cfg:30
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:33
@@ -3435,8 +3435,8 @@ msgstr ""
 #. [unit]: type=Drake Flare, gender=male, id=Theracar
 #. [message]: speaker=narrator
 #. [unit]: type=Drake Flameheart, gender=male, id=Theracar
-#: Flight_Freedom/scenarios/01_Survival.cfg:122
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:326
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:122
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:326
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:261
 #: Flight_Freedom/scenarios/10a_Underground.cfg:222
 #: Flight_Freedom/scenarios/11a_River_of_Skulls.cfg:365
@@ -3445,27 +3445,27 @@ msgid "Theracar"
 msgstr ""
 
 #. [side]: type=Grand Knight, id=Mato
-#: Flight_Freedom/scenarios/01_Survival.cfg:140
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:140
 msgid "Mato"
 msgstr ""
 
 #. [side]: type=Grand Knight, id=Mato
-#: Flight_Freedom/scenarios/01_Survival.cfg:148
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:148
 msgid "Elite Royal Cavalry"
 msgstr ""
 
 #. [unit]: gender=female, type=Drake Burner, id=Necolag
-#: Flight_Freedom/scenarios/01_Survival.cfg:215
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:215
 msgid "Necolag"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:297
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:297
 msgid "What? No! NO! RrrrrrrRRRRRAAARGHH!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:301
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:301
 msgid ""
 "Kakatar Flight!\n"
 "To arms!\n"
@@ -3473,22 +3473,22 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/01_Survival.cfg:308
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:308
 msgid "For the course of this campaign <i>Inferno Drakes</i> can upgrade to <b>Armageddon Drakes</b>, and <i>Drake Clashers</i> can upgrade to <b>Drake Guards</b>."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/01_Survival.cfg:321
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:321
 msgid "NOTE: Achievements are disabled if debug mode is enabled."
 msgstr ""
 
 #. [message]: speaker=Necolag
-#: Flight_Freedom/scenarios/01_Survival.cfg:338
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:338
 msgid "NYIEEEEEEEE!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:351
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:351
 msgid ""
 "This is an army!\n"
 "We cannot hope to take them ourselves.\n"
@@ -3500,13 +3500,13 @@ msgstr ""
 
 #. [message]: speaker=Theracar0
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/01_Survival.cfg:361
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:361
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:288
 msgid "At once, Malakar."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:365
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:365
 msgid ""
 "Kin!\n"
 "\n"
@@ -3518,19 +3518,19 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:375
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:375
 msgid ""
 "Our second priority is to make sure that the children's children of these murderers still see our faces in their nightmares.\n"
 "Attack!"
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/01_Survival.cfg:380
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:380
 msgid "Defeat the cavalry leader"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:416
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:416
 msgid ""
 "Theracar!\n"
 "Without their horses, you should be able to outdistance them in the hills.\n"
@@ -3538,12 +3538,12 @@ msgid ""
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/01_Survival.cfg:427
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:427
 msgid "Move Theracar to the end of the southern stream"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:453
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:453
 msgid ""
 "Drakes!\n"
 "Theracar is clear!\n"
@@ -3551,7 +3551,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:468
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:468
 msgid ""
 "Drakes!\n"
 "Theracar is clear!\n"
@@ -3561,26 +3561,26 @@ msgid ""
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/01_Survival.cfg:476
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:476
 msgid "Move Malakar to the end of the southern stream"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:490
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:490
 msgid ""
 "Kin!\n"
 "We must flee, at least for now!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:554
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:554
 msgid ""
 "I cannot abandon my flight!\n"
 "As Dominant, honor demands I fight to the last!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:592
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:592
 msgid ""
 "Our fastest messenger is defeated!\n"
 "Abandon the Eyrie!\n"
@@ -3589,12 +3589,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/01_Survival.cfg:620
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:620
 msgid "Haha! This one should fetch a hefty price at the market!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:650
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:650
 msgid ""
 "No!\n"
 "The humans have overrun our lands!\n"
@@ -3602,7 +3602,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:663
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:663
 msgid ""
 "No!\n"
 "The humans have overrun our lands!\n"
@@ -3611,7 +3611,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/01_Survival.cfg:672
+#: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:672
 msgid ""
 "The humans have overrun our lands yet our messenger has escaped.\n"
 "Our deaths will not be in vain."
@@ -3654,8 +3654,8 @@ msgstr ""
 #. [scenario]: id=Caravan
 #. [scenario]: id=Blue_River
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:124
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:152
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:157
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:152
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:157
 #: Flight_Freedom/scenarios/05a_Blue_River.cfg:74
 msgid "Animals"
 msgstr ""
@@ -3896,7 +3896,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:564
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:82
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:546
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:743
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:746
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:68
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:363
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:756
@@ -4406,17 +4406,13 @@ msgstr ""
 msgid "Council of War"
 msgstr ""
 
-#. [side]
 #. [scenario]: id=Caravan
-#. [unit_type]: id=Caravan, race=human
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:106
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:4
-#: Flight_Freedom/units/special/Caravan.cfg:5
-msgid "Caravan"
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:4
+msgid "Capturing the Caravan"
 msgstr ""
 
 #. [side]: type=Elvish Marshal, id=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:38
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:38
 msgid "Haloran"
 msgstr ""
 
@@ -4425,65 +4421,72 @@ msgstr ""
 #. [side]: type=Elvish Marshal, type=Elvish Captain, id=Mandros
 #. [side]: type=Elvish Captain, id=Einelen
 #. [side]
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:47
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:798
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:47
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:798
 #: Flight_Freedom/scenarios/05a_Blue_River.cfg:51
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:114
 #: Flight_Freedom/scenarios/10b_Freezing_Foothills.cfg:107
 msgid "Elvish Melrithian Force"
 msgstr ""
 
+#. [side]
+#. [unit_type]: id=Caravan, race=human
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:106
+#: Flight_Freedom/units/special/Caravan.cfg:5
+msgid "Caravan"
+msgstr ""
+
 #. [unit]: type=Caravan, id=theCaravan
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:113
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:113
 msgid "Prax's Caravan"
 msgstr ""
 
 #. [scenario]: id=Caravan
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:160
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:160
 msgid "Destroy the caravan"
 msgstr ""
 
 #. [scenario]: id=Caravan
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:162
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:162
 msgid "Caravan is destroyed by wolves"
 msgstr ""
 
 #. [scenario]: id=Caravan
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:163
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:163
 msgid "Caravan escapes (reaches the western edge of the map)"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:371
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:371
 msgid "After torching the mansion, Malakar headed out to intercept the caravan."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:381
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:381
 msgid ""
 "Our flight is now free.\n"
 "I now have true warriors at hand, as well as the Dominant of the Jamolar!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:389
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:389
 msgid ""
 "Our flight is now free.\n"
 "I now have true warriors at hand!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:565
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:565
 msgid "Our next step towards home is simple: seize the caravan. It must not enter the hills!"
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:581
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:581
 msgid "Scaled creatures! Do you know of Kogw?"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:585
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:585
 msgid ""
 "No.\n"
 "I have heard of no such name.\n"
@@ -4492,22 +4495,22 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:592
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:592
 msgid "Watch your tongue!"
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:596
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:596
 msgid "Even the insulting are allowed safe passage through our forest. Do not try us, however, or you will find us unmatched in the woods. The rules are simple: take no longer than necessary, start no fires of any kind, and harm no living creature while within our borders."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:600
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:600
 msgid "Very well, we will be gone from your lands shortly."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:604
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:604
 msgid ""
 "Remember, everyone, we take the caravan!\n"
 "We have no quarrel with the elves."
@@ -4515,18 +4518,18 @@ msgstr ""
 
 #. [message]: speaker=Theracar
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:618
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:624
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:618
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:624
 msgid "Well, at least not yet."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:637
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:637
 msgid "NOTE: From now on, since Hartholar is no longer critical to your cause, the game will not end if he is killed."
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:657
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:657
 msgid ""
 "Gar-Alagar does not approve of banditry!\n"
 "We have suffered at the humans' hands.\n"
@@ -4534,14 +4537,14 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:663
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:663
 msgid ""
 "The Baron made this money on the backs of us drakes and the blood of our hatchlings!\n"
 "We merely repay them in kind."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:681
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:681
 msgid ""
 "Our imprisonment was not kind to us.\n"
 "It will be some time before we regain our former strength at arms.\n"
@@ -4550,71 +4553,71 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:694
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:694
 msgid "Elves! Spread out through the forest! While these beasts have done nothing yet to provoke us, we must be wary!"
 msgstr ""
 
 #. [message]: speaker=theCaravan
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:708
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:708
 msgid "We're being robbed! Guards!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:721
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:721
 msgid ""
 "No!\n"
 "The caravan has escaped into the hills!"
 msgstr ""
 
 #. [unit]: type=Peasant, id=Trevor
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:742
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:742
 msgid "Trevor"
 msgstr ""
 
 #. [message]: speaker=Trevor
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:748
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:748
 msgid " *gasp* Elves! Have mercy on me! I come from the Baron's manor, to the west, with terrible news! I need your shelter!"
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:752
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:752
 msgid "We cannot offer you sanctuary, but we can promise you safe passage to the other..."
 msgstr ""
 
 #. [message]: speaker=Trevor
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:756
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:756
 msgid "Winged beasts! They killed everyone, and burned everything! Fires! And bodies! And wings! And... scales... and... *collapses*."
 msgstr ""
 
 #. [message]: speaker=Scout
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:793
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:793
 msgid "Lord Haloran, my men have returned. The western hills are ablaze!"
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:802
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:802
 msgid "Those fiends! Rally! Drive out the beasts! Do not rest 'til you cannot see their scales beneath our arrows!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:818
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:818
 msgid ""
 "$gold_amt gold!\n"
 "This will go a long way toward our cause!"
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:824
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:824
 msgid "ARRH! You fight like a crazed beast, and I wish to lose no more men. You have whatever it is you have come for - get out! Get out of our forest! If we ever cross paths again, it will be your death!"
 msgstr ""
 
 #. [message]: role=questionb
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:838
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:838
 msgid "What about the elves? They will pursue us!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:842
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:842
 msgid ""
 "I am aware.\n"
 "But I fear that they will call reinforcements.\n"
@@ -4622,24 +4625,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:871
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:871
 msgid "Guards! Rally to me!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:913
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:913
 msgid ""
 "The forest is crawling with elves!\n"
 "We must focus on the caravan!"
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:929
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:929
 msgid "Malakar, I have slain the elven chief!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:933
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:933
 msgid ""
 "Now is not the time to celebrate our kills!\n"
 "Quickly, we must capture the caravan!\n"
@@ -4647,29 +4650,29 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:953
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:953
 msgid "You will not take us alive, lizards!"
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:986
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:986
 msgid "We elves will remember this, lizards!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:993
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:993
 msgid "This victory would taste sweeter if we had not wasted so much time fighting those elves..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:1017
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:1017
 msgid ""
 "The caravan guards are slain!\n"
 "Plunder the caravan quickly so we may make our escape!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:1034
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:1034
 msgid ""
 "No!\n"
 "The wolves have destroyed the caravan!\n"
@@ -4678,12 +4681,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=outrider_time_over
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:1080
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:1080
 msgid "Lord Haloran, we received your summons."
 msgstr ""
 
 #. [message]: speaker=Haloran
-#: Flight_Freedom/scenarios/04a_Caravan.cfg:1084
+#: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:1084
 msgid "The drakes have brought death and flames to the forest. Kill them all!"
 msgstr ""
 
@@ -5772,7 +5775,7 @@ msgstr ""
 #. [event]: id=apprentice_1, id=apprentice_2, id=apprentice_3, id=apprentice_4
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:306
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:547
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:744
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:747
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:69
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:364
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:757
@@ -5955,7 +5958,7 @@ msgstr ""
 #. [objectives]
 #. [scenario]: id=Citadel
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:548
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:745
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:748
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:70
 msgid "Death of Taqkar"
 msgstr ""
@@ -6049,7 +6052,7 @@ msgid "Kill the elemental guardians ($dead_guardians / 4)"
 msgstr ""
 
 #. [message]: speaker=Taqkar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:668
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:671
 msgid ""
 "Fool!\n"
 "Now you die!\n"
@@ -6057,73 +6060,73 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:710
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:713
 msgid "We must defeat the guardians first!"
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:728
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:731
 msgid "The guardians have been dealt with!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:732
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:735
 msgid ""
 "Onward!\n"
 "Seize the Citadel!"
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:741
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:744
 msgid "Move a unit next to the Citadel"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:758
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:761
 msgid "Quemar, we have reached the Citadel."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:764
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:767
 msgid "Quemar casts a great spell!"
 msgstr ""
 
 #. [event]: id=Quahgakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:769
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:772
 msgid "Quahgakar"
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:782
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:785
 msgid ""
 "We must talk about the future of our existence.\n"
 "I have commanded an end to the trial."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:821
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:824
 msgid ""
 "I feel an anger surging through me!\n"
 "An urge to rend and kill!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:828
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:831
 msgid "Unit gains 1 more round of all attacks!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:874
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:877
 msgid "I feel my mind expanding... the winds around me obey my command!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:880
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:883
 msgid "Unit's attacks become magical! (70% chance to hit)"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:926
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:929
 msgid ""
 "The energy imbues my muscle and sinew...\n"
 "I feel more flexible than ever!\n"
@@ -6131,24 +6134,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:934
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:937
 msgid "Unit gains the skirmisher ability! (ignore enemy zones of control)"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:980
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:983
 msgid ""
 "I feel a connection to life around me!\n"
 "It is as if I can draw essence from the decay of others!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:987
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:990
 msgid "Unit's attacks gain the drain ability!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1027
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1030
 msgid ""
 "No!\n"
 "Too much power...\n"
@@ -6156,38 +6159,38 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1090
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1093
 msgid ""
 "Such power!\n"
 "I cannot absorb more lest it should unmake me."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1097
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1100
 msgid ""
 "You have absorbed great power.\n"
 "Take caution that you are not consumed by it!"
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1136
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1139
 msgid ""
 "The trial of fire will confront us with living flames.\n"
 "These will seek to turn our inner fires against us."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1145
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1148
 msgid "The trial of earth will transform the very ground we stand on or fly over into an adversary."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1153
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1156
 msgid "The trial of water will attack us with beings of water that will attempt to douse our internal flames."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1384
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1387
 msgid ""
 "No!\n"
 "He was a focal point of the trial.\n"
@@ -6195,7 +6198,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1398
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1401
 msgid ""
 "The citadel has become impenetrable.\n"
 "We have failed."
