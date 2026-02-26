@@ -5121,7 +5121,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/05a_Blue_River.cfg:397
 msgid ""
 "You!\n"
-"I am Malakar, Dominant of these Drakes\n"
+"I am Malakar, Dominant of these Drakes.\n"
 "You will answer to me why you and your men pursue us."
 msgstr ""
 
