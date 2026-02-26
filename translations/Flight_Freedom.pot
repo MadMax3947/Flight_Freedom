@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-02-25 01:56 UTC\n"
+"POT-Creation-Date: 2026-02-26 03:30 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1118,7 +1118,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:563
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:81
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:545
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:745
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:751
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:67
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:361
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:754
@@ -3896,7 +3896,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:564
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:82
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:546
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:746
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:752
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:68
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:363
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:756
@@ -5775,7 +5775,7 @@ msgstr ""
 #. [event]: id=apprentice_1, id=apprentice_2, id=apprentice_3, id=apprentice_4
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:306
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:547
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:747
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:753
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:69
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:364
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:757
@@ -5958,7 +5958,7 @@ msgstr ""
 #. [objectives]
 #. [scenario]: id=Citadel
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:548
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:748
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:754
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:70
 msgid "Death of Taqkar"
 msgstr ""
@@ -6052,7 +6052,7 @@ msgid "Kill the elemental guardians ($dead_guardians / 4)"
 msgstr ""
 
 #. [message]: speaker=Taqkar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:671
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:677
 msgid ""
 "Fool!\n"
 "Now you die!\n"
@@ -6060,73 +6060,73 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:713
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:719
 msgid "We must defeat the guardians first!"
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:731
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:737
 msgid "The guardians have been dealt with!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:735
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:741
 msgid ""
 "Onward!\n"
 "Seize the Citadel!"
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:744
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:750
 msgid "Move a unit next to the Citadel"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:761
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:767
 msgid "Quemar, we have reached the Citadel."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:767
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:773
 msgid "Quemar casts a great spell!"
 msgstr ""
 
 #. [event]: id=Quahgakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:772
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:778
 msgid "Quahgakar"
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:785
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:791
 msgid ""
 "We must talk about the future of our existence.\n"
 "I have commanded an end to the trial."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:824
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:830
 msgid ""
 "I feel an anger surging through me!\n"
 "An urge to rend and kill!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:831
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:837
 msgid "Unit gains 1 more round of all attacks!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:877
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:883
 msgid "I feel my mind expanding... the winds around me obey my command!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:883
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:889
 msgid "Unit's attacks become magical! (70% chance to hit)"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:929
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:935
 msgid ""
 "The energy imbues my muscle and sinew...\n"
 "I feel more flexible than ever!\n"
@@ -6134,24 +6134,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:937
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:943
 msgid "Unit gains the skirmisher ability! (ignore enemy zones of control)"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:983
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:989
 msgid ""
 "I feel a connection to life around me!\n"
 "It is as if I can draw essence from the decay of others!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:990
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:996
 msgid "Unit's attacks gain the drain ability!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1030
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1036
 msgid ""
 "No!\n"
 "Too much power...\n"
@@ -6159,38 +6159,61 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1093
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1099
 msgid ""
 "Such power!\n"
 "I cannot absorb more lest it should unmake me."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1100
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1106
 msgid ""
 "You have absorbed great power.\n"
 "Take caution that you are not consumed by it!"
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1139
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1145
 msgid ""
 "The trial of fire will confront us with living flames.\n"
 "These will seek to turn our inner fires against us."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1148
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1154
 msgid "The trial of earth will transform the very ground we stand on or fly over into an adversary."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1156
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1162
 msgid "The trial of water will attack us with beings of water that will attempt to douse our internal flames."
 msgstr ""
 
+#. [message]
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1412
+msgid "The lava rises around me!"
+msgstr ""
+
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1387
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1416
+msgid ""
+"Those who are overcome by lava shall not be harmed by it.\n"
+"This is the one boon granted to Aspirants.\n"
+"But know that any who presume to enter the flames,\n"
+"Shall be consumed at once."
+msgstr ""
+
+#. [message]
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1448
+msgid ""
+"The air is thin...\n"
+"My fire flickers...\n"
+"I am unable to fight...\n"
+"I must descend immediately!"
+msgstr ""
+
+#. [message]: speaker=Quemar
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1470
 msgid ""
 "No!\n"
 "He was a focal point of the trial.\n"
@@ -6198,7 +6221,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1401
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1484
 msgid ""
 "The citadel has become impenetrable.\n"
 "We have failed."
