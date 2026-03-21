@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-02-26 05:26 UTC\n"
+"POT-Creation-Date: 2026-03-21 04:28 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -948,7 +948,7 @@ msgid ""
 msgstr ""
 
 #. [message]: role=despairing_drake
-#: Flight_Freedom/macros/deaths.cfg:284
+#: Flight_Freedom/macros/deaths.cfg:289
 msgid ""
 "No!\n"
 "They can even slay dragons...\n"
@@ -956,7 +956,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/macros/deaths.cfg:290
+#: Flight_Freedom/macros/deaths.cfg:295
 msgid ""
 "Silence!\n"
 "Do not give in to despair.\n"
@@ -964,56 +964,56 @@ msgid ""
 "Pick yourself up and fight!"
 msgstr ""
 
-#: Flight_Freedom/macros/deaths.cfg:318
+#: Flight_Freedom/macros/deaths.cfg:323
 msgid "All is lost!"
 msgstr ""
 
-#: Flight_Freedom/macros/deaths.cfg:319
+#: Flight_Freedom/macros/deaths.cfg:324
 msgid "My flagship! Our fleet is shattered!"
 msgstr ""
 
-#: Flight_Freedom/macros/deaths.cfg:334
+#: Flight_Freedom/macros/deaths.cfg:339
 msgid "(Kogw) All is lost!"
 msgstr ""
 
-#: Flight_Freedom/macros/deaths.cfg:335
+#: Flight_Freedom/macros/deaths.cfg:340
 msgid "(Kogw) We're dead in the water! And, soon to be dead."
 msgstr ""
 
-#: Flight_Freedom/macros/deaths.cfg:336
+#: Flight_Freedom/macros/deaths.cfg:341
 msgid "(Kogw) ...time to walk the plank."
 msgstr ""
 
-#: Flight_Freedom/macros/deaths.cfg:337
+#: Flight_Freedom/macros/deaths.cfg:342
 msgid "(Kogw) ...time to feed the sharks."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/macros/deaths.cfg:377
+#: Flight_Freedom/macros/deaths.cfg:382
 msgid "This is the end... of the drakes."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/macros/deaths.cfg:400
+#: Flight_Freedom/macros/deaths.cfg:405
 msgid ""
 "No!\n"
 "Without him, I cannot hope to prevail!"
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/macros/deaths.cfg:416
+#: Flight_Freedom/macros/deaths.cfg:421
 msgid ""
 "No!\n"
 "My flight's chief priest has fallen!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/macros/deaths.cfg:421
+#: Flight_Freedom/macros/deaths.cfg:426
 msgid "We are drakes first and foremost and we must press on!"
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/macros/deaths.cfg:436
+#: Flight_Freedom/macros/deaths.cfg:441
 msgid ""
 "No!\n"
 "Without the Magi, the drakes are doomed!"
@@ -1166,9 +1166,9 @@ msgstr ""
 #: Flight_Freedom/scenarios/05a_Blue_River.cfg:272
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:212
 #: Flight_Freedom/scenarios/10b_Freezing_Foothills.cfg:275
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:281
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:280
 #: Flight_Freedom/scenarios/16_The_Exodus.cfg:426
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:691
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:690
 #: Flight_Freedom/scenarios/20_Battle_of_the_Temple.cfg:272
 msgid "Defeat all enemy leaders"
 msgstr ""
@@ -5480,7 +5480,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:290
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:743
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:121
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:284
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:283
 #: Flight_Freedom/scenarios/17a_Blockade.cfg:121
 msgid "Destruction of the Unforgiver"
 msgstr ""
@@ -6263,8 +6263,8 @@ msgstr ""
 #. [scenario]: id=Hordes_Undead
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:281
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:742
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:256
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:72
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:263
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:79
 msgid "Defeat both enemy leaders"
 msgstr ""
 
@@ -8784,65 +8784,65 @@ msgid "Gala-Thano"
 msgstr ""
 
 #. [scenario]: id=Hordes_Undead
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:71
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:78
 msgid "Move Malakar to the ruined keep"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:120
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:127
 msgid "After defeating the rebels, the remaining Kakatars left the valley. The gliders soon began reporting salt on the breeze: the ocean couldn't be far off."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:126
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:133
 msgid "Mal! Mal!"
 msgstr ""
 
 #. [message]: speaker=Malakar
 #. case matters here; Malakar is emphasizing the part of his name Kogw left out:
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:131
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:138
 msgid "MalAKAR, Kogw, Malakar."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:135
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:142
 msgid "Yes, great! I just spoke with a scout and..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:139
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:146
 msgid "The scouts do not report to you!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:143
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:150
 msgid "He was wounded and I'd be faster; but we've got trouble!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:147
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:154
 msgid "The humans?"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:151
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:158
 msgid "The Gate of Storms, Mal, the Gate! This half of the island is crawling with undead!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:155
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:162
 msgid ""
 "We can rally the flight at the ruined fortress!\n"
 "Go!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:163
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:170
 msgid "After escaping the magical trap, the remaining Kakatars left the valley. The gliders soon began reporting salt on the breeze: the ocean couldn't be far off."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:169
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:176
 msgid ""
 "Now we must find a way off of this island.\n"
 "\n"
@@ -8851,14 +8851,14 @@ msgid ""
 msgstr ""
 
 #. [message]: role=glidera
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:207
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:214
 msgid ""
 "Dominant!\n"
 "This half of the island is crawling with undead!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:212
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:219
 msgid ""
 "The humans must have stooped to necromancy!\n"
 "We must tread carefully."
@@ -8866,63 +8866,63 @@ msgstr ""
 
 #. [message]: speaker=Malakar
 #. Malakar catches himself before finishing "read about"
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:224
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:231
 msgid ""
 "Or perhaps this is the Gate I read... the pirate spoke of.\n"
 "We must reach the ruined fortress and rally the flight!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:231
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:238
 msgid ""
 "Or perhaps this is the Gate the pirate spoke of.\n"
 "We must reach the ruined fortress and rally the flight!"
 msgstr ""
 
 #. [message]: id=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:276
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:283
 msgid "They seem to fight with statues."
 msgstr ""
 
 #. [message]: id=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:280
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:287
 msgid "I've heard stories of them; step carefully, this is powerful black magic."
 msgstr ""
 
 #. [message]: id=Theracar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:284
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:291
 msgid ""
 "I recall rumors of them from my time serving that wretched Baron.\n"
 "This is powerful black magic."
 msgstr ""
 
 #. [unit]: type=Arch Mage, id=Elealonna, gender=female
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:310
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:317
 msgid "Elealonna"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:324
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:331
 msgid "Mercy! Mercy!"
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:326
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:333
 msgid "Give me one reason not to kill you, human."
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:326
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:333
 msgid "Who goes there?"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:329
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:336
 msgid "I am... was... the Mage-Advisor to this expedition. I think I'm the only one left, but I'm old... so old..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:333
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:340
 msgid ""
 "Human.\n"
 "Tell me what happened.\n"
@@ -8930,32 +8930,32 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:339
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:346
 msgid "There was an earthquake. Then a purple fog rippling across the land, the air suddenly thick with dark magic. Then everyone started to age. I just can't stop thinking about it... the boyish soldiers' faces sprouting lifetimes of wrinkles in but moments... vibrant locks of hair graying and falling out before my eyes... I cast a barrier charm as fast as I could but it was too late to save my vitality."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:343
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:350
 msgid "And then everyone, wracked in agony, began to die. Flesh rotting and sloughing off as if it were but drool, bones and sinew bleaching in an instant..."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:347
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:354
 msgid "I ran as fast... or slow... as my now aching, weak knees could carry me, when the rattling began. Skeletons, monsters, and worse standing up and once more taking up their weapons. I slipped away as the fog began to dissipate. I've been hiding in this army tent since. Desperately waiting for a chance to go somewhere... anywhere besides this cursed place."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:351
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:358
 msgid "The cave-in, it must have woken the Gate!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:355
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:362
 msgid "Now I am old... so, so old... my magic is diminished but not yet faded. Yes... I still have that spark in my mind. I'll lend my staff to your service against these undead... even those who were once my friends when they yet lived. Will you have me?"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:365
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:372
 msgid ""
 "You came with your army to this island, across the ocean, to cast us once again into slavery.\n"
 "Perhaps unlife was a fitting punishment for your crimes.\n"
@@ -8963,13 +8963,13 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:371
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:378
 msgid "But Mal, the Gate is a true evil! This black magic threatens us all, and she can help us!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:375
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:403
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:382
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:410
 msgid ""
 "Or perhaps she is behind this.\n"
 "\n"
@@ -8979,7 +8979,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:390
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:397
 msgid ""
 "You came with your army to this island, across the ocean, to cast us once again into slavery.\n"
 "\n"
@@ -8988,7 +8988,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:397
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:404
 msgid ""
 "Malakar!\n"
 "She may be a human.\n"
@@ -8996,7 +8996,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:414
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:421
 msgid ""
 "Malakar, we must consider that the thinskins could be anywhere.\n"
 "I propose that we dispense of this one.\n"
@@ -9004,7 +9004,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:420
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:427
 msgid ""
 "Human.\n"
 "You came with your army to this island, across the ocean, to cast us once again into slavery.\n"
@@ -9014,34 +9014,34 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:430
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:437
 msgid "The undead are closing in... I pledge myself to your service, but if you wish to kill me... just be quick about it..."
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:432
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:439
 msgid "Spare her."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:436
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:443
 msgid ""
 "You may live.\n"
 "But give even the slightest hint of betrayal and you will wish you were among the undead."
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:447
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:460
 msgid "Kill her."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:458
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:471
 msgid "Malakar, please! You ask me to kill her in cold blood!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:462
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:475
 msgid ""
 "I do not ask.\n"
 "I am your Dominant!\n"
@@ -9050,46 +9050,46 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:469
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:482
 msgid "Arr... so be it. I'm sorry, lass."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:506
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:516
 #: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:714
 msgid "And so it ends... grant final rest to my companions, I beg you..."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:528
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:538
 msgid "Thano... my love... I can only hope you now find peace in the hereafter..."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:539
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:549
 msgid "Nana... my apprentice... I failed you, I'm so sorry..."
 msgstr ""
 
 #. [message]: speaker=Elealonna
 #. probably won't be reached, but the enemies can recruit Dark Adepts who could theoretically also advance to Liches:
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:548
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:558
 msgid "Seeing my fellow magi turning to darkness and lichdom... it pains my heart."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:559
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:569
 msgid "The undead are growing too powerful! We cannot prevail!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:563
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:573
 msgid ""
 "The undead are growing too powerful!\n"
 "We cannot prevail!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:576
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:586
 msgid ""
 "The undead are weakening.\n"
 "We must move on before they regroup!"
@@ -9483,19 +9483,19 @@ msgstr ""
 #. [unit]: type=Pirate NOADV, gender=male, id=Rhys
 #. [message]: speaker=narrator
 #: Flight_Freedom/scenarios/16_The_Exodus.cfg:146
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:308
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:510
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:882
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:943
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:307
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:509
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:881
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:942
 msgid "Rhys"
 msgstr ""
 
 #. [unit]: type=Pirate NOADV, gender=male, id=Davies
 #. [message]: speaker=narrator
 #: Flight_Freedom/scenarios/16_The_Exodus.cfg:172
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:333
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:524
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:876
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:332
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:523
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:875
 msgid "Davies"
 msgstr ""
 
@@ -9541,7 +9541,7 @@ msgstr ""
 
 #. [message]: speaker=Kogw
 #: Flight_Freedom/scenarios/16_The_Exodus.cfg:220
-msgid "The Unforgiver is still in one piece? That's wonderful! We'll have ocean's finest ride all the way to Morogor!"
+msgid "The Unforgiver is still in one piece? That's wonderful! We'll have the ocean's finest ride all the way to Morogor!"
 msgstr ""
 
 #. [message]: speaker=Rhys
@@ -9578,63 +9578,64 @@ msgid "Oh, and we've scraped together a few coins. We kind of figured we'd be us
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:273
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:272
 msgid "Also, the village we were staying in is friendly."
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:282
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:281
 msgid "Death of Rhys"
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:283
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:282
 msgid "Death of Davies"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:292
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:291
 msgid "A mere four days of travel later, the flight found themselves on familiar ground."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:348
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:347
 msgid "Drakes! Do you bring word of Kogw?"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:352
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:351
 msgid ""
 "Thinskin.\n"
 "Tell me the way to Morogor."
 msgstr ""
 
 #. [message]: speaker=Davies
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:357
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:356
 msgid "Rhys, here, says that he's got a map. But first, tell us of our captain!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:361
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:360
 msgid ""
 "The captain is dead.\n"
 "He was killed by the elves."
 msgstr ""
 
 #. [message]: speaker=s16_peasant
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:376
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:375
 msgid "We all heard how the elves killed a pirate in the forest! Oh dearie... 'twas so horrible... I swear we could hear his screams for days..."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:380
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:379
 msgid "And you drakes let him die!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:384
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:383
 msgid ""
-"Hand over the map now, thinskin, or you will join your captain.\n"
+"Hand over the map now, thinskin.\n"
+"Or you will join your captain.\n"
 "Believe me, you would suffer far more burning alive by my flame than anything the pointy ears could do."
 msgstr ""
 
@@ -9645,17 +9646,17 @@ msgstr ""
 
 #. [else]
 #: Flight_Freedom/scenarios/16_The_Exodus.cfg:425
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1011
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1010
 msgid "Capture the pirates"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:550
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:549
 msgid "Dominant, we have found the pirates!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:556
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:555
 msgid ""
 "The map.\n"
 "Hand it over.\n"
@@ -9663,22 +9664,22 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:562
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:561
 msgid "You betrayed my captain! I'll rip it to shreds it before I ever give it to you monsters!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:580
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:579
 msgid "Drake, kill his companion."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:586
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:585
 msgid "Kill his companion."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:635
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:634
 msgid ""
 "Listen to me well, thinskin.\n"
 "\n"
@@ -9689,106 +9690,106 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:645
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:644
 msgid "I... I... h-h-here you go... t-t-take the map... please don't kill me... please don't kill me!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:649
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:648
 msgid ""
 "Very well.\n"
 "Now stand and face your end!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:687
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:686
 msgid ""
 "This map points the way to Morogor!\n"
 "Now we must drive away these stragglers so we can prepare to depart this cursed island."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:715
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:714
 msgid "Oh no... on no!!!"
 msgstr ""
 
 #. [message]: speaker=Davies
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:783
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:782
 msgid "Yo! We need passage off this island! We will pay you all that we have!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:787
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:786
 msgid "That can be arranged... for the right price."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:792
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:791
 msgid "I trust this will be enough."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:796
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:795
 msgid "Indeed so! Come on, lads. Let's get you two out of here."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:802
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:801
 msgid ""
 "No!\n"
 "Without the map we will never find our way back home!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:833
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:832
 msgid "No! Without my navigator, we cannot sail!"
 msgstr ""
 
 #. [message]: speaker=Davies
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:861
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:878
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:860
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:877
 msgid "Hey, Rhys. I have a new guess about what's wrong with this island."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:884
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:883
 msgid "Hopefully they still answer to gold..."
 msgstr ""
 
 #. [message]: speaker=Rhys
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:928
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:945
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:927
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:944
 msgid "See! A skeleton! I told you so!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:968
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:967
 msgid "No! Without my helmsman, we cannot sail!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1007
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1006
 msgid ""
 "We have slain the deserter leaders.\n"
 "We must still track down the pirates and their map!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1053
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1052
 msgid "The wind is dying down. We cannot sail away!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1064
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1063
 msgid ""
 "We are exhausted from the fighting...\n"
 "We cannot fly against the winds!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1072
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1071
 msgid ""
 "We still have not found the map!\n"
 "Doubtlessly the pirates have escaped.\n"
@@ -9796,7 +9797,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1094
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1093
 msgid ""
 "Drakes!\n"
 "We have a hard flight ahead of us.\n"
@@ -9807,12 +9808,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1105
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1104
 msgid "To Morogor!"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1115
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1114
 msgid "Cap'n, glad to have you aboard again! It's a shame we couldn't kill more of these rabble..."
 msgstr ""
 
