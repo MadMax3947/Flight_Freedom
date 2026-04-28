@@ -625,6 +625,38 @@ function UndeadRoom:pre_corridor_setup()
 	end
 end
 
+MessHallRoom = Room:new()
+
+function MessHallRoom:pre_corridor_setup()
+	self:set_inner_terrain("Isa")
+end
+
+function MessHallRoom:post_corridor_setup()
+	local q0, r0, s0 = table.unpack(get_cubic({self.x1 + 2, self.y1}))
+	-- start at second row along -s axis
+	local q1 = q0 + 1
+	local r1 = r0
+	local s1 = s0 - 1
+	for i = 1, self.r_height - 2 do
+		local q2 = q1
+		local r2 = r1
+		local s2 = s1
+		-- skip the top row
+		for j = 2, self.s_height - 2 do
+			-- don't place tables in the middle of the room
+			-- also make sure that there are multiples of 2 tables on r axis
+			if ((self.r_height - 2) % 4 == 0 or math.abs(i - (self.r_height - 1) / 2) > math.floor((self.r_height - 2) % 4) / 2) and (self.s_height % 2 == 0 or j ~= (self.s_height - 1) / 2) then
+				local hex_x, hex_y = table.unpack(from_cubic(q2, r2, s2))
+				add_terrain_overlay(hex_x, hex_y, "TabY")
+			end
+			q2 = q2 + 1
+			s2 = s2 - 1
+		end
+		q1 = q1 + 1
+		r1 = r1 - 1
+	end
+end
+
 EmptyRoom = Room:new()
 
 function EmptyRoom:pre_corridor_setup()
@@ -787,6 +819,21 @@ local function place_random_rooms(mapgen, num_random_rooms, num_undead_per_room,
 		end
 	end
 end
+
+local function place_messhall_room(mapgen)
+	local messhall_room = MessHallRoom:new()
+	local r_height = 3 + mathx.random(1, 2) * 4
+	local s_height = math.min(math.ceil(random_norm(9, 5)), 12)
+	s_height = math.max(s_height, 7)
+	messhall_room:set_dimensions(r_height, s_height)
+	messhall_room.id = "messhall_room"
+	-- it can go anywhere, and it's not essential
+	local placed = mapgen:find_placement_anywhere(messhall_room, false)
+	if placed then
+		mapgen:register_room(messhall_room)
+	end
+end
+
 
 ------------------------
 ----- other map setup functions
@@ -1014,6 +1061,7 @@ function randomize_scenario()
 	local num_undead_per_room = 3
 	local num_undead_rooms = 4
 	place_random_rooms(mapgen, num_random_rooms, num_undead_per_room, num_undead_rooms)
+	place_messhall_room(mapgen)
 
 	mapgen:pre_corridor_setup()
 	mapgen:place_corridors("Isa")
