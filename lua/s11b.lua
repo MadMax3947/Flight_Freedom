@@ -840,6 +840,7 @@ local function place_random_rooms(mapgen, num_random_rooms, num_undead_per_room,
 			r = EmptyRoom:new()
 		end
 		r:set_dimensions(r_height, s_height)
+		r.max_degree = 4
 		local placed = mapgen:find_placement_anywhere(r, false)
 		if placed then
 			rand_rooms_generated = rand_rooms_generated + 1
