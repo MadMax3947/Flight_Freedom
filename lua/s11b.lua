@@ -657,6 +657,33 @@ function MessHallRoom:post_corridor_setup()
 	end
 end
 
+SupplyRoom = Room:new()
+
+function SupplyRoom:pre_corridor_setup()
+	self:set_inner_terrain("Isa")
+	--self:set_wall_terrain("Xom") -- wood wall
+end
+
+function SupplyRoom:post_corridor_setup()
+	local center_hex = self:get_approx_center()
+	local hexes = self:get_inner_hexes()
+	for i, hex in ipairs(hexes) do
+		local distance = cartesian_distance_between_hexes(center_hex[1], center_hex[2], hex[1], hex[2])
+		local thingy_prob = norm_pdf(distance, 0, 5) * 4.0
+		if mathx.random() < thingy_prob then
+			local item = mathx.random_choice{
+				"items/box.png",
+				"scenery/brokenbarrel.png",
+				"items/barrel.png",
+				"scenery/barrel1.png",
+				"scenery/barrel2.png",
+				"scenery/barrel3.png"
+			}
+			wesnoth.interface.add_item_image(hex[1], hex[2], item)
+		end
+	end
+end
+
 EmptyRoom = Room:new()
 
 function EmptyRoom:pre_corridor_setup()
@@ -807,6 +834,8 @@ local function place_random_rooms(mapgen, num_random_rooms, num_undead_per_room,
 		if rand_rooms_generated < num_undead_rooms then
 			r = UndeadRoom:new()
 			r:set_levels({table.unpack(undead_levels, num_undead_per_room * rand_rooms_generated + 1, num_undead_per_room * (rand_rooms_generated + 1))})
+		elseif rand_rooms_generated < num_undead_rooms + 1 then
+			r = SupplyRoom:new()
 		else
 			r = EmptyRoom:new()
 		end

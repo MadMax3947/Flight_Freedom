@@ -23,6 +23,10 @@ function random_norm(mean, sd)
 	return r
 end
 
+function norm_pdf(x, mean, sd)
+	return math.exp(-1.0*((x-mean)^2)/(2.0*sd*sd)) / math.sqrt(2.0 * math.pi * sd * sd)
+end
+
 --- randomly generate k integers from 1 to n without replacement
 function random_sample_wor(k, n)
 	local reservoir = {}
@@ -91,6 +95,17 @@ function find_angle_between_hexes(x1, y1, x2, y2)
 		theta = (math.pi * 2) - theta
 	end
 	return theta
+end
+
+-- find the distance between two hexes in a straight line between them
+function cartesian_distance_between_hexes(x1, y1, x2, y2)
+	local q1, r1, s1 = table.unpack(get_cubic({x1, y1}))
+	local q2, r2, s2 = table.unpack(get_cubic({x2, y2}))
+	local x1_pixel = (3.0 / 2) * q1
+	local y1_pixel = ((math.sqrt(3.0) / 2) * q1) + (math.sqrt(3.0) * r1)
+	local x2_pixel = (3.0 / 2) * q2
+	local y2_pixel = ((math.sqrt(3.0) / 2) * q2) + (math.sqrt(3.0) * r2)
+	return math.sqrt(((x1_pixel - x2_pixel) ^ 2) + ((y1_pixel - y2_pixel) ^ 2)) / math.sqrt(3)
 end
 
 --- adjusts side numbers in the sidebar to 'skip over' listed sides

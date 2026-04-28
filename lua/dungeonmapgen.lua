@@ -542,6 +542,7 @@ function DungeonMapGen:place_corridors(terrain_type)
 	local connect_attempts = 0 -- tracks number of failed connections (resets if successful connection made)
 	local rays_failed = 0
 	local starting_max_ray_length = 15 -- restrict maximum distance algorithm will try to connect rooms
+	local successful = true
 	while not graph:is_connected() do
 		local origin_room_selected = false
 		local origin_room_num = nil
@@ -784,11 +785,11 @@ function DungeonMapGen:place_corridors(terrain_type)
 			end
 		end
 		if connect_attempts > max_connect_attempts then
-			-- todo: if mapgen fails, potentially endlevel back to itself?
+			successful = false
 			break
 		end
 	end
-	return graph
+	return {graph, successful}
 end
 
 ---Execute the pre_corridor_setup of all registered Rooms
