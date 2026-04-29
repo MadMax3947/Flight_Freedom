@@ -665,7 +665,7 @@ function SupplyRoom:pre_corridor_setup()
 	local hexes = self:get_inner_hexes()
 	for i, hex in ipairs(hexes) do
 		local distance = cartesian_distance_between_hexes(center_hex[1], center_hex[2], hex[1], hex[2])
-		local thingy_prob = norm_pdf(distance, 0, 5) * 4.0
+		local thingy_prob = norm_pdf(distance, 0, 4) * 4.0
 		if mathx.random() < thingy_prob then
 			local item = mathx.random_choice{
 				"items/box.png",
