@@ -661,10 +661,6 @@ SupplyRoom = Room:new()
 
 function SupplyRoom:pre_corridor_setup()
 	self:set_inner_terrain("Isa")
-	--self:set_wall_terrain("Xom") -- wood wall
-end
-
-function SupplyRoom:post_corridor_setup()
 	local center_hex = self:get_approx_center()
 	local hexes = self:get_inner_hexes()
 	for i, hex in ipairs(hexes) do
@@ -682,6 +678,33 @@ function SupplyRoom:post_corridor_setup()
 			wesnoth.interface.add_item_image(hex[1], hex[2], item)
 		end
 	end
+end
+
+ClassRoom = Room:new()
+
+function ClassRoom:pre_corridor_setup()
+	self:set_inner_terrain("Isa")
+	local q0, r0, s0 = table.unpack(get_cubic({self.x1 + 2, self.y1}))
+	-- student chairs, skip the rightmost two rows
+	for i = 1, self.r_height - 4 do
+		local q1 = q0
+		local r1 = r0
+		local s1 = s0
+		for j = 1, self.s_height - 2 do
+			local hex_x, hex_y = table.unpack(from_cubic(q1, r1, s1))
+			wesnoth.interface.add_item_image(hex_x, hex_y, "scenery/chairNE.png")
+			q1 = q1 + 1
+			s1 = s1 - 1
+		end
+		q0 = q0 + 1
+		r0 = r0 - 1
+	end
+	-- teacher chair, midway on rightmost row
+	q0 = q0 + math.ceil((self.s_height - 2) / 2)
+	r0 = r0 - 1
+	s0 = s0 - math.ceil((self.s_height - 2) / 2) + 1
+	local hex_x, hex_y = table.unpack(from_cubic(q0, r0, s0))
+	wesnoth.interface.add_item_image(hex_x, hex_y, "scenery/chairSW-fancier.png")
 end
 
 EmptyRoom = Room:new()
@@ -836,6 +859,10 @@ local function place_random_rooms(mapgen, num_random_rooms, num_undead_per_room,
 			r:set_levels({table.unpack(undead_levels, num_undead_per_room * rand_rooms_generated + 1, num_undead_per_room * (rand_rooms_generated + 1))})
 		elseif rand_rooms_generated < num_undead_rooms + 1 then
 			r = SupplyRoom:new()
+		elseif rand_rooms_generated < num_undead_rooms + 2 then
+			r = ClassRoom:new()
+			r_height = math.max(r_height, 6)
+			s_height = math.min(s_height, 9)
 		else
 			r = EmptyRoom:new()
 		end

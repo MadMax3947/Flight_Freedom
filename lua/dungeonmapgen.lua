@@ -456,6 +456,7 @@ end
 ---| sw #Extend the corridor SW
 ---| se #Extend the corridor SE
 ---@param inst_list instruction[] #List of instructions to extend the tunnel
+---@return location[]
 function DungeonMapGen:plot_corridor(q, r, s, corridor_width, inst_list)
 	local corridor_tiles = {}
 	local half_corridor_width = math.floor(corridor_width / 2)
@@ -526,6 +527,8 @@ end
 ---Any Room with max_degree set will have no more than that number of connecting corridors
 ---Note: corridors will only paint over wall terrain (i.e. terrain codes that begin with 'X')
 ---@param terrain_type string #The terrain code to paint
+---@return graph #Graph object containing connections between Rooms. Node indices correspond to the order of registered Rooms in the DungeonMapGen object.
+---@return boolean #true if algorithm was able to connect all rooms, otherwise false
 function DungeonMapGen:place_corridors(terrain_type)
 	local map_size_x = wesnoth.current.map.playable_width
 	local map_size_y = wesnoth.current.map.playable_height
