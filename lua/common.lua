@@ -1,19 +1,3 @@
----
--- from After the Storm, by shadowm
----
-
-function safe_random(arg)
-	wml.fire("set_variable", {
-		name = "temp_ats_lua_random",
-		rand = arg,
-	})
-
-	local r = wml.variables["temp_ats_lua_random"]
-	wml.variables["temp_ats_lua_random"] = nil
-
-	return r
-end
-
 --- return a replay-safe random number sampled from specified normal distribution
 function random_norm(mean, sd)
 	local u = mathx.random()
