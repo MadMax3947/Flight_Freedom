@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-04-29 19:53 UTC\n"
+"POT-Creation-Date: 2026-05-19 03:55 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10956,44 +10956,49 @@ msgid "Slaves! By order of Grand Marshal Yrynyc, you are to be executed for your
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1817
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1813
+msgid "This gate has been sealed shut!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1829
 msgid "There was a key in this box!"
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1828
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1840
 msgid ""
 "There is enough wood here to finish the bridge.\n"
 "It is awkward to carry but surprisingly light."
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1829
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1841
 msgid "There's enough wood here to finish the bridge. It's awkward to carry, but surprisingly light."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1848
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1860
 msgid "The bridge is almost finished -- one could almost jump across."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1854
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1866
 msgid "The bridge is almost finished -- I could almost jump across."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1892
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1904
 msgid "The bridge is complete!"
 msgstr ""
 
 #. [message]: speaker=Cicyn
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1952
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1964
 msgid "Wake up! Wake up, you fools! The slaves have rebelled!"
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1976
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1988
 msgid ""
 "There is a large human garrison sleeping here.\n"
 "The door is locked from the inside.\n"
@@ -11001,7 +11006,7 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1978
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1990
 msgid "There is a large human garrison sleeping here. We could attack them in their sleep, but the door is locked from the inside."
 msgstr ""
 
