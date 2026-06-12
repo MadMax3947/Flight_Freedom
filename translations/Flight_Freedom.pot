@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-06-11 00:40 UTC\n"
+"POT-Creation-Date: 2026-06-12 05:25 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3395,7 +3395,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/13a_Betrayal.cfg:30
 #: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:28
 #: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:27
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:468
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:474
 #: Flight_Freedom/scenarios/16_The_Exodus.cfg:27
 #: Flight_Freedom/scenarios/17a_Blockade.cfg:22
 #: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:31
@@ -4039,15 +4039,22 @@ msgid "Die, foul one!"
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:340
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:343
 msgid ""
 "Kakatars!\n"
 "These are our swamps.\n"
 "You are not welcome here!"
 msgstr ""
 
+#. [message]: speaker=Hartholar
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:360
+msgid ""
+"The Kakatar Dominant lies dead!\n"
+"We fly north to plunder their Eyrie!"
+msgstr ""
+
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:385
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:404
 msgid ""
 "I shall kill Hartholar, for the good of the flight!\n"
 "\n"
@@ -4057,7 +4064,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:393
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:412
 msgid ""
 "Loyal kin!\n"
 "Kill the traitor, before he kills Hartholar!"
@@ -4065,21 +4072,21 @@ msgstr ""
 
 #. [message]: speaker=second_unit
 #. this is supposed to be sarcastic:
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:407
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:426
 msgid ""
 "For Malakar, the honorable!\n"
 "So honorable that he cannot even strike down his enemies!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:420
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:439
 msgid ""
 "The Jamolar Flight is shattered and my honor blackened!\n"
 "None will stand with me now!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:492
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:511
 msgid ""
 "Hartholar!\n"
 "There, to the north, are the humans' scouts!\n"
@@ -4088,26 +4095,26 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:499
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:518
 msgid ""
 "Hartholar, you are bound by this sacrifice to accept my people into your flight.\n"
 "Perhaps your combined strength can succeed where ours has failed."
 msgstr ""
 
 #. [then]: type=Drake Priest, id=Morlin Ka
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:513
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:532
 msgid "Morlin Ka"
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:525
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:544
 msgid ""
 "The Kakatar Dominant speaks true!\n"
 "Our fighting in the face of a greater enemy is a dishonor to Gar-Alagar himself!"
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:530
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:549
 msgid ""
 "Stay, warrior-chief!\n"
 "\n"
@@ -4117,7 +4124,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:538
+#: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:557
 msgid "Then we must plan our resistance!"
 msgstr ""
 
@@ -6381,7 +6388,7 @@ msgstr ""
 #. [message]: speaker=Kogw
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:922
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:809
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:897
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:921
 msgid "A spirit has attacked!"
 msgstr ""
 
@@ -6497,7 +6504,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:1256
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:875
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:639
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:370
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:373
 #: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:679
 msgid "..."
 msgstr ""
@@ -8796,8 +8803,22 @@ msgid ""
 "MOVE OUT!"
 msgstr ""
 
+#. [message]: speaker=Theracar
+#: Flight_Freedom/scenarios/13a_Betrayal.cfg:503
+msgid ""
+"Kakatars!\n"
+"All hail your new Dominant!"
+msgstr ""
+
+#. [message]: speaker=Theracar
+#: Flight_Freedom/scenarios/13a_Betrayal.cfg:516
+msgid ""
+"We have purged the stain of the thinskin!\n"
+"The flight is pure again!"
+msgstr ""
+
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/13a_Betrayal.cfg:499
+#: Flight_Freedom/scenarios/13a_Betrayal.cfg:525
 msgid ""
 "We have lost too many!\n"
 "Even if I win this fight, the flight cannot continue!"
@@ -9091,7 +9112,7 @@ msgstr ""
 
 #. [message]: speaker=Elealonna
 #: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:516
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:714
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:726
 msgid "And so it ends... grant final rest to my companions, I beg you..."
 msgstr ""
 
@@ -9147,8 +9168,8 @@ msgstr ""
 #. [then]
 #. [event]
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:669
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:732
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:681
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:744
 #: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:100
 msgid "Destroy the Gate of Storms"
 msgstr ""
@@ -9245,66 +9266,66 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:366
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:369
 msgid "Join us... bring death to the humans... bring death to ALL!"
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:372
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:375
 msgid "I! Am! MALAKAR! And I reject your evil!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:378
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:384
 msgid "Death shall find you... in the end..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:382
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:388
 msgid ""
 "Then I shall live on in the memory of my flight.\n"
 "Begone!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:394
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:400
 msgid "Malakar gains the Fearless trait!"
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:400
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:406
 msgid "I... I must submit... I surrender to you..."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:424
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:430
 msgid "Then enter... embrace the End of all things!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:521
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:527
 msgid "Mal, what have you done???"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:525
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:531
 msgid ""
 "Malakar...\n"
 "You have betrayed the flight and I shall strike you down!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:530
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:536
 msgid "END."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:649
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:661
 msgid "The arcane energy density is too high, I cannot get close enough to touch the gate! Physical force will be worthless here!"
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:653
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:665
 msgid ""
 "Such... strange... power.\n"
 "I cannot get close enough to touch the gate.\n"
@@ -9312,12 +9333,12 @@ msgid ""
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:655
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:667
 msgid "Such... strange... power. I cannot get close enough to touch the gate. Physical force is worthless here!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:660
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:672
 msgid ""
 "The spirits are redoubling their efforts!\n"
 "\n"
@@ -9327,44 +9348,44 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:670
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:682
 msgid "Move a Drake Burner, Fire Drake, Inferno Drake, or Armageddon Drake onto the Gate of Storms"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:679
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:691
 msgid "A Fire, Inferno or Armageddon Drake is necessary to destroy the Gate of Storms."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:694
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:706
 msgid "I... I feel a coldness, a terrible, crushing coldness in my chest... I fear my time is coming to a close..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:728
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:740
 msgid ""
 "My fire is too weak.\n"
 "We need a stronger firebreather!"
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:733
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:745
 msgid "Move a Fire, Inferno or Armageddon Drake onto the Gate of Storms"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:748
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:760
 msgid "I call upon Gar-Hagar, god of all that is burning and favored child of Gar-Alagar, to destroy this portal of evil!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:772
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:796
 msgid "Wow, that was quite the fiery display! I just wonder if it could have been even more fiery..."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:776
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:800
 msgid ""
 "The portal seems to have closed.\n"
 "We must hope it remains closed for the foreseeable future...\n"
@@ -9372,46 +9393,46 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:789
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:813
 msgid "Noble drakes... you have my gratitude. Now I can die in peace..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:819
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:843
 msgid ""
 "The Gate is still open!\n"
 "Close it quickly before any more monsters come through!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:832
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:856
 msgid "I feel a growing sensation of evil. As if the undead are growing stronger before our eyes!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:836
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:860
 msgid ""
 "I feel a growing sensation of evil.\n"
 "As if the undead are growing stronger before our eyes!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:848
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:872
 msgid "Indeed the dark magic in the air thickens... we must stop the thaumic flow at its source... destabilize the planar vortex... asymmetric local perturbation of entropy should initiate cascading harmonic failure and interrupt transdimensional flux..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:852
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:876
 msgid "Speak plainly, human!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:856
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:880
 msgid "Apologies... we must set the gate on fire... that should close it..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:862
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:886
 msgid ""
 "I too feel the undead menace growing.\n"
 "We must close the gate quickly.\n"
@@ -9419,24 +9440,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:907
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:931
 msgid "Focus on the gate!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1018
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1097
 msgid ""
 "The Gate...\n"
 "It is glowing..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1081
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1173
 msgid "Get... out... of... my... HEAD!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1089
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1181
 msgid ""
 "No...\n"
 "These voices compel me...\n"
@@ -9445,39 +9466,39 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1096
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1188
 msgid ""
 "Malakar, hold fast!\n"
 "You must not let this evil overtake you!"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1114
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1208
 msgid "doom to all turn back TURN BACK nightmare of ending doom destruction desolation death DEATH to the world"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1115
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1209
 msgid "darkness awaits all YOU CANNOT PREVAIL failure despair empty death void hatred misery enmity black HATE"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1116
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1210
 msgid "evil will NOT BE DENIED all must die ALL MUST END torture PAIN agony terror suffering why fight the inevitable"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1117
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1211
 msgid "all must die YOU WILL DIE DARKNESS OBLIVION give up GIVE UP ALL IS DEATH death awaits you DIE DIE DIE"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1136
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1230
 msgid "Some sort of barrier is keeping me from approaching the lich!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1225
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1319
 msgid "We must destroy the Gate!"
 msgstr ""
 
