@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-06-13 20:20 UTC\n"
+"POT-Creation-Date: 2026-06-23 04:50 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 #. [campaign]: id=Flight_to_Freedom
 #. [about]
 #: Flight_Freedom/_main.cfg:26
-#: Flight_Freedom/credits.cfg:99
+#: Flight_Freedom/credits.cfg:100
 msgid "Flight to Freedom"
 msgstr ""
 
@@ -395,37 +395,37 @@ msgid "Avenge Necolag in Scenario 20 (Battle of the Temple)."
 msgstr ""
 
 #. [entry]
-#: Flight_Freedom/credits.cfg:101
+#: Flight_Freedom/credits.cfg:102
 msgid "read credits.cfg for full list of contributions"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:108
+#: Flight_Freedom/credits.cfg:109
 msgid "Original Creator and Inspiration"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:114
+#: Flight_Freedom/credits.cfg:115
 msgid "Version 5 Author, Maintainer"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:120
+#: Flight_Freedom/credits.cfg:121
 msgid "New Maintainer"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:126
+#: Flight_Freedom/credits.cfg:127
 msgid "Graphics"
 msgstr ""
 
 #. [entry]
-#: Flight_Freedom/credits.cfg:269
+#: Flight_Freedom/credits.cfg:273
 msgid "and others"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:273
+#: Flight_Freedom/credits.cfg:277
 msgid "Sounds and Music"
 msgstr ""
 
@@ -6388,7 +6388,7 @@ msgstr ""
 #. [message]: speaker=Kogw
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:925
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:815
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:941
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:948
 msgid "A spirit has attacked!"
 msgstr ""
 
@@ -6505,7 +6505,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:875
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:642
 #: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:373
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:679
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:688
 msgid "..."
 msgstr ""
 
@@ -9112,7 +9112,7 @@ msgstr ""
 
 #. [message]: speaker=Elealonna
 #: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:516
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:726
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:727
 msgid "And so it ends... grant final rest to my companions, I beg you..."
 msgstr ""
 
@@ -9168,8 +9168,8 @@ msgstr ""
 #. [then]
 #. [event]
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:681
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:744
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:682
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:745
 #: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:100
 msgid "Destroy the Gate of Storms"
 msgstr ""
@@ -9320,12 +9320,12 @@ msgid "END."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:661
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:662
 msgid "The arcane energy density is too high, I cannot get close enough to touch the gate! Physical force will be worthless here!"
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:665
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:666
 msgid ""
 "Such... strange... power.\n"
 "I cannot get close enough to touch the gate.\n"
@@ -9333,12 +9333,12 @@ msgid ""
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:667
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:668
 msgid "Such... strange... power. I cannot get close enough to touch the gate. Physical force is worthless here!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:672
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:673
 msgid ""
 "The spirits are redoubling their efforts!\n"
 "\n"
@@ -9348,44 +9348,44 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:682
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:683
 msgid "Move a Drake Burner, Fire Drake, Inferno Drake, or Armageddon Drake onto the Gate of Storms"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:691
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:692
 msgid "A Fire, Inferno or Armageddon Drake is necessary to destroy the Gate of Storms."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:706
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:707
 msgid "I... I feel a coldness, a terrible, crushing coldness in my chest... I fear my time is coming to a close..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:740
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:741
 msgid ""
 "My fire is too weak.\n"
 "We need a stronger firebreather!"
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:745
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:746
 msgid "Move a Fire, Inferno or Armageddon Drake onto the Gate of Storms"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:760
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:761
 msgid "I call upon Gar-Hagar, god of all that is burning and favored child of Gar-Alagar, to destroy this portal of evil!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:821
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:828
 msgid "Wow, that was quite the fiery display! I just wonder if it could have been even more fiery..."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:825
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:832
 msgid ""
 "The portal seems to have closed.\n"
 "We must hope it remains closed for the foreseeable future...\n"
@@ -9393,46 +9393,46 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:833
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:840
 msgid "Noble drakes... you have my gratitude. Now I can die in peace..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:861
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:868
 msgid ""
 "The Gate is still open!\n"
 "Close it quickly before any more monsters come through!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:874
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:881
 msgid "I feel a growing sensation of evil. As if the undead are growing stronger before our eyes!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:878
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:885
 msgid ""
 "I feel a growing sensation of evil.\n"
 "As if the undead are growing stronger before our eyes!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:890
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:897
 msgid "Indeed the dark magic in the air thickens... we must stop the thaumic flow at its source... destabilize the planar vortex... asymmetric local perturbation of entropy should initiate cascading harmonic failure and interrupt transdimensional flux..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:894
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:901
 msgid "Speak plainly, human!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:898
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:905
 msgid "Apologies... we must set the gate on fire... that should close it..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:904
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:911
 msgid ""
 "I too feel the undead menace growing.\n"
 "We must close the gate quickly.\n"
@@ -9440,24 +9440,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:951
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:958
 msgid "Focus on the gate!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1148
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1155
 msgid ""
 "The Gate...\n"
 "It is glowing..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1227
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1238
 msgid "Get... out... of... my... HEAD!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1235
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1246
 msgid ""
 "No...\n"
 "These voices compel me...\n"
@@ -9466,39 +9466,39 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1242
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1253
 msgid ""
 "Malakar, hold fast!\n"
 "You must not let this evil overtake you!"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1262
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1273
 msgid "doom to all turn back TURN BACK nightmare of ending doom destruction desolation death DEATH to the world"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1263
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1274
 msgid "darkness awaits all YOU CANNOT PREVAIL failure despair empty death void hatred misery enmity black HATE"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1264
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1275
 msgid "evil will NOT BE DENIED all must die ALL MUST END torture PAIN agony terror suffering why fight the inevitable"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1265
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1276
 msgid "all must die YOU WILL DIE DARKNESS OBLIVION give up GIVE UP ALL IS DEATH death awaits you DIE DIE DIE"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1284
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1295
 msgid "Some sort of barrier is keeping me from approaching the lich!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1373
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1384
 msgid "We must destroy the Gate!"
 msgstr ""
 
@@ -10035,7 +10035,7 @@ msgid "Birds"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:391
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:400
 msgid ""
 "Finally, dry land.\n"
 "We cannot tarry here.\n"
@@ -10045,17 +10045,17 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Nibir_alNassim
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:400
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:409
 msgid "Scaled ones. You speak with Muqaddam Nibir al-Nassim, master of this island. If you have come to trade, you must register at the southeast docks. Otherwise you must leave at once!"
 msgstr ""
 
 #. [message]: speaker=Zakara
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:404
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:413
 msgid "The markets of Al-Zaiybah are open to all. Registration forms must be completed in triplicate. Tribute equivalent to one part of every three parts of precious metals in your possession is due at time of registration. My, my, your weapons and armor are truly fine in quality..."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:408
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:417
 msgid ""
 "Dominant, we do not have the time or the resources to pander to the thinskins' greed!\n"
 "\n"
@@ -10063,7 +10063,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:414
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:423
 msgid ""
 "Muqaddam.\n"
 "We seek food and water.\n"
@@ -10071,12 +10071,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Nibir_alNassim
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:420
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:429
 msgid "This is your last warning. I, Nibir al-Nassim, command you to pay tribute and trade or begone!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:424
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:433
 msgid ""
 "Then we will take what we need.\n"
 "\n"
@@ -10085,85 +10085,85 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:432
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:441
 msgid "In this scenario your objective is to hunt sufficient food to sustain the flight to finish your journey to Morogor. Hunting animals and monsters grants food; $food_needed food is necessary to win."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:438
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:447
 msgid "You may view how much food you have acquired at any time during your turn by right-clicking and selecting “Food...”"
 msgstr ""
 
 #. [set_menu_item]: id=show_food_table
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:444
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:453
 msgid "Food..."
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:452
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:461
 msgid "Hunt animals and monsters for food"
 msgstr ""
 
 #. [message]: speaker=Nibir_alNassim
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:498
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:507
 msgid "My palace is under attack! I, Nibir al-Nassim, command all who are able to take up arms and fight!"
 msgstr ""
 
 #. [message]: speaker=Nibir_alNassim
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:516
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:525
 msgid "Look into my face, drake, and know that I, Nibir al-Nassim, shall be the one to end your life!"
 msgstr ""
 
 #. [message]: speaker=Nibir_alNassim
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:532
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:541
 msgid "All hail I, Nibir al-Nassim, the Drakeslayer!"
 msgstr ""
 
 #. [message]: speaker=Zakara
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:550
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:559
 msgid "Such precious metals this lizard was wearing! These should fetch a princely sum indeed at the markets."
 msgstr ""
 
 #. [message]: speaker=Nibir_alNassim
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:561
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:570
 msgid "I, Nibir al-Nassim, am the strongest! I am the greatest! I am... I am..."
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:581
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:590
 msgid "Food."
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:587
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:596
 msgid "Dead."
 msgstr ""
 
 #. [message]: speaker=Zakara
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:600
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:609
 msgid "No! My trading contracts, my riches, my fancy goods, all for naught!"
 msgstr ""
 
 #. [message]: speaker=second_unit
 #. [message]: role=hungry_drake
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:632
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:652
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:659
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:641
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:661
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:668
 msgid ""
 "So hungry...\n"
 "I could even eat this thinskin..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:668
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:677
 msgid ""
 "Check yourself!\n"
 "We will not sully ourselves with the meat of thinskins!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:673
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:682
 msgid ""
 "But Malakar, my Dominant, our flight is starving!\n"
 "We need all the food we can carry.\n"
@@ -10171,60 +10171,60 @@ msgid ""
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:681
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:690
 msgid "We are better than the humans, and we always will be! We shall not defile their dead."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:686
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:695
 msgid ""
 "Very well, Dominant.\n"
 "Just let us hope we find enough to eat in this sandy wasteland."
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:692
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:701
 msgid "The health of my flight must come before propriety. We shall feast on the flesh of our enemies this day!"
 msgstr ""
 
 #. [message]: role=angry_dune
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:706
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:715
 msgid "The monsters are eating our dead!"
 msgstr ""
 
 #. [message]: speaker=Nibir_alNassim
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:710
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:719
 msgid "Men of the dunes! The drakes have brought unspeakable evil to our island. Slaughter them all! Do not rest until every fiend is dead! I, Nibir al-Nassim, shall lead you to victory!"
 msgstr ""
 
 #. [command]
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:716
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:725
 msgid "Hunt enemies for food"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:798
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:807
 msgid ""
 "We barely have scraps left to eat.\n"
 "We need to find more food quickly or we will never make it to Morogor!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:807
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:816
 msgid ""
 "Our strength is spent here...\n"
 "We cannot go on."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:816
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:825
 msgid ""
 "We have the food we need.\n"
 "Malakar, let us plunder this island for ourselves!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:821
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:830
 msgid ""
 "No.\n"
 "Every day we spend on this island is another day Morogor remains unguarded.\n"
@@ -11992,6 +11992,7 @@ msgstr ""
 #: Flight_Freedom/units/drakes/Worker.cfg:112
 #: Flight_Freedom/units/drakes/Worker_Malakar.cfg:128
 #: Flight_Freedom/units/special/Caravan.cfg:43
+#: Flight_Freedom/units/undead/Skele_Doombringer.cfg:34
 msgid "spear"
 msgstr ""
 
@@ -13034,6 +13035,16 @@ msgstr ""
 #. [unit_type]: id=Gargoyle, race=undead
 #: Flight_Freedom/units/undead/Gargoyle.cfg:18
 msgid "This is a statue animated by dark magic. It is not very powerful, but it is annoying, as it reverts to its stone form during the day, rendering it utterly invulnerable to any and all forces."
+msgstr ""
+
+#. [unit_type]: id=Doombringer, race=undead
+#: Flight_Freedom/units/undead/Skele_Doombringer.cfg:4
+msgid "Doombringer"
+msgstr ""
+
+#. [unit_type]: id=Doombringer, race=undead
+#: Flight_Freedom/units/undead/Skele_Doombringer.cfg:29
+msgid "Mighty belligerents of the long forgotten past raised once again for combat. Confined in crumbling memories of their former glory they hunt down foes relentlessly."
 msgstr ""
 
 #. [unit_type]: id=Wisp, race=undead
