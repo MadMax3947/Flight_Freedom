@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-06-23 04:50 UTC\n"
+"POT-Creation-Date: 2026-07-02 04:56 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1122,9 +1122,9 @@ msgstr ""
 #: Flight_Freedom/scenarios/04a_Capturing_the_Caravan.cfg:161
 #: Flight_Freedom/scenarios/04b_Forest_of_Nightmares.cfg:87
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:213
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:304
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:449
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:563
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:305
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:454
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:624
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:81
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:545
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:751
@@ -3900,9 +3900,9 @@ msgstr ""
 #: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:19
 #: Flight_Freedom/scenarios/04b_Forest_of_Nightmares.cfg:88
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:214
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:305
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:450
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:564
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:306
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:455
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:625
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:82
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:546
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:752
@@ -5625,20 +5625,20 @@ msgstr ""
 #. [event]: id=Quemar
 #. [event]
 #. [scenario]: id=Mountain_Crypt
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:303
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:448
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:562
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:304
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:453
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:623
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:80
 msgid "Move Malakar to the southern end of the valley"
 msgstr ""
 
 #. [message]: speaker=$branchb_narration_recipient
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:116
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:117
 msgid "I have never seen such land as this, with mountains taller than the strongest gliders fly."
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:120
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:121
 msgid ""
 "We are within a valley in the Harkon Mountains.\n"
 "One of only a few where drakes can survive.\n"
@@ -5646,14 +5646,14 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=$branchb_narration_recipient
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:126
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:127
 msgid ""
 "I must ask regarding the nature of this curse.\n"
 "And whether we can avoid it by a different route rather than to traverse this valley."
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:131
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:132
 msgid ""
 "We are at the site of the battle between Kahn and Mal-Bronam.\n"
 "The site where our ancestors defeated that lich and won this island.\n"
@@ -5664,7 +5664,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:140
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:141
 msgid ""
 "We should leave this valley as quickly as possible.\n"
 "Not only are the humans conquering Morogor as we speak, I have learned to fear even the dead undead.\n"
@@ -5673,25 +5673,25 @@ msgstr ""
 
 #. [event]: id=Quemar
 #. [then]: type=Fire Dragon, id=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:159
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:160
 #: Flight_Freedom/scenarios/18_Return_to_Morogor.cfg:705
 msgid "Quemar"
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:193
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:194
 msgid ""
 "Fellow drake!\n"
 "Of what flight are... a magus?!?"
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:197
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:198
 msgid "Drake! Of what flight are... a magus?!?"
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:202
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:203
 msgid ""
 "Greetings.\n"
 "I am Quemar, a magus of the Citadel.\n"
@@ -5701,7 +5701,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:210
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:211
 msgid ""
 "Perhaps I can explain.\n"
 "Humans have invaded Morogor in several places and butchered my daughter.\n"
@@ -5710,7 +5710,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:217
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:218
 msgid ""
 "I know full well of the apathy that you speak of.\n"
 "For some reason, many of my colleagues have lost their ardor.\n"
@@ -5727,7 +5727,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:232
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:233
 msgid ""
 "Yet the Magi are more powerful than ever.\n"
 "\n"
@@ -5741,7 +5741,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:244
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:245
 msgid ""
 "We must reach the Magi.\n"
 "All of Morogor depends on it.\n"
@@ -5750,7 +5750,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:283
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:284
 msgid ""
 "I can create flame and frost with my hands and fire.\n"
 "I can control the magics around us.\n"
@@ -5761,14 +5761,14 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:292
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:293
 msgid ""
 "Your assistance honors us.\n"
 "Thank you."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:297
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:298
 msgid ""
 "However, we must vanquish Mal-Bronam's restless spirit.\n"
 "Unless his evil is banished from this realm, the convocation cannot form."
@@ -5776,8 +5776,8 @@ msgstr ""
 
 #. [event]: id=Quemar
 #. [event]
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:302
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:447
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:303
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:452
 msgid "Defeat Mal-Bronam"
 msgstr ""
 
@@ -5785,7 +5785,7 @@ msgstr ""
 #. [objectives]
 #. [scenario]: id=Citadel
 #. [event]: id=apprentice_1, id=apprentice_2, id=apprentice_3, id=apprentice_4
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:306
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:307
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:547
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:753
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:69
@@ -5795,12 +5795,12 @@ msgid "Death of Quemar"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:399
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:404
 msgid "A curtain of darkness descends from the mountains, cloaking the entire valley."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:425
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:430
 msgid ""
 "The undead have found us.\n"
 "\n"
@@ -5810,14 +5810,14 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:435
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:440
 msgid ""
 "That darkness...\n"
 "It must be Mal-Bronam!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:442
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:447
 msgid ""
 "Drakes!\n"
 "Use the mountains for cover and defend yourselves!\n"
@@ -5825,7 +5825,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:519
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:580
 msgid ""
 "Mal-Bronam has finally been defeated.\n"
 "The darkness is already fading.\n"
@@ -5835,31 +5835,31 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:618
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:679
 msgid "We must defeat Mal-Bronam first!"
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:624
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:685
 msgid "We must hurry before Morogor is overrun by the humans!"
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:628
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:689
 msgid ""
 "Yes, but we must plan our strategy.\n"
 "The Citadel will not be easy to breach."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:633
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:694
 msgid ""
 "We will, Quemar, we will.\n"
 "May Gar-Alagar be with us."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:660
+#: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:722
 msgid ""
 "We have tarried too long...\n"
 "We cannot reach the citadel in time!"
@@ -6388,7 +6388,7 @@ msgstr ""
 #. [message]: speaker=Kogw
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:925
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:815
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:948
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:952
 msgid "A spirit has attacked!"
 msgstr ""
 
@@ -8358,7 +8358,7 @@ msgid ""
 "\n"
 "Automata require both magic and caged lightning to operate. Their magical source is derived from a bound soul, trapped in place by runes that some of the necromancers among us would find vaguely familiar. The RAM siphons energy from the soul to supply the various Programs along with a rotary magnetic armature which generates synthetic lightning. Such synthetic lightning can be far more easily channeled throughout the chassis of the Automation by way of metallic wires. When these wires are connected to another rotary magnetic armature the device functions in reverse, transforming synthetic lightning back into motion. Such armatures are built into various hard points in the chassis, and supply the Automaton with incredible amounts of motive force. All the while glyphs of holy magic sustain the strength of the empowering soul.\n"
 "\n"
-"The Automata represent only an infintesimal fraction of the elegance and complexity of the Engine, though are by no means simple to craft. Indeed, the first Automaton was quite difficult even for a wizard of my unparalled talents. However I had yet another revelation. Most of the complexity of an Automaton is mechanical, and hence can be built by other Automata. By grafting specialized Automata to a rolling line with each Automaton performing a single construction sub-task, a great many Automata chassis can be built in a short period of time. The soul binding ritual and glyph crafting techniques have been refined to be within the talents of a sufficiently trained wizard of mere middling skill. As for the origin of these bespoke souls, that is a lesson for another time.</span>"
+"The Automata represent only an infinitesimal fraction of the elegance and complexity of the Engine, though are by no means simple to craft. Indeed, the first Automaton was quite difficult even for a wizard of my unparalled talents. However I had yet another revelation. Most of the complexity of an Automaton is mechanical, and hence can be built by other Automata. By grafting specialized Automata to a rolling line with each Automaton performing a single construction sub-task, a great many Automata chassis can be built in a short period of time. The soul binding ritual and glyph crafting techniques have been refined to be within the talents of a sufficiently trained wizard of mere middling skill. As for the origin of these bespoke souls, that is a lesson for another time.</span>"
 msgstr ""
 
 #. [message]: speaker=unit
@@ -9112,7 +9112,7 @@ msgstr ""
 
 #. [message]: speaker=Elealonna
 #: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:516
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:727
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:731
 msgid "And so it ends... grant final rest to my companions, I beg you..."
 msgstr ""
 
@@ -9168,8 +9168,8 @@ msgstr ""
 #. [then]
 #. [event]
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:682
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:745
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:686
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:749
 #: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:100
 msgid "Destroy the Gate of Storms"
 msgstr ""
@@ -9320,12 +9320,12 @@ msgid "END."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:662
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:666
 msgid "The arcane energy density is too high, I cannot get close enough to touch the gate! Physical force will be worthless here!"
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:666
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:670
 msgid ""
 "Such... strange... power.\n"
 "I cannot get close enough to touch the gate.\n"
@@ -9333,12 +9333,12 @@ msgid ""
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:668
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:672
 msgid "Such... strange... power. I cannot get close enough to touch the gate. Physical force is worthless here!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:673
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:677
 msgid ""
 "The spirits are redoubling their efforts!\n"
 "\n"
@@ -9348,44 +9348,44 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:683
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:687
 msgid "Move a Drake Burner, Fire Drake, Inferno Drake, or Armageddon Drake onto the Gate of Storms"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:692
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:696
 msgid "A Fire, Inferno or Armageddon Drake is necessary to destroy the Gate of Storms."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:707
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:711
 msgid "I... I feel a coldness, a terrible, crushing coldness in my chest... I fear my time is coming to a close..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:741
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:745
 msgid ""
 "My fire is too weak.\n"
 "We need a stronger firebreather!"
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:746
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:750
 msgid "Move a Fire, Inferno or Armageddon Drake onto the Gate of Storms"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:761
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:765
 msgid "I call upon Gar-Hagar, god of all that is burning and favored child of Gar-Alagar, to destroy this portal of evil!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:828
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:832
 msgid "Wow, that was quite the fiery display! I just wonder if it could have been even more fiery..."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:832
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:836
 msgid ""
 "The portal seems to have closed.\n"
 "We must hope it remains closed for the foreseeable future...\n"
@@ -9393,46 +9393,46 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:840
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:844
 msgid "Noble drakes... you have my gratitude. Now I can die in peace..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:868
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:872
 msgid ""
 "The Gate is still open!\n"
 "Close it quickly before any more monsters come through!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:881
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:885
 msgid "I feel a growing sensation of evil. As if the undead are growing stronger before our eyes!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:885
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:889
 msgid ""
 "I feel a growing sensation of evil.\n"
 "As if the undead are growing stronger before our eyes!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:897
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:901
 msgid "Indeed the dark magic in the air thickens... we must stop the thaumic flow at its source... destabilize the planar vortex... asymmetric local perturbation of entropy should initiate cascading harmonic failure and interrupt transdimensional flux..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:901
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:905
 msgid "Speak plainly, human!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:905
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:909
 msgid "Apologies... we must set the gate on fire... that should close it..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:911
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:915
 msgid ""
 "I too feel the undead menace growing.\n"
 "We must close the gate quickly.\n"
@@ -9440,24 +9440,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:958
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:962
 msgid "Focus on the gate!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1155
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1159
 msgid ""
 "The Gate...\n"
 "It is glowing..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1238
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1242
 msgid "Get... out... of... my... HEAD!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1246
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1250
 msgid ""
 "No...\n"
 "These voices compel me...\n"
@@ -9466,39 +9466,39 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1253
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1257
 msgid ""
 "Malakar, hold fast!\n"
 "You must not let this evil overtake you!"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1273
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1277
 msgid "doom to all turn back TURN BACK nightmare of ending doom destruction desolation death DEATH to the world"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1274
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1278
 msgid "darkness awaits all YOU CANNOT PREVAIL failure despair empty death void hatred misery enmity black HATE"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1275
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1279
 msgid "evil will NOT BE DENIED all must die ALL MUST END torture PAIN agony terror suffering why fight the inevitable"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1276
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1280
 msgid "all must die YOU WILL DIE DARKNESS OBLIVION give up GIVE UP ALL IS DEATH death awaits you DIE DIE DIE"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1295
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1299
 msgid "Some sort of barrier is keeping me from approaching the lich!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1384
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1388
 msgid "We must destroy the Gate!"
 msgstr ""
 
