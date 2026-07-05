@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-07-02 04:56 UTC\n"
+"POT-Creation-Date: 2026-07-05 17:32 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 #. [campaign]: id=Flight_to_Freedom
 #. [about]
 #: Flight_Freedom/_main.cfg:26
-#: Flight_Freedom/credits.cfg:100
+#: Flight_Freedom/credits.cfg:101
 msgid "Flight to Freedom"
 msgstr ""
 
@@ -395,37 +395,37 @@ msgid "Avenge Necolag in Scenario 20 (Battle of the Temple)."
 msgstr ""
 
 #. [entry]
-#: Flight_Freedom/credits.cfg:102
+#: Flight_Freedom/credits.cfg:103
 msgid "read credits.cfg for full list of contributions"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:109
+#: Flight_Freedom/credits.cfg:110
 msgid "Original Creator and Inspiration"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:115
+#: Flight_Freedom/credits.cfg:116
 msgid "Version 5 Author, Maintainer"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:121
+#: Flight_Freedom/credits.cfg:122
 msgid "New Maintainer"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:127
+#: Flight_Freedom/credits.cfg:128
 msgid "Graphics"
 msgstr ""
 
 #. [entry]
-#: Flight_Freedom/credits.cfg:273
+#: Flight_Freedom/credits.cfg:274
 msgid "and others"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:277
+#: Flight_Freedom/credits.cfg:278
 msgid "Sounds and Music"
 msgstr ""
 
@@ -5881,69 +5881,74 @@ msgid "Move the Unforgiver to the bottom"
 msgstr ""
 
 #. [set_menu_item]: id=control_thunder_sound
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:231
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:236
 msgid "Toggle Thunder Sound Effects"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:282
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:287
 msgid "(Kogw) Welcome to the Sea of Webs, boys and girls, home to the nastiest beasts you're likely to find this side of an undead family reunion."
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:287
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:292
 msgid ""
 "(Malakar) None will obstruct our passage.\n"
 "We will kill anything that tries to stop us!"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:293
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:298
 msgid "(Kogw) Good plan! Let's round up every monster in the ocean, and a few of the larger fish, and fight them one-on-one!"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:298
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:303
 msgid "(Malakar) Only the ones that oppose... do not mock me, thinskin."
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:303
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:308
 msgid "(Kogw) Heh-heh, I'm the one with thin skin, now? Keep the Unforgiver oriented South, men, and keep us well clear of the larger monsters! If we don't get wrapped up fighting, we should have more than enough time to be out of here before that storm hits."
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:308
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:313
 msgid "(Malakar) I can scarcely believe that you would let mere rain stop you."
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:313
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:318
 msgid "(Kogw) Spend enough time on the waves, Mal, and you can read the waves and the wind like a book. This place is right in the path of Heaven's own fury, and we've got to be gone before then."
 msgstr ""
 
+#. [message]: speaker=narrator
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:323
+msgid "NOTE: Any of your units which end their turn on a highlighted hex will be damaged by lightning."
+msgstr ""
+
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:330
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:341
 msgid "(Pirate) Incoming! Monsters!"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:335
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:346
 msgid "(Kogw) Hold your course!"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:410
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:428
 msgid "(Kogw) Full speed thataway!"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:418
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:436
 msgid "(Kogw) A shame we lost a member of our fleet in this storm, but I suppose it couldn't be helped. Onwards!"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:430
+#: Flight_Freedom/scenarios/07a_The_Open_Ocean.cfg:449
 msgid "(Kogw) We'll never outdistance this storm, and it's gaining strength by the minute! We're doomed!"
 msgstr ""
 
