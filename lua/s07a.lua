@@ -4,10 +4,10 @@ local simplex = wesnoth.require('~add-ons/Flight_Freedom/lua/simplex.lua')
 
 StormHandler = {
 	-- lower threshold corresponds to more lightning
-	-- 0.7 feels better with 2d noise, 0.58 feels better with 3d noise
-	lightning_threshold = 0.58,
+	-- 0.7 feels better with 2d noise, 0.57 feels better with 3d noise
+	lightning_threshold = 0.57,
 	-- lower cloud scale corresponds with larger clouds
-	cloud_scale = 0.3,
+	cloud_scale = 0.2,
 	-- lower time scale corresponds with slower cloud changes per turn
 	time_scale = 0.05,
 	cloud_map = {},
