@@ -3,6 +3,7 @@
 local simplex = wesnoth.require('~add-ons/Flight_Freedom/lua/simplex.lua')
 
 StormHandler = {
+	-- lower threshold corresponds to more lightning
 	lightning_threshold = 0.7,
 	cloud_map = {},
 	built_turn = 0,

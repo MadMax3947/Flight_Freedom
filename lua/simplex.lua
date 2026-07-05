@@ -454,7 +454,7 @@ function simplex.FractalSum(func, iter, ...)
     for i=1,iter do
         local power = 2^iter
         local s = power/i
-       
+
         local scaled = {}
         for elem in ipairs({...}) do
             table.insert(scaled, elem*s)
@@ -468,7 +468,7 @@ function simplex.FractalSumAbs(func, iter, ...)
     for i=1,iter do
         local power = 2^iter
         local s = power/i
-       
+
         local scaled = {}
         for elem in ipairs({...}) do
             table.insert(scaled, elem*s)
@@ -482,7 +482,7 @@ function simplex.Turbulence(func, direction, iter, ...)
     for i=1,iter do
         local power = 2^iter
         local s = power/i
-       
+
         local scaled = {}
         for elem in ipairs({...}) do
             table.insert(scaled, elem*s)
