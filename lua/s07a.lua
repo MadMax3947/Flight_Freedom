@@ -48,18 +48,37 @@ function StormHandler:build_cloud_map(turn_number)
 	self.built_turn = turn_number
 end
 
--- avoid sampling the whole map every turn
+-- avoid sampling the whole map unless we have to
 function StormHandler:update_map(turn_number)
-	for i = self.built_turn + 1, turn_number do
-		table.remove(self.cloud_map, 1)
-		local column = {}
-		for j = 1, wesnoth.current.map.playable_height do
-			local x = i + wesnoth.current.map.playable_width
-			local y = j
-			local noise = self:noise(x, y)
-			table.insert(column, noise)
+	if math.abs(turn_number - self.built_turn) >= wesnoth.current.map.playable_width then
+		-- we've skipped too far off the cached map
+		self:build_cloud_map(turn_number)
+	elseif turn_number > self.built_turn then
+		-- moving forward in time
+		for i = self.built_turn + 1, turn_number do
+			table.remove(self.cloud_map, 1)
+			local column = {}
+			for j = 1, wesnoth.current.map.playable_height do
+				local x = i + wesnoth.current.map.playable_width
+				local y = j
+				local noise = self:noise(x, y)
+				table.insert(column, noise)
+			end
+			table.insert(self.cloud_map, column)
 		end
-		table.insert(self.cloud_map, column)
+	elseif turn_number < self.built_turn then
+		-- moving backward in time
+		for i = self.built_turn - 1, turn_number, -1 do
+			table.remove(self.cloud_map, #self.cloud_map)
+			local column = {}
+			for j = 1, wesnoth.current.map.playable_height do
+				local x = i
+				local y = j
+				local noise = self:noise(x, y)
+				table.insert(column, noise)
+			end
+			table.insert(self.cloud_map, column, 1)
+		end
 	end
 	self.built_turn = turn_number
 end
