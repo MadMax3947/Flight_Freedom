@@ -3,13 +3,17 @@
 -- Original Java Source: http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf
 -- (most) Original comments included
 -- https://github.com/weswigham/simplex
------------------------------------------------
-local simplex = {}
+-----------------------------------------------
+
+local simplex = {}
+
 simplex.DIR_X = 0
 simplex.DIR_Y = 1
 simplex.DIR_Z = 2
 simplex.DIR_W = 3
-simplex.internalCache = false
+simplex.internalCache = false
+
+
 local Gradients3D = {{1,1,0},{-1,1,0},{1,-1,0},{-1,-1,0},
 {1,0,1},{-1,0,1},{1,0,-1},{-1,0,-1},
 {0,1,1},{0,-1,1},{0,1,-1},{0,-1,-1}};
@@ -33,27 +37,35 @@ local p = {151,160,137,91,90,15,
 129,22,39,253, 19,98,108,110,79,113,224,232,178,185, 112,104,218,246,97,228,
 251,34,242,193,238,210,144,12,191,179,162,241, 81,51,145,235,249,14,239,107,
 49,192,214, 31,181,199,106,157,184, 84,204,176,115,121,50,45,127, 4,150,254,
-138,236,205,93,222,114,67,29,24,72,243,141,128,195,78,66,215,61,156,180};
--- To remove the need for index wrapping, double the permutation table length
+138,236,205,93,222,114,67,29,24,72,243,141,128,195,78,66,215,61,156,180};
+
+-- To remove the need for index wrapping, double the permutation table length
+
 for i=1,#p do
 	p[i-1] = p[i]
 	p[i] = nil
-end
+end
+
 for i=1,#Gradients3D do
 	Gradients3D[i-1] = Gradients3D[i]
 	Gradients3D[i] = nil
-end
+end
+
 for i=1,#Gradients4D do
 	Gradients4D[i-1] = Gradients4D[i]
 	Gradients4D[i] = nil
-end
-local perm = {}
+end
+
+local perm = {}
+
 for i=0,255 do
 	perm[i] = p[i]
 	perm[i+256] = p[i]
-end
+end
+
 -- A lookup table to traverse the sim around a given point in 4D.
--- Details can be found where this table is used, in the 4D noise method.
+-- Details can be found where this table is used, in the 4D noise method.
+
 local sim = {
 {0,1,2,3},{0,1,3,2},{0,0,0,0},{0,2,3,1},{0,0,0,0},{0,0,0,0},{0,0,0,0},{1,2,3,0},
 {0,2,1,3},{0,0,0,0},{0,3,1,2},{0,3,2,1},{0,0,0,0},{0,0,0,0},{0,0,0,0},{1,3,2,0},
@@ -62,20 +74,28 @@ local sim = {
 {1,0,2,3},{1,0,3,2},{0,0,0,0},{0,0,0,0},{0,0,0,0},{2,0,3,1},{0,0,0,0},{2,1,3,0},
 {0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0},
 {2,0,1,3},{0,0,0,0},{0,0,0,0},{0,0,0,0},{3,0,1,2},{3,0,2,1},{0,0,0,0},{3,1,2,0},
-{2,1,0,3},{0,0,0,0},{0,0,0,0},{0,0,0,0},{3,1,0,2},{0,0,0,0},{3,2,0,1},{3,2,1,0}};
+{2,1,0,3},{0,0,0,0},{0,0,0,0},{0,0,0,0},{3,1,0,2},{0,0,0,0},{3,2,0,1},{3,2,1,0}};
+
 local function Dot2D(tbl, x, y)
 	return tbl[1]*x + tbl[2]*y;
-end
+end
+
 local function Dot3D(tbl, x, y, z)
 	return tbl[1]*x + tbl[2]*y + tbl[3]*z
-end
+end
+
 local function Dot4D( tbl, x,y,z,w)
 	return tbl[1]*x + tbl[2]*y + tbl[3]*z + tbl[3]*w;
-end
-local Prev2D = {}
--- 2D simplex noise
+end
+
+local Prev2D = {}
+
+
+-- 2D simplex noise
+
 function simplex.Noise2D(xin, yin)
-	if simplex.internalCache and Prev2D[xin] and Prev2D[xin][yin] then return Prev2D[xin][yin] end
+	if simplex.internalCache and Prev2D[xin] and Prev2D[xin][yin] then return Prev2D[xin][yin] end
+
 	local n0, n1, n2; -- Noise contributions from the three corners
 	-- Skew the input space to determine which simplex cell we're in
 	local F2 = 0.5*(math.sqrt(3.0)-1.0);
@@ -103,17 +123,20 @@ function simplex.Noise2D(xin, yin)
 
 	-- A step of (1,0) in (i,j) means a step of (1-c,-c) in (x,y), and
 	-- a step of (0,1) in (i,j) means a step of (-c,1-c) in (x,y), where
-	-- c = (3-sqrt(3))/6
+	-- c = (3-sqrt(3))/6
+
 	local x1 = x0 - i1 + G2; -- Offsets for middle corner in (x,y) unskewed coords
 	local y1 = y0 - j1 + G2;
 	local x2 = x0 - 1.0 + 2.0 * G2; -- Offsets for last corner in (x,y) unskewed coords
-	local y2 = y0 - 1.0 + 2.0 * G2;
+	local y2 = y0 - 1.0 + 2.0 * G2;
+
 	-- Work out the hashed gradient indices of the three simplex corners
 	local ii = i & 255
 	local jj = j & 255
 	local gi0 = perm[ii+perm[jj]] % 12;
 	local gi1 = perm[ii+i1+perm[jj+j1]] % 12;
-	local gi2 = perm[ii+1+perm[jj+1]] % 12;
+	local gi2 = perm[ii+1+perm[jj+1]] % 12;
+
 	-- Calculate the contribution from the three corners
 	local t0 = 0.5 - x0*x0-y0*y0;
 	if t0<0 then
@@ -137,7 +160,8 @@ function simplex.Noise2D(xin, yin)
 	else
 		t2 = t2*t2
 		n2 = t2 * t2 * Dot2D(Gradients3D[gi2], x2, y2);
-	end
+	end
+
 
 	-- Add contributions from each corner to get the final noise value.
 	-- The result is scaled to return values in the localerval [-1,1].
@@ -150,8 +174,10 @@ function simplex.Noise2D(xin, yin)
 	end
 
 	return retval;
-end
-local Prev3D = {}
+end
+
+local Prev3D = {}
+
 -- 3D simplex noise
 function simplex.Noise3D(xin, yin, zin)
 
@@ -276,10 +302,13 @@ function simplex.Noise3D(xin, yin, zin)
 	end
 
 	return retval;
-end
-local Prev4D = {}
+end
+
+local Prev4D = {}
+
 -- 4D simplex noise
-function simplex.Noise4D(x,y,z,w)
+function simplex.Noise4D(x,y,z,w)
+
 	if simplex.internalCache and Prev4D[x] and Prev4D[x][y] and Prev4D[x][y][z] and Prev4D[x][y][z][w] then return Prev4D[x][y][z][w] end
 
 	-- The skewing and unskewing factors are hairy again for the 4D case
@@ -422,10 +451,15 @@ function simplex.Noise4D(x,y,z,w)
 		Prev4D[x][y][z][w] = retval
 	end
 
-	return retval;
-end
-local e = math.exp(1)
-local PrevBlur2D = {}
+	return retval;
+
+
+end
+
+local e = math.exp(1)
+
+local PrevBlur2D = {}
+
 function simplex.GBlur2D(x,y,stdDev)
 	if simplex.internalCache and PrevBlur2D[x] and PrevBlur2D[x][y] and PrevBlur2D[x][y][stdDev] then return PrevBlur2D[x][y][stdDev] end
 	local pwr = ((x^2+y^2)/(2*(stdDev^2)))*-1
@@ -437,18 +471,22 @@ function simplex.GBlur2D(x,y,stdDev)
 		PrevBlur2D[x][y][stdDev] = ret
 	end
 	return ret
-end
-local PrevBlur1D = {}
+end
+
+local PrevBlur1D = {}
+
 function simplex.GBlur1D(x,stdDev)
 	if simplex.internalCache and PrevBlur1D[x] and PrevBlur1D[x][stdDev] then return PrevBlur1D[x][stdDev] end
 	local pwr = (x^2/(2*stdDev^2))*-1
-	local ret = (1/(math.sqrt(2*math.pi)*stdDev))*(e^pwr)
+	local ret = (1/(math.sqrt(2*math.pi)*stdDev))*(e^pwr)
+
 	if simplex.internalCache then
 		if not PrevBlur1D[x] then PrevBlur1D[x] = {} end
 		PrevBlur1D[x][stdDev] = ret
 	end
 	return ret
-end
+end
+
 function simplex.FractalSum(func, iter, ...)
     local ret = func(...)
     for i=1,iter do
@@ -462,7 +500,8 @@ function simplex.FractalSum(func, iter, ...)
         ret = ret + (i/power)*(func(unpack(scaled)))
     end
     return ret
-end
+end
+
 function simplex.FractalSumAbs(func, iter, ...)
     local ret = math.abs(func(...))
     for i=1,iter do
@@ -476,7 +515,8 @@ function simplex.FractalSumAbs(func, iter, ...)
         ret = ret + (i/power)*(math.abs(func(unpack(scaled))))
     end
     return ret
-end
+end
+
 function simplex.Turbulence(func, direction, iter, ...)
     local ret = math.abs(func(...))
     for i=1,iter do
@@ -492,5 +532,6 @@ function simplex.Turbulence(func, direction, iter, ...)
     local args = {...}
     local dir_component = args[direction+1]
     return math.sin(dir_component+ret)
-end
-return simplex
+end
+
+return simplex
