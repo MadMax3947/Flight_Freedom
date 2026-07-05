@@ -4,8 +4,12 @@ local simplex = wesnoth.require('~add-ons/Flight_Freedom/lua/simplex.lua')
 
 StormHandler = {
 	-- lower threshold corresponds to more lightning
-	-- 0.7 feels better with 2d noise, 0.6 feels better with 3d noise
-	lightning_threshold = 0.7,
+	-- 0.7 feels better with 2d noise, 0.58 feels better with 3d noise
+	lightning_threshold = 0.58,
+	-- lower cloud scale corresponds with larger clouds
+	cloud_scale = 0.3,
+	-- lower time scale corresponds with slower cloud changes per turn
+	time_scale = 0.05,
 	cloud_map = {},
 	built_turn = 0,
 }
@@ -27,8 +31,8 @@ function StormHandler:init()
 end
 
 function StormHandler:noise_2d(hex_x, hex_y)
-	local x = hex_x + wml.variables["x_offset"]
-	local y = hex_y + wml.variables["y_offset"]
+	local x = (hex_x * self.cloud_scale) + wml.variables["x_offset"]
+	local y = (hex_y * self.cloud_scale) + wml.variables["y_offset"]
 	-- simplex noise ranges [-1, 1]; we want our average to be 0.5
 	local r = (simplex.Noise2D(x, y) + 1.0) / 2.0
 	return r
@@ -36,9 +40,9 @@ end
 
 -- by moving linearly down the z-axis can simulate cloud shifts
 function StormHandler:noise_3d(hex_x, hex_y, time_z)
-	local x = hex_x + wml.variables["x_offset"]
-	local y = hex_y + wml.variables["y_offset"]
-	local z = time_z + wml.variables["z_offset"]
+	local x = (hex_x * self.cloud_scale) + wml.variables["x_offset"]
+	local y = (hex_y * self.cloud_scale) + wml.variables["y_offset"]
+	local z = (time_z * self.time_scale) + wml.variables["z_offset"]
 	local r = (simplex.Noise3D(x, y, z) + 1.0) / 2.0
 	return r
 end
@@ -174,13 +178,13 @@ end
 
 -- regenerate the cloud map on save load (when called by preload event)
 if wml.variables["storm_initial_setup"] == 1 then
-	storm_handler:build_cloud_map_2d(wesnoth.current.turn)
+	storm_handler:build_cloud_map_3d(wesnoth.current.turn)
 end
 
 -- must be done in prestart instead of preload for replay safety
 function storm_initial_setup()
 	storm_handler:init()
-	storm_handler:build_cloud_map_2d(1)
+	storm_handler:build_cloud_map_3d(1)
 	local lightning_locs = storm_handler:get_lightning_hexes()
 	add_hex_highlights(lightning_locs)
 	wml.variables["storm_initial_setup"] = 1
@@ -192,7 +196,7 @@ function storm_turn_update()
 		local lightning_locs = storm_handler:get_lightning_hexes()
 		lightning_strike_damage(lightning_locs)
 		remove_hex_highlights(lightning_locs)
-		storm_handler:update_map_2d(wesnoth.current.turn)
+		storm_handler:update_map_3d(wesnoth.current.turn)
 		lightning_locs = storm_handler:get_lightning_hexes()
 		add_hex_highlights(lightning_locs)
 	end
