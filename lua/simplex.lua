@@ -1,8 +1,10 @@
+-- implemented and released under MIT license by weswigham
+-- https://github.com/weswigham/simplex
+
 -----------------------------------------------
 ---Simplex Noise
 -- Original Java Source: http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf
 -- (most) Original comments included
--- https://github.com/weswigham/simplex
 -----------------------------------------------
 
 local simplex = {}
