@@ -30,6 +30,16 @@ function StormHandler:init()
 	wml.variables["z_offset"] = z_offset
 end
 
+-- x: input
+-- k: depth
+function StormHandler:exponential_adjust(x, k)
+	local y = x
+	if k ~= 0.0 then
+		y = (1.0 - math.exp(-1.0 * k * x)) / (1.0 - math.exp(-1.0 * k))
+	end
+	return y
+end
+
 function StormHandler:noise_2d(hex_x, hex_y)
 	local x = (hex_x * self.cloud_scale) + wml.variables["x_offset"]
 	local y = (hex_y * self.cloud_scale) + wml.variables["y_offset"]
