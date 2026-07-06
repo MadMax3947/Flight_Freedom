@@ -196,37 +196,71 @@ end
 
 -- Image Placement Functions
 
-local function get_image_name_with_offset(x, y, image)
-	-- since halo doesn't have a key to offset an image, use the CROP
-	-- function built into the wesnoth image placement to fake it
-	-- requires a 72 pixel border around the image to work properly
-	x = x*2
-	y = y*2
-	local w, h = filesystem.image_size(image)
+local get_image_name_with_offset = nil
 
-	w = w-math.abs(x)
-	if w <= 0 then
-		return
+if wesnoth.current_version() >= wesnoth.version("1.19.17") then
+	get_image_name_with_offset = function(x, y, image)
+		-- using PAD function avoids old requirement of 72 pixel border
+		x = x*2
+		y = y*2
+		x = math.floor(x+0.5)
+		y = math.floor(y+0.5)
+		local x_offset_str = ""
+		if x > 0 then
+			x_offset_str = "l=" .. tostring(x)
+		elseif x < 0 then
+			x_offset_str = "r=" .. tostring(-1 * x)
+		end
+		local y_offset_str = ""
+		if y > 0 then
+			y_offset_str = "t=" .. tostring(y)
+		elseif y < 0 then
+			y_offset_str = "b=" .. tostring(-1 * y)
+		end
+		local image_path = image
+		if x_offset_str ~= "" and y_offset_str ~= "" then
+			image_path = image_path .. "~PAD(" .. x_offset_str .. "," .. y_offset_str .. ")"
+		elseif x_offset_str ~= "" then
+			image_path = image_path .. "~PAD(" .. x_offset_str .. ")"
+		elseif y_offset_str ~= "" then
+			image_path = image_path .. "~PAD(" .. y_offset_str .. ")"
+		end
+		return image_path
 	end
-	h = h-math.abs(y)
-	if h <= 0 then
-		return
+else
+	get_image_name_with_offset = function(x, y, image)
+		-- since halo doesn't have a key to offset an image, use the CROP
+		-- function built into the wesnoth image placement to fake it
+		-- requires a 72 pixel border around the image to work properly
+		x = x*2
+		y = y*2
+		local w, h = filesystem.image_size(image)
+
+		w = w-math.abs(x)
+		if w <= 0 then
+			return
+		end
+		h = h-math.abs(y)
+		if h <= 0 then
+			return
+		end
+		if x > 0 then
+			x = 0
+		else
+			x = -x
+		end
+		if y > 0 then
+			y = 0
+		else
+			y = -y
+		end
+		x = math.floor(x+0.5)
+		y = math.floor(y+0.5)
+		w = math.floor(w+0.5)
+		h = math.floor(h+0.5)
+		local image_path = string.format("%s~CROP(%d,%d,%d,%d)",image,x,y,w,h)
+		return image_path
 	end
-	if x > 0 then
-		x = 0
-	else
-		x = -x
-	end
-	if y > 0 then
-		y = 0
-	else
-		y = -y
-	end
-	x = math.floor(x+0.5)
-	y = math.floor(y+0.5)
-	w = math.floor(w+0.5)
-	h = math.floor(h+0.5)
-	return string.format("%s~CROP(%d,%d,%d,%d)",image,x,y,w,h)
 end
 
 -- x and y are hex values in this function
