@@ -62,13 +62,16 @@ else
 	end
 end
 
+function hex_to_cartesian_space(x, y)
+	local q, r, s = table.unpack(get_cubic({x, y}))
+	local x_pixel = 1.5 * q / math.sqrt(3.0)
+	local y_pixel = ((q / 2.0) + r)
+	return x_pixel, y_pixel
+end
+
 function find_angle_between_hexes(x1, y1, x2, y2)
-	local q1, r1, s1 = table.unpack(get_cubic({x1, y1}))
-	local q2, r2, s2 = table.unpack(get_cubic({x2, y2}))
-	local x1_pixel = (3.0 / 2) * q1
-	local y1_pixel = ((math.sqrt(3.0) / 2) * q1) + (math.sqrt(3.0) * r1)
-	local x2_pixel = (3.0 / 2) * q2
-	local y2_pixel = ((math.sqrt(3.0) / 2) * q2) + (math.sqrt(3.0) * r2)
+	local x1_pixel, y1_pixel = hex_to_cartesian_space(x1, y1)
+	local x2_pixel, y2_pixel = hex_to_cartesian_space(x2, y2)
 	local theta = math.atan(math.abs(y2_pixel - y1_pixel) / math.abs(x2_pixel - x1_pixel))
 	-- y2 reversed here to account for flipped Y axis
 	if x1_pixel >= x2_pixel and y2_pixel <= y1_pixel then -- quadrant II
@@ -83,13 +86,9 @@ end
 
 -- find the distance between two hexes in a straight line between them
 function cartesian_distance_between_hexes(x1, y1, x2, y2)
-	local q1, r1, s1 = table.unpack(get_cubic({x1, y1}))
-	local q2, r2, s2 = table.unpack(get_cubic({x2, y2}))
-	local x1_pixel = (3.0 / 2) * q1
-	local y1_pixel = ((math.sqrt(3.0) / 2) * q1) + (math.sqrt(3.0) * r1)
-	local x2_pixel = (3.0 / 2) * q2
-	local y2_pixel = ((math.sqrt(3.0) / 2) * q2) + (math.sqrt(3.0) * r2)
-	return math.sqrt(((x1_pixel - x2_pixel) ^ 2) + ((y1_pixel - y2_pixel) ^ 2)) / math.sqrt(3)
+	local x1_pixel, y1_pixel = hex_to_cartesian_space(x1, y1)
+	local x2_pixel, y2_pixel = hex_to_cartesian_space(x2, y2)
+	return math.sqrt(((x1_pixel - x2_pixel) ^ 2) + ((y1_pixel - y2_pixel) ^ 2))
 end
 
 --- adjusts side numbers in the sidebar to 'skip over' listed sides

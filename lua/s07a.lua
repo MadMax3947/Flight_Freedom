@@ -41,8 +41,9 @@ function StormHandler:exponential_adjust(x, k)
 end
 
 function StormHandler:noise_2d(hex_x, hex_y)
-	local x = (hex_x * self.cloud_scale) + wml.variables["x_offset"]
-	local y = (hex_y * self.cloud_scale) + wml.variables["y_offset"]
+	local x_pixel, y_pixel = hex_to_cartesian_space(hex_x, hex_y)
+	local x = (x_pixel * self.cloud_scale) + wml.variables["x_offset"]
+	local y = (y_pixel * self.cloud_scale) + wml.variables["y_offset"]
 	-- simplex noise ranges [-1, 1]; we want our average to be 0.5
 	local r = (simplex.Noise2D(x, y) + 1.0) / 2.0
 	return r
@@ -50,8 +51,9 @@ end
 
 -- by moving linearly down the z-axis can simulate cloud shifts
 function StormHandler:noise_3d(hex_x, hex_y, time_z)
-	local x = (hex_x * self.cloud_scale) + wml.variables["x_offset"]
-	local y = (hex_y * self.cloud_scale) + wml.variables["y_offset"]
+	local x_pixel, y_pixel = hex_to_cartesian_space(hex_x, hex_y)
+	local x = (x_pixel * self.cloud_scale) + wml.variables["x_offset"]
+	local y = (y_pixel * self.cloud_scale) + wml.variables["y_offset"]
 	local z = (time_z * self.time_scale) + wml.variables["z_offset"]
 	local r = (simplex.Noise3D(x, y, z) + 1.0) / 2.0
 	return r
