@@ -179,14 +179,14 @@ function lightning_strike_damage(locs)
 		local unit = wesnoth.units.get(hex[1], hex[2])
 		if unit ~= nil and unit.side == 1 then
 			wesnoth.audio.play("lightning.ogg")
-			local bolt_var = mathx.random(1,3)
+			local bolt_var = math.random(1,3)
 			for j = 1, 4 do
 				local image_path = "halo/lightning-bolt-" .. tostring(bolt_var) .. "-" .. tostring(j) .. ".png~PAD(b=250)"
 				wesnoth.interface.add_hex_overlay(hex[1], hex[2], {halo = image_path})
 				wesnoth.interface.delay(100)
 				wesnoth.interface.remove_hex_overlay(hex[1], hex[2], image_path)
 			end
-			wesnoth.wml_actions.harm_unit{wml.tag.filter{x=hex[1], y=hex[2]}, amount=12, kill=true, fire_event=true}
+			wesnoth.wml_actions.harm_unit{wml.tag.filter{x=hex[1], y=hex[2]}, amount=12, animate=true, kill=true, fire_event=true}
 			wesnoth.interface.delay(500)
 		end
 	end
