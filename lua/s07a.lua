@@ -4,10 +4,11 @@ local simplex = wesnoth.require('~add-ons/Flight_Freedom/lua/simplex.lua')
 
 StormHandler = {
 	-- lower threshold corresponds to more lightning
-	-- 0.7 feels better with 2d noise, 0.57 feels better with 3d noise
-	lightning_threshold = 0.57,
-	-- lower cloud scale corresponds with larger clouds
-	cloud_scale = 0.2,
+	-- 0.7 feels better with 2d noise, 0.55-0.57 or so feels better with 3d noise
+	lightning_threshold = 0.56,
+	-- lower cloud scale corresponds with larger clouds along an axis
+	cloud_scale_x = 0.2,
+	cloud_scale_y = 0.2,
 	-- lower time scale corresponds with slower cloud changes per turn
 	time_scale = 0.05,
 	cloud_map = {},
@@ -28,6 +29,9 @@ function StormHandler:init()
 	wml.variables["y_offset"] = y_offset
 	local z_offset = mathx.random(0,99999)
 	wml.variables["z_offset"] = z_offset
+	if wesnoth.scenario.difficulty == "EASY" then self.lightning_threshold = 0.57
+	elseif wesnoth.scenario.difficulty == "HARD" then self.lightning_threshold = 0.55
+	end
 end
 
 -- x: input
@@ -42,8 +46,8 @@ end
 
 function StormHandler:noise_2d(hex_x, hex_y)
 	local x_pixel, y_pixel = hex_to_cartesian_space(hex_x, hex_y)
-	local x = (x_pixel * self.cloud_scale) + wml.variables["x_offset"]
-	local y = (y_pixel * self.cloud_scale) + wml.variables["y_offset"]
+	local x = (x_pixel * self.cloud_scale_x) + wml.variables["x_offset"]
+	local y = (y_pixel * self.cloud_scale_y) + wml.variables["y_offset"]
 	-- simplex noise ranges [-1, 1]; we want our average to be 0.5
 	local r = (simplex.Noise2D(x, y) + 1.0) / 2.0
 	return r
@@ -52,8 +56,8 @@ end
 -- by moving linearly down the z-axis can simulate cloud shifts
 function StormHandler:noise_3d(hex_x, hex_y, time_z)
 	local x_pixel, y_pixel = hex_to_cartesian_space(hex_x, hex_y)
-	local x = (x_pixel * self.cloud_scale) + wml.variables["x_offset"]
-	local y = (y_pixel * self.cloud_scale) + wml.variables["y_offset"]
+	local x = (x_pixel * self.cloud_scale_x) + wml.variables["x_offset"]
+	local y = (y_pixel * self.cloud_scale_y) + wml.variables["y_offset"]
 	local z = (time_z * self.time_scale) + wml.variables["z_offset"]
 	local r = (simplex.Noise3D(x, y, z) + 1.0) / 2.0
 	return r
