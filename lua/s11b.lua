@@ -94,16 +94,8 @@ local journal_window_def = wml.load('~add-ons/Flight_Freedom/gui/journal_window.
 gui.add_widget_definition("window", "journal", wml.get_child(journal_window_def, "window_definition"))
 
 local function show_journal_dialog(text, font)
-	local text_font = font
-	if text_font == nil then
-		if wesnoth.current_version() >= wesnoth.version("1.19.15") then
-			text_font = "WesScript"
-		else
-			text_font = "Oldania ADF Std"
-		end
-	end
 	local function pre_show(self)
-		self.text.label = "<span font_family='" .. text_font .. "' size='xx-large' color='#000000'>" .. text .. "</span>"
+		self.text.label = "<span font_family='WesScript' size='xx-large' color='#000000'>" .. text .. "</span>"
 	end
 	local dialog_wml = wml.load("~add-ons/Flight_Freedom/gui/journal_dialog.cfg")
 	gui.show_dialog(wml.get_child(dialog_wml, 'resolution'), pre_show)

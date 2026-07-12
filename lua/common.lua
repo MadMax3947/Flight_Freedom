@@ -48,19 +48,7 @@ function from_cubic(q, r, s)
 	return({x, y})
 end
 
-get_cubic = nil
-if wesnoth.current_version() >= wesnoth.version("1.19.4") then
-	get_cubic = wesnoth.map.get_cubic
-else
-	-- even-q -> cubic conversion prior to 1.19.4
-	get_cubic = function(loc)
-		local parity = math.abs(loc[1]) % 2
-		local q = loc[1]
-		local r = loc[2] - trunc((loc[1] + parity) / 2)
-		local s = -1 * (q+r)
-		return({q, r, s})
-	end
-end
+get_cubic = wesnoth.map.get_cubic
 
 function hex_to_cartesian_space(x, y)
 	local q, r, s = table.unpack(get_cubic({x, y}))
@@ -151,29 +139,6 @@ function wesnoth.wml_actions.total_unit_cost(cfg)
 		wml.variables[varname] = 0
 	else
 		wml.variables[varname] = functional.reduce(units, function(a,b) return a + b.cost end, 0)
-	end
-end
-
-if wesnoth.current_version() < wesnoth.version("1.19.17") then
-	---
-	-- Clears the chat log.
-	--
-	-- [clear_chat]
-	-- [/clear_chat]
-	---
-	function wesnoth.wml_actions.clear_chat(cfg)
-		wesnoth.interface.clear_chat_messages()
-	end
-
-	---
-	-- Get current game zoom level.
-	--
-	-- [store_zoom]
-	--     variable=zoom
-	-- [/store_zoom]
-	---
-	function wesnoth.wml_actions.store_zoom(cfg)
-		wml.variables[cfg.variable or "zoom"] = wesnoth.interface.zoom(1, true)
 	end
 end
 
