@@ -44,6 +44,10 @@ function StormHandler:exponential_adjust(x, k)
 	return y
 end
 
+function StormHandler:rational_sigmoid(x, k)
+	return (x ^ k) / ((x ^ k) + ((1.0 - x) ^ k))
+end
+
 function StormHandler:noise_2d(hex_x, hex_y)
 	local x_pixel, y_pixel = hex_to_cartesian_space(hex_x, hex_y)
 	local x = (x_pixel * self.cloud_scale_x) + wml.variables["x_offset"]
@@ -150,6 +154,44 @@ function StormHandler:get_lightning_hexes()
 	return lightning_locs
 end
 
+function StormHandler:update_cloud_gfx()
+	for i = 1, wesnoth.current.map.playable_width do
+		for j = 1, wesnoth.current.map.playable_height do
+			local item_id = "cloud_" .. tostring(i) .. "_" .. tostring(j)
+			wesnoth.interface.remove_hex_overlay(i, j, item_id)
+			local image_stem = "data/add-ons/Animated_Weather_and_Scenery/images/weather/mist_heavy/00"
+			local num_frames = 20
+			local frame_choice = math.random(1, num_frames)
+			local frame_str = string.format("%02d", frame_choice) .. ".png"
+			--local split_point = math.random(1, num_frames)
+			--local frame_str = "[" .. string.format("%02d", split_point) .. "~" .. string.format("%02d", num_frames)
+			--if split_point == 2 then
+			--	frame_str = frame_str .. ",01"
+			--elseif split_point > 2 then
+			--	frame_str = frame_str .. ",01~" .. string.format("%02d", split_point - 1)
+			--end
+			--frame_str = frame_str .. "].png"
+			local opacity = self:rational_sigmoid(self.cloud_map[i][j], 2)
+			local opacity_str = "~O(" .. tostring(opacity) .. ")"
+			local flip_str = ""
+			local flip_chance = math.random()
+			if flip_chance < 0.25 then
+				flip_str = flip_str .. "~FL(horizvert)"
+			elseif flip_chance < 0.5 then
+				flip_str = flip_str .. "~FL(horiz)"
+			elseif flip_chance < 0.75 then
+				flip_str = flip_str .. "~FL(vert)"
+			end
+			local ms_per_frame = 190
+			local timer_randomness_factor = 0.1
+			local time_delta = math.floor(timer_randomness_factor * ms_per_frame) + 1
+			local ms_per_frame_string = ":" .. tostring(math.random(math.max(1, ms_per_frame - time_delta), ms_per_frame + time_delta))
+			local image_str = image_stem .. frame_str .. opacity_str .. flip_str .. ms_per_frame_string
+			wesnoth.interface.add_hex_overlay(i, j, {halo=image_str, name=item_id})
+		end
+	end
+end
+
 function StormHandler:debug_show_cloud_map()
 	for i = 1, wesnoth.current.map.playable_width do
 		for j = 1, wesnoth.current.map.playable_height do
@@ -205,6 +247,8 @@ function storm_initial_setup()
 	add_hex_highlights(lightning_locs)
 	wml.variables["storm_initial_setup"] = 1
 	--storm_handler:debug_show_cloud_map()
+	-- too slow to actually use in game
+	--storm_handler:update_cloud_gfx()
 end
 
 function storm_turn_update()
@@ -217,6 +261,7 @@ function storm_turn_update()
 		add_hex_highlights(lightning_locs)
 	end
 	--storm_handler:debug_show_cloud_map()
+	--storm_handler:update_cloud_gfx()
 end
 
 function wesnoth.wml_actions.storm_initial_setup(cfg)
