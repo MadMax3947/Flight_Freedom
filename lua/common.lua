@@ -156,6 +156,21 @@ function wesnoth.wml_conditionals.debug_mode(cfg)
 	return (wesnoth.game_config.debug or wesnoth.game_config.debug_lua or wesnoth.game_config.mp_debug)
 end
 
+--- Conditional tag if viewing a replay
+--
+-- [if]
+--     [replay_mode]
+--     [/replay_mode]
+--     [then]
+--         ...
+--     [/then]
+-- [/if]
+---
+function wesnoth.wml_conditionals.replay_mode(cfg)
+	return wesnoth.current.user_is_replaying
+end
+
+
 --[=[
 [has_possible_actions]
 Author: MadMax (username on the Battle for Wesnoth forum)
