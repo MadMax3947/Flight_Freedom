@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-07-09 05:32 UTC\n"
+"POT-Creation-Date: 2026-07-16 10:35 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgstr ""
 
 #. [campaign]: id=Flight_to_Freedom
 #: Flight_Freedom/_main.cfg:49
-msgid "(for Wesnoth v1.19.9 or later)"
+msgid "(for Wesnoth v1.19.17 or later)"
 msgstr ""
 
 #. [achievement]: id=ftf_last_stand
@@ -476,291 +476,291 @@ msgstr ""
 
 #. [lua]: hex_to_wml_var
 #. [lua]: EmptyRoom
-#: Flight_Freedom/lua/s11b.lua:142
-#: Flight_Freedom/lua/s11b.lua:723
+#: Flight_Freedom/lua/s11b.lua:134
+#: Flight_Freedom/lua/s11b.lua:715
 msgid "Red Orb"
 msgstr ""
 
 #. [lua]: hex_to_wml_var
 #. [lua]: EmptyRoom
-#: Flight_Freedom/lua/s11b.lua:143
-#: Flight_Freedom/lua/s11b.lua:724
+#: Flight_Freedom/lua/s11b.lua:135
+#: Flight_Freedom/lua/s11b.lua:716
 msgid "Blue Orb"
 msgstr ""
 
 #. [lua]: hex_to_wml_var
 #. [lua]: EmptyRoom
-#: Flight_Freedom/lua/s11b.lua:144
-#: Flight_Freedom/lua/s11b.lua:725
+#: Flight_Freedom/lua/s11b.lua:136
+#: Flight_Freedom/lua/s11b.lua:717
 msgid "Green Orb"
 msgstr ""
 
 #. [lua]: hex_to_wml_var
 #. [lua]: EmptyRoom
-#: Flight_Freedom/lua/s11b.lua:145
-#: Flight_Freedom/lua/s11b.lua:726
+#: Flight_Freedom/lua/s11b.lua:137
+#: Flight_Freedom/lua/s11b.lua:718
 msgid "White Orb"
 msgstr ""
 
 #. [lua]: hex_to_wml_var
 #. [lua]: EmptyRoom
-#: Flight_Freedom/lua/s11b.lua:146
-#: Flight_Freedom/lua/s11b.lua:727
+#: Flight_Freedom/lua/s11b.lua:138
+#: Flight_Freedom/lua/s11b.lua:719
 msgid "Black Orb"
 msgstr ""
 
 #. [lua]: hex_to_wml_var
 #. [lua]: EmptyRoom
-#: Flight_Freedom/lua/s11b.lua:147
-#: Flight_Freedom/lua/s11b.lua:728
+#: Flight_Freedom/lua/s11b.lua:139
+#: Flight_Freedom/lua/s11b.lua:720
 msgid "Yellow Orb"
 msgstr ""
 
 #. [lua]: place_assistant_notes
 #. all of these entries must have the name of each entry's color in them
-#: Flight_Freedom/lua/s11b.lua:990
+#: Flight_Freedom/lua/s11b.lua:982
 msgid "Blood. How fascinating. Such a potent symbol of our life, the red ichor of our vitality. Dark wizards throughout Irdya know of its power and have learned to harness it. By the judicious addition of blood, I can increase by many-fold the potency of the runes and glyphs that shape the void in the heart of the Engine. But I need more blood. Fresh blood. Where, oh where to find it?"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:991
+#: Flight_Freedom/lua/s11b.lua:983
 msgid "My experiments have borne fruit. After so many experiments and burned apprentices, I have done it! Such a wonderful blue glow, these jars of metal and glass that store lightning in a bottle. With these, the Engine can discharge in a flash the energy needed to breach the final veil between the planes."
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:992
+#: Flight_Freedom/lua/s11b.lua:984
 msgid "Sometimes I consider the toll of my research. I have given so much to the Engine. My fortune, the rarest of resources, the lives of my assistants, and most importantly my own blood, sweat, and tears. Even the few who I once considered to be friends have left me. Oh, how at times I miss the world outside of my laboratory, the green grass, the tall trees, the wind over the rolling hills. But I have come so far. I cannot turn back. I will not turn back. With each passing day the call of the void grows louder."
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:993
+#: Flight_Freedom/lua/s11b.lua:985
 msgid "So many discordant forces suffuse the Engine. Strands of magic as prolific as the rainbow itself. How fitting, then, that I have made an artificial rainbow. By carefully cutting the purest of crystals into exact shapes, white light can be split into a riot of colors. With the proper enchantments, these crystals can split magic itself."
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:994
+#: Flight_Freedom/lua/s11b.lua:986
 msgid "The essence of the void. Of nothingness, of that which is not. The purest black, the emptiest nonexistence. Even as I plumb its secrets, I sometimes feel that the void is staring back. But I must press on. Infinity awaits! Through nothing, I shall gain the power of everything. And those Magisters who expelled me from Alduin... they shall be the first to feel my wrath."
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:995
+#: Flight_Freedom/lua/s11b.lua:987
 msgid "I lost my best apprentice, Goryi, today. While we were concentrating a sphere of pure fire magic, a moment of distraction disrupted our containment charm. The resulting magical flash left Goryi as nothing but a pile of bones, bleached yellow by the fury of the element unchained. Goryi was the apprentice who believed the most in our cause, in the awesome potential of the Engine to be. Perhaps I even would have granted him part of the reward I once promised him. At least his death shall serve the cause of my ascension."
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1003
+#: Flight_Freedom/lua/s11b.lua:995
 msgid "Whitefire"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1004
+#: Flight_Freedom/lua/s11b.lua:996
 msgid "Bleeding Moon"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1005
+#: Flight_Freedom/lua/s11b.lua:997
 msgid "Scatterseed"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1006
+#: Flight_Freedom/lua/s11b.lua:998
 msgid "Deeproot"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1007
+#: Flight_Freedom/lua/s11b.lua:999
 msgid "Scryer's Bloom"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1008
+#: Flight_Freedom/lua/s11b.lua:1000
 msgid "Thorntress"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1009
+#: Flight_Freedom/lua/s11b.lua:1001
 msgid "Summit Star"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1010
+#: Flight_Freedom/lua/s11b.lua:1002
 msgid "Kindlefire"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1011
+#: Flight_Freedom/lua/s11b.lua:1003
 msgid "Stillseed"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1012
+#: Flight_Freedom/lua/s11b.lua:1004
 msgid "Reaper's Moon"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1013
+#: Flight_Freedom/lua/s11b.lua:1005
 msgid "Verglas Bloom"
 msgstr ""
 
 #. [lua]: place_assistant_notes
-#: Flight_Freedom/lua/s11b.lua:1014
+#: Flight_Freedom/lua/s11b.lua:1006
 msgid "Blackfire"
 msgstr ""
 
 #. [lua]: day_to_month_date
-#: Flight_Freedom/lua/s11b.lua:1027
+#: Flight_Freedom/lua/s11b.lua:1019
 msgid "$month $day"
 msgstr ""
 
 #. [lua]: generate_journal
 #. none of these can have any names of a color in them
-#: Flight_Freedom/lua/s11b.lua:1044
+#: Flight_Freedom/lua/s11b.lua:1036
 msgid "Oh, the wonderful, fabulous workings of the Engine! Countless paths and etchings of magic, to work in such harmony of discord as to sunder the fabric of our world itself! Night after fitful night, I find myself wandering its infinite labyrinth in the eye of my mind. Approaching the void that I so fervently seek."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1045
+#: Flight_Freedom/lua/s11b.lua:1037
 msgid "In my studies I have become increasingly convinced that the void has a presence. I have contemplated how this may be, how oblivion itself can be made tangible, in hopes that I may find yet more terrible insights for the Engine. Yet understanding eludes me. Always."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1046
+#: Flight_Freedom/lua/s11b.lua:1038
 msgid "I caught one of my assistants, Yadna, stealing from me. Somehow she had found a way to bypass the inner wards, sneaking precious metals under the cover of spell to a lover down in the valley. Such treachery cannot be tolerated. I am planning a grand experiment, in generating self-perpetuating etheric harmonics using a closed temporal loop to precisely synchronize the automatic redirection of life force. Her life force will do."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1047
+#: Flight_Freedom/lua/s11b.lua:1039
 msgid "As I seek to fashion new magics from the fundamental firmanent of the universe, I am reminded of my days in the Great Academy of Magic. Even in my youth I was eager to learn. How I would pore over the tomes of the library, in search of every last morsel of knowledge. But my curiosity was too much for those moribund Magisters. They could not stand my intelligence, my growing wisdom, my emerging greatness! Now I have acquired such secrets as to one day become the master of existence itself!"
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1048
+#: Flight_Freedom/lua/s11b.lua:1040
 msgid "I slipped on a loose flagstone today. My knee will be sore for a while."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1049
+#: Flight_Freedom/lua/s11b.lua:1041
 msgid "Throughout my life I have been deemed mad. At first by my own family, who termed me 'touched' after I manifested accidental magic as a toddler. By my classmates in the Academy, whom I could always hear mocking me behind my back. By the Professors and Magisters. By my various illicit patrons as I was forced to make my way in the world after leaving Alduin, criminals who sought to employ a rogue mage to defeat their enemies yet never dared to show their face to me. But it is they who are mad! It is they who deny the pursuit of greatness, the pursuit of all knowledge and power! Work on the Engine proceeds by the day. Soon I shall ascend to mastery of the void, and through nothing I shall attain everything!"
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1050
+#: Flight_Freedom/lua/s11b.lua:1042
 msgid "The next phase of the Engine demands much. Eldritch, timeless bindings of pure, youthful vigor, a fusion of life and unlife, a magical contradiction to apply pressure on the local metric tensor. Perhaps the application of a necromantic binding glyph to the beating heart of a virgin will generate the requisite combination of energies."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1051
+#: Flight_Freedom/lua/s11b.lua:1043
 msgid "At times I imagine how I shall reshape Irdya after the Engine is complete. Not only Irdya but the entire universe! All those who once laughed at me, the multitude of lesser men and women who have wronged me during my life. Oh, how they shall suffer! As for my laboratory assistants, perhaps I shall fulfill my promise of power beyond their imagination. Or perhaps not, their imagination was always limited after all."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1052
+#: Flight_Freedom/lua/s11b.lua:1044
 msgid "I once again find myself in need of apprentices. The locals are strong in body, hardened from lives of toil on this hostile isle. When approached in secret many of them are eager to join my cause as assistants, if none else but for an escape from the oppression of the orcs. They have proved useful for manual labor and the occasional sacrifice, yet they are weak in mind and ill-served as apprentices. My agents in Wesnoth must redouble their efforts in recruitment. But they report that rogue mages and other magical cast-offs grow ever more difficult to find."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1053
+#: Flight_Freedom/lua/s11b.lua:1045
 msgid "My agents in Wesnoth report that word has spread about me among the wizarding underworld. 'Bringer of the Void', I have been rather derisively rumored. Short-sighted fools! They comprehend not the scope of my genius! At least this Laboratory and the Engine remain unknown to the wider world. The local orcs have learned to avoid us, though they know not the cause of their fear. But I have no doubt that the Royal Army would hasten to destroy us should they learn of the Engine."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1054
+#: Flight_Freedom/lua/s11b.lua:1046
 msgid "I have noticed leaps of logic coming more quickly to my brain as of late. Solutions to higher-order nonlinear partial differential equations revealing themselves almost as soon as I put quill to paper, new alchemical brews of just the exact properties needed for the Engine, early prototypes that not only function but exceed my expectations... it is almost as if something is helping me in my labors. Or perhaps this is my intellect continuing to expand, as my mind grows to embrace new heights of genius."
 msgstr ""
 
 #. [lua]: generate_journal
-#: Flight_Freedom/lua/s11b.lua:1055
+#: Flight_Freedom/lua/s11b.lua:1047
 msgid "In my laboratory I have wrought superlative technologies beyond the wildest imagining of the known world. Oh, how even the best minds of the dwarves would envy my grand accomplishments! It has not escaped my reckoning that my artifice could conquer the Great Continent should I so choose. Mass-produced legions of indefatigable Automata that would sweep away even the bravest of warriors. Computing machines by which I could tabulate every hair on each of my subjects' heads should I so desire. Materials of immense strength that would serve as the foundation of the greatest cities to grace Irdya. But the Engine shall grant me power infinitely greater than any king or emperor could ever hope to wield."
 msgstr ""
 
 #. [lua]: orbs_y
-#: Flight_Freedom/lua/s11b.lua:1213
+#: Flight_Freedom/lua/s11b.lua:1205
 msgid "This time the machine did not activate.\nThere must be a way to safely break the orbs!"
 msgstr ""
 
 #. [lua]: wesnoth.wml_actions.display_console_screen
 #. number of periods should vary so that status entries are aligned
-#: Flight_Freedom/lua/s11b.lua:1319
+#: Flight_Freedom/lua/s11b.lua:1311
 msgid "VOID ENGINE STATUS............<span color='yellow'>INITIALIZING</span>"
 msgstr ""
 
 #. [lua]: wesnoth.wml_actions.display_console_screen
-#: Flight_Freedom/lua/s11b.lua:1320
+#: Flight_Freedom/lua/s11b.lua:1312
 msgid "INNER CONTAINMENT FIELD.......<span color='yellow'>ENABLED</span>"
 msgstr ""
 
 #. [lua]: wesnoth.wml_actions.display_console_screen
-#: Flight_Freedom/lua/s11b.lua:1322
+#: Flight_Freedom/lua/s11b.lua:1314
 msgid "VOID ENGINE STATUS............<span color='green'>READY</span>"
 msgstr ""
 
 #. [lua]: wesnoth.wml_actions.display_console_screen
-#: Flight_Freedom/lua/s11b.lua:1323
+#: Flight_Freedom/lua/s11b.lua:1315
 msgid "INNER CONTAINMENT FIELD.......DISABLED"
 msgstr ""
 
 #. [lua]: wesnoth.wml_actions.display_console_screen
-#: Flight_Freedom/lua/s11b.lua:1326
+#: Flight_Freedom/lua/s11b.lua:1318
 msgid "OUTER CONTAINMENT FIELD.......<span color='red'>OFFLINE</span>"
 msgstr ""
 
 #. [lua]: list_contains
-#: Flight_Freedom/lua/s11b.lua:1339
+#: Flight_Freedom/lua/s11b.lua:1331
 msgid "ENERGY SOURCE $i:"
 msgstr ""
 
 #. [lua]: list_contains
-#: Flight_Freedom/lua/s11b.lua:1341
+#: Flight_Freedom/lua/s11b.lua:1333
 msgid "   CHARGE.....................<span color='green'>100%</span>"
 msgstr ""
 
 #. [lua]: list_contains
-#: Flight_Freedom/lua/s11b.lua:1342
+#: Flight_Freedom/lua/s11b.lua:1334
 msgid "   TRANSFER...................<span color='yellow'>STANDBY</span>"
 msgstr ""
 
 #. [lua]: list_contains
-#: Flight_Freedom/lua/s11b.lua:1344
+#: Flight_Freedom/lua/s11b.lua:1336
 msgid "   CHARGE.....................<span color='red'>0%</span>"
 msgstr ""
 
 #. [lua]: list_contains
-#: Flight_Freedom/lua/s11b.lua:1345
+#: Flight_Freedom/lua/s11b.lua:1337
 msgid "   TRANSFER...................<span color='green'>COMPLETED</span>"
 msgstr ""
 
 #. [lua]: list_contains
-#: Flight_Freedom/lua/s11b.lua:1349
+#: Flight_Freedom/lua/s11b.lua:1341
 msgid "ALARMS TRIGGERED..............<span color='red'>$i</span>"
 msgstr ""
 
 #. [lua]: list_contains
-#: Flight_Freedom/lua/s11b.lua:1351
+#: Flight_Freedom/lua/s11b.lua:1343
 msgid "ALARMS TRIGGERED..............<span color='green'>0</span>"
 msgstr ""
 
 #. [lua]: tremor
-#: Flight_Freedom/lua/s11b.lua:1388
+#: Flight_Freedom/lua/s11b.lua:1380
 msgid "The machine is active!\nBy Gar-Alagar... no..."
 msgstr ""
 
 #. [lua]: assistant_note_y
-#: Flight_Freedom/lua/s11b.lua:1618
+#: Flight_Freedom/lua/s11b.lua:1610
 msgid "I've been stuck down here for months now. I pledged myself to Sol'kan to learn magic after Alduin rejected me. But all I've done is help with insane experiments, each more dangerous than the last. He hasn't taught me even one spell yet. Both of the only real friends I had down here are dead. Leofric died to a malfunctioning Automaton and Perrin was literally turned inside out. Sol'kan does not care. I've fantasized more than once about gutting him with a knife during one of his walks or while he's wrapped up in one of his experiments. And I know I'm not the only one who thinks about it."
 msgstr ""
 
 #. [lua]: assistant_note_y
-#: Flight_Freedom/lua/s11b.lua:1619
+#: Flight_Freedom/lua/s11b.lua:1611
 msgid "That crazy bastard actually did it. The Engine is complete, and Sol'kan is making his final preparations. Already he has activated the containment fields. None of us can get in or out. I know that he promised us all eternal rewards from the void. But I don't believe him anymore. He'll have no need of us, and I think he'll just leave us to rot.\n\nI've talked to my mates and they're with me. He dies tonight. Then we plunder this place and get out of here."
 msgstr ""
 
 #. [lua]: assistant_note_y
-#: Flight_Freedom/lua/s11b.lua:1620
+#: Flight_Freedom/lua/s11b.lua:1612
 msgid "Sol'kan lies dead. Me and my buddies jumped him on the way to the privy and I strangled him with my bare hands. Then we cut his ugly head off to make sure he can't come back. But the containment fields are still up. We hoped that they would fall with his death. We've pored over every book in the library but his magic is far too advanced for us. The apprentices threw every spell they had at the barriers with no luck. We even tried digging under the containment fields but we found the dirt to be as hard as stone.\n\nTempers are running high. Nobody knows how we're going to find more food when the supplies down here run out. Already fights are breaking out, old grudges and spite boiling over. And lots of us have lost hope."
 msgstr ""
 
 #. [lua]: assistant_note_y
-#: Flight_Freedom/lua/s11b.lua:1621
+#: Flight_Freedom/lua/s11b.lua:1613
 msgid "I'm the last one left. We ran out of food a month ago. Everyone else has either starved to death, taken their own life, or was eaten by their fellows. It's been three days since I've had a bite to eat, and I already feel my strength starting to fade. I know my death is coming soon. Gods, I should have never come down here..."
 msgstr ""
 
@@ -1111,11 +1111,11 @@ msgstr ""
 #: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:366
 #: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:413
 #: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:462
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:904
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:915
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1008
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1124
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1133
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:923
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:934
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1027
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1143
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1152
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:129
 #: Flight_Freedom/scenarios/02b_Swamps_of_the_Jamolar.cfg:18
 #: Flight_Freedom/scenarios/03a_The_Manor.cfg:87
@@ -1126,14 +1126,14 @@ msgstr ""
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:454
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:624
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:81
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:545
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:751
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:565
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:771
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:67
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:361
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:754
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1327
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1338
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1351
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1355
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1366
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1379
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:245
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:342
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:404
@@ -1178,9 +1178,9 @@ msgstr ""
 #: Flight_Freedom/scenarios/05a_Blue_River.cfg:272
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:212
 #: Flight_Freedom/scenarios/10b_Freezing_Foothills.cfg:282
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:274
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:450
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:732
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:275
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:453
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:735
 #: Flight_Freedom/scenarios/20_Battle_of_the_Temple.cfg:272
 msgid "Defeat all enemy leaders"
 msgstr ""
@@ -3351,7 +3351,7 @@ msgstr ""
 #. [side]: type=Grand Marshal, id=Yrynyc
 #. [unit]: type=Grand Marshal, id=Yrynyc
 #: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:49
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1754
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1776
 #: Flight_Freedom/scenarios/20_Battle_of_the_Temple.cfg:165
 msgid "Yrynyc"
 msgstr ""
@@ -3395,7 +3395,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/13a_Betrayal.cfg:30
 #: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:28
 #: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:27
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:474
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:492
 #: Flight_Freedom/scenarios/16_The_Exodus.cfg:27
 #: Flight_Freedom/scenarios/17a_Blockade.cfg:22
 #: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:31
@@ -3649,7 +3649,7 @@ msgstr ""
 #. [modify_side]
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:83
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:111
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:804
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:823
 msgid "Overseers"
 msgstr ""
 
@@ -3671,52 +3671,52 @@ msgstr ""
 
 #. [objectives]
 #. [scenario]: id=Rebellion
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:912
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1006
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:931
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1025
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:127
 msgid "Kill the overseer"
 msgstr ""
 
 #. [objectives]
 #. [scenario]: id=Rebellion
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1132
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1151
 #: Flight_Freedom/scenarios/02a_Rebellion.cfg:128
 msgid "Rescue the Hatchlings"
 msgstr ""
 
 #. [fading_message]
 #. [unit_type]: id=Slave Driver, race=human
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:641
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:651
 #: Flight_Freedom/units/humans/Loyalist_Slave_Driver.cfg:5
 msgid "Slave Driver"
 msgstr ""
 
 #. [fading_message]
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:642
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:652
 msgid "WORK!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:684
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:703
 msgid "ARRGH!"
 msgstr ""
 
 #. [message]
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:688
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:707
 msgid ""
 "Malakar, the guards' fresh replacements are late.\n"
 "Is this our time to strike?"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:694
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:713
 msgid ""
 "Our rebellion has not yet been fully planned out.\n"
 "But if we wait any longer we will have no strength left at all."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:700
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:719
 msgid ""
 "Kin!\n"
 "Rally to me!\n"
@@ -3725,39 +3725,39 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:715
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:734
 msgid "This, human, is for my daughter!"
 msgstr ""
 
 #. [message]: speaker=Overseer
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:726
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:745
 msgid "Men! Round up the slaves, and make them suffer for their disobedience!"
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:737
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:756
 msgid "Die the death you meant for us!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:825
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:844
 msgid "The hatchlings are free!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:832
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:851
 msgid "The hatchlings are free! We must kill the taskmaster!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:838
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:857
 msgid ""
 "Malakar... our hatchlings... they've been tortured and wounded.\n"
 "Why... why would they do this?"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:844
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:863
 msgid ""
 "Listen to me!\n"
 "If any of you have any sense of justice, find a thinskin and cleanse this world of a little of their evil!"
@@ -3765,41 +3765,41 @@ msgstr ""
 
 #. [unit]: id=Guard1, type=Spearman
 #. [unit]: id=Guard2, type=Spearman
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:865
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:874
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:884
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:893
 msgid "Guard"
 msgstr ""
 
 #. [message]: speaker=Overseer
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:885
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:904
 msgid "Kill the hatchlings! Kill them all!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:890
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:909
 msgid ""
 "The guards have arrived!\n"
 "Protect the hatchlings!"
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:902
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:913
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1122
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:921
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:932
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1141
 msgid "Kill both guards"
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:903
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:914
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1007
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1123
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:922
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:933
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1026
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1142
 msgid "At least four hatchlings must survive ($hatchling_count / 4)"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:950
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1093
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:969
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1112
 msgid ""
 "The manor house lies ahead!\n"
 "Tear out its black heart!\n"
@@ -3807,14 +3807,14 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:973
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:992
 msgid ""
 "The overseer shall pay for the sufferings of our hatchlings!\n"
 "The debt must be paid in blood!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:987
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1006
 msgid ""
 "Let us make the overseer pay for that hatchling!\n"
 "A life for a life!!"
@@ -3822,21 +3822,21 @@ msgstr ""
 
 #. [message]: speaker=Malakar
 #. if this would not work in the target language, feel free to remove the number of hatchlings:
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:996
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1015
 msgid ""
 "$hatchlings_killed hatchlings gone!\n"
 "Overseer, your time has come!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1025
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1044
 msgid ""
 "Our hatchlings are under attack!\n"
 "Hurry!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1048
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1067
 msgid ""
 "NO!!\n"
 "\n"
@@ -3845,33 +3845,33 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1067
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1086
 msgid ""
 "The thinskins are slaughtering our hatchlings!\n"
 "Our flight is nearly broken!"
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1110
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1129
 msgid ""
 "The taskmaster - that monster - is dead!\n"
 "We must free the hatchlings!"
 msgstr ""
 
 #. [message]: speaker=Halberdier
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1203
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1222
 msgid "Slaves! Surrender or die!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1208
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1227
 msgid ""
 "The Baron's army has arrived!\n"
 "We are defeated... for now."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1231
+#: Flight_Freedom/scenarios/02a_Rebellion.cfg:1250
 msgid ""
 "We may have lost some of our hatchlings today.\n"
 "But we shall avenge our fallen!\n"
@@ -3904,8 +3904,8 @@ msgstr ""
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:455
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:625
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:82
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:546
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:752
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:566
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:772
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:68
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:363
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:756
@@ -5499,7 +5499,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:290
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:743
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:121
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:277
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:278
 #: Flight_Freedom/scenarios/17a_Blockade.cfg:121
 msgid "Destruction of the Unforgiver"
 msgstr ""
@@ -5786,8 +5786,8 @@ msgstr ""
 #. [scenario]: id=Citadel
 #. [event]: id=apprentice_1, id=apprentice_2, id=apprentice_3, id=apprentice_4
 #: Flight_Freedom/scenarios/06b_The_Crypt_of_the_Mountains.cfg:307
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:547
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:753
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:567
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:773
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:69
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:364
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:757
@@ -5974,8 +5974,8 @@ msgstr ""
 
 #. [objectives]
 #. [scenario]: id=Citadel
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:548
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:754
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:568
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:774
 #: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:70
 msgid "Death of Taqkar"
 msgstr ""
@@ -6030,31 +6030,31 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:517
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:537
 msgid ""
 "This was once a traditional initiation rite that all Magi undergo.\n"
 "However my colleagues have twisted it into a blasphemous weapon."
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:522
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:542
 msgid "You must reveal the dangers of this trial."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:526
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:546
 msgid ""
 "These trials consist of magical manifestations of the four fundamental elements.\n"
 "The trial of air will pit us against creatures of the winds that will attack with lightning and chill."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:531
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:551
 msgid "Whatever we face, we must reach the Citadel!"
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:535
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:555
 msgid ""
 "First we must banish the four guardians that orbit the Citadel.\n"
 "Then the way will be open.\n"
@@ -6064,12 +6064,12 @@ msgid ""
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:544
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:564
 msgid "Kill the elemental guardians ($dead_guardians / 4)"
 msgstr ""
 
 #. [message]: speaker=Taqkar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:677
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:697
 msgid ""
 "Fool!\n"
 "Now you die!\n"
@@ -6077,73 +6077,73 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:719
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:739
 msgid "We must defeat the guardians first!"
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:737
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:757
 msgid "The guardians have been dealt with!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:741
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:761
 msgid ""
 "Onward!\n"
 "Seize the Citadel!"
 msgstr ""
 
 #. [objectives]
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:750
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:770
 msgid "Move a unit next to the Citadel"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:767
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:787
 msgid "Quemar, we have reached the Citadel."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:773
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:793
 msgid "Quemar casts a great spell!"
 msgstr ""
 
 #. [event]: id=Quahgakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:778
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:798
 msgid "Quahgakar"
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:791
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:811
 msgid ""
 "We must talk about the future of our existence.\n"
 "I have commanded an end to the trial."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:830
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:850
 msgid ""
 "I feel an anger surging through me!\n"
 "An urge to rend and kill!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:837
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:857
 msgid "Unit gains 1 more round of all attacks!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:883
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:903
 msgid "I feel my mind expanding... the winds around me obey my command!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:889
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:909
 msgid "Unit's attacks become magical! (70% chance to hit)"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:935
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:955
 msgid ""
 "The energy imbues my muscle and sinew...\n"
 "I feel more flexible than ever!\n"
@@ -6151,24 +6151,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:943
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:963
 msgid "Unit gains the skirmisher ability! (ignore enemy zones of control)"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:989
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1009
 msgid ""
 "I feel a connection to life around me!\n"
 "It is as if I can draw essence from the decay of others!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:996
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1016
 msgid "Unit's attacks gain the drain ability!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1036
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1056
 msgid ""
 "No!\n"
 "Too much power...\n"
@@ -6176,43 +6176,43 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1099
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1119
 msgid ""
 "Such power!\n"
 "I cannot absorb more lest it should unmake me."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1106
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1126
 msgid ""
 "You have absorbed great power.\n"
 "Take caution that you are not consumed by it!"
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1145
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1165
 msgid ""
 "The trial of fire will confront us with living flames.\n"
 "These will seek to turn our inner fires against us."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1154
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1174
 msgid "The trial of earth will transform the very ground we stand on or fly over into an adversary."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1162
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1182
 msgid "The trial of water will attack us with beings of water that will attempt to douse our internal flames."
 msgstr ""
 
 #. [message]
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1412
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1432
 msgid "The lava rises around me!"
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1416
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1436
 msgid ""
 "Those who are overcome by lava shall not be harmed by it.\n"
 "This is the one boon granted to Aspirants.\n"
@@ -6221,7 +6221,7 @@ msgid ""
 msgstr ""
 
 #. [message]
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1448
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1468
 msgid ""
 "The air is thin...\n"
 "My fire flickers...\n"
@@ -6230,7 +6230,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1470
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1490
 msgid ""
 "No!\n"
 "He was a focal point of the trial.\n"
@@ -6238,7 +6238,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1484
+#: Flight_Freedom/scenarios/07b_The_Obsidian_Citadel.cfg:1504
 msgid ""
 "The citadel has become impenetrable.\n"
 "We have failed."
@@ -6392,8 +6392,8 @@ msgstr ""
 
 #. [message]: speaker=Kogw
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:925
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:815
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:956
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:837
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:978
 msgid "A spirit has attacked!"
 msgstr ""
 
@@ -6416,7 +6416,7 @@ msgstr ""
 
 #. [message]: speaker=Malakar
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:962
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:838
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:860
 msgid "I only hope that you will not say that EVERY time."
 msgstr ""
 
@@ -6509,7 +6509,7 @@ msgstr ""
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:1232
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:875
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:642
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:373
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:372
 #: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:688
 msgid "..."
 msgstr ""
@@ -6546,7 +6546,7 @@ msgstr ""
 
 #. [option]
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:182
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:499
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:518
 msgid "Continue normally"
 msgstr ""
 
@@ -6738,32 +6738,36 @@ msgid ""
 "I implore you to think carefully!"
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:887
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:877
 msgid "We continue with our original plan to awaken Quemar as a dragon!"
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:882
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:893
 msgid ""
 "Drakes!\n"
 "Hold the line while the magi finish their work!"
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:888
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:908
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:899
 msgid "There is no time! We must purge the humans before they slaughter us all!"
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:897
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:919
 msgid ""
 "Turn back at once!\n"
 "Gar-Alagar will never forgive this!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:902
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:924
 msgid ""
 "My will is set.\n"
 "The thinskins are closing in.\n"
@@ -6771,156 +6775,156 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Hartholar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:910
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:932
 msgid ""
 "Very well, Malakar.\n"
 "Drakes! Take flight at once!"
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:929
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:951
 msgid ""
 "The hour grows near!\n"
 "We must stand firm just a while longer!"
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1061
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1083
 msgid "Powers below, hear me! Powers above, fear me!"
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1072
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1094
 msgid "I call upon your wrath! Accept our life force, so that your fires may be quickened!"
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1151
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1173
 msgid "Accept my sacrifice of blood, so that your hatred may surge forth!"
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1173
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1195
 msgid "And now I offer myself to the flames."
 msgstr ""
 
 #. [fading_message]: id=Malakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1242
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1264
 msgid "What... what have we done..."
 msgstr ""
 
 #. [message]: speaker=Quemar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1395
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1417
 msgid "Quahgakar, let us begin."
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1407
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1429
 msgid "Breath of Gar-Alagar! Spirit of Morogor! Hear my voice."
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1418
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1440
 msgid "Accept your servant and infuse him with your might!"
 msgstr ""
 
 #. [fading_message]: id=Quemar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1430
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1452
 msgid "Hear me, a humble servant."
 msgstr ""
 
 #. [fading_message]: id=Quemar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1451
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1473
 msgid "I walk the path of my ancestors."
 msgstr ""
 
 #. [fading_message]: id=Quemar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1463
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1485
 msgid "I walk to the edge of death."
 msgstr ""
 
 #. [fading_message]: id=Quemar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1475
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1497
 msgid "And return with new life."
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1488
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1510
 msgid "Open the way to the heart of the fire!"
 msgstr ""
 
 #. [fading_message]: id=Quemar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1595
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1617
 msgid "I surrender, to be reborn in flame."
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1641
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1663
 msgid "Malakar, it is done."
 msgstr ""
 
 #. [fading_message]: id=Hartholar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1661
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1683
 msgid "Quahgakar, what's happening?"
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1683
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1705
 msgid "The ritual, it's going out of control!"
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1741
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1763
 msgid "The life force needed was much greater than I had imagined... the spell stole what it sought from us!"
 msgstr ""
 
 #. [message]: speaker=capturer_1
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1851
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1873
 msgid "We have found the last of the rebels! Shall we kill them?"
 msgstr ""
 
 #. [message]: speaker=Yrynyc
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1855
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1877
 msgid "No. Bind them in iron fetters and muzzle their snouts. I intend to make an example out of them, so all drakes may fear the name of our King!"
 msgstr ""
 
 #. [message]: speaker=messenger_08b
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2119
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2141
 msgid ""
 "Mount Morogor...\n"
 "It calls me..."
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2131
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2153
 msgid ""
 "No!\n"
 "We cannot complete the ritual!"
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2153
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2175
 msgid ""
 "We must protect the apprentices at all cost!\n"
 "Only with their combined will can we contain the energies we hope to let forth!"
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2172
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2194
 msgid ""
 "No!\n"
 "Without our apprentices we cannot complete the ritual!"
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2195
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2217
 msgid ""
 "The spirits are growing restless!\n"
 "We must begin the ritual swiftly!"
 msgstr ""
 
 #. [message]: speaker=Quahgakar
-#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2205
+#: Flight_Freedom/scenarios/08b_Apocalypse.cfg:2227
 msgid ""
 "No!\n"
 "The magic in the air is fading.\n"
@@ -7127,67 +7131,71 @@ msgstr ""
 msgid "Our quarrel is not with you. Give us Kogw, and we will leave you be."
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:653
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:644
 msgid "Kogw has fought by our side even against other thinskins. Honor demands that I stand with him now!"
 msgstr ""
 
 #. [message]: speaker=Einelen
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:649
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:660
 msgid "Our lives are long but our memories are longer! The forests shall forevermore be your foe!"
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:660
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:680
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:671
 msgid "My first duty must be to my fellow drakes. We cannot afford more enemies. If this means that Kogw must die then so be it."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:680
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:702
 msgid "I understand. Farewell, Malakar. Time for me to dance the hempen jig..."
 msgstr ""
 
 #. [message]: speaker=Einelen
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:688
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:710
 msgid "Hear, hear! For his crimes against the Woses and my people, I hereby condemn the pirate to death. He is to be bound in living fetters of vine over a sapling, which shall slowly impale him as it grows while the faerie magic of the forest sustains his loathsome existence until a branch pierces his black heart!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:692
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:714
 msgid "No! Mercy, I beg of you! NO!!!"
 msgstr ""
 
 #. [message]: speaker=Einelen
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:720
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:742
 msgid "All interlopers must leave the forest at once! Drakes, for your cooperation you may cross through the forest just this once to the southern edge while your pursuers must travel along the coast; do not tarry or you shall join the pirate in death."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:823
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:845
 msgid "Do these spirits pursue us, too?"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:830
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:852
 msgid ""
 "It did not attack!\n"
 "It just appeared!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:866
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:888
 msgid ""
 "They pursue us!\n"
 "We must hurry!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:880
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:902
 msgid "They murdered those people in cold blood! Those bloodthirsty monsters..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:884
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:906
 msgid ""
 "You are shocked only because the orcs are disorganized.\n"
 "The thinskins plan their killings.\n"
@@ -7195,32 +7203,32 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=wolf_squad_leader
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:951
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:973
 msgid "Hup hup! At them!!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:955
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:977
 msgid "To the caves! Quickly!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:981
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1003
 msgid "Wose-slayer! The spirits of the forest thirst for vengeance!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:985
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1007
 msgid "Oh, shut up, forest rat."
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1001
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1023
 msgid "At last! Justice for the forest!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1013
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1035
 msgid ""
 "Forgive me, Malakar.\n"
 "But there is no time.\n"
@@ -7230,7 +7238,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1021
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1043
 msgid ""
 "No!\n"
 "I beg you!\n"
@@ -7238,7 +7246,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1041
+#: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:1063
 msgid "Theracar!"
 msgstr ""
 
@@ -8052,14 +8060,14 @@ msgid "Automata"
 msgstr ""
 
 #. [message]: speaker=s11b_scout
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:209
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:219
 msgid ""
 "Dominant!\n"
 "There is a hidden entrance in the mountain!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:271
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:281
 msgid ""
 "An avalanche!\n"
 "\n"
@@ -8069,7 +8077,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:355
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:365
 msgid ""
 "What... what is this?\n"
 "All the flight, frozen in place...\n"
@@ -8079,84 +8087,84 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:490
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:509
 msgid ""
 "This appears to be some sort of hidden base.\n"
 "I must find a way to lift the curse!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:496
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:515
 msgid "NOTE: This scenario uses color-coded graphics. Those colors that are essential for scenario completion can be labeled for color-deficient players."
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:505
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:524
 msgid "Continue with labeled colors"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:518
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:537
 msgid "NOTE: As each turn represents a short amount of time, rest healing is disabled. Additionally, your gold stockpile is frozen, and Malakar will not gain experience."
 msgstr ""
 
 #. [set_menu_item]: id=enable_auto_end_turn
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:523
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:542
 msgid "Enable automatic end turn"
 msgstr ""
 
 #. [set_menu_item]: id=e_disable_auto_end_turn
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:537
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:556
 msgid "Disable automatic end turn"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:565
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:591
 msgid "If you wish for your turn to automatically end after Malakar is out of moves and attacks, right-click on the map and select “Enable automatic end turn”. This can be toggled on or off at any time."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:609
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:637
 msgid "This seems to be a machine fashioned into a statue."
 msgstr ""
 
 #. [case]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:629
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:657
 msgid "A red orb! Should I break it?"
 msgstr ""
 
 #. [case]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:633
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:661
 msgid "A blue orb! Should I break it?"
 msgstr ""
 
 #. [case]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:637
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:665
 msgid "A green orb! Should I break it?"
 msgstr ""
 
 #. [case]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:641
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:669
 msgid "A white orb! Should I break it?"
 msgstr ""
 
 #. [case]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:645
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:673
 msgid "A black orb! Should I break it?"
 msgstr ""
 
 #. [case]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:649
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:677
 msgid "A yellow orb! Should I break it?"
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:656
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:684
 msgid "Yes."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:676
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:704
 msgid ""
 "I believe that this is the last of the orbs.\n"
 "\n"
@@ -8165,7 +8173,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:688
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:716
 msgid ""
 "I believe that this is the last of the orbs.\n"
 "\n"
@@ -8174,58 +8182,58 @@ msgid ""
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:700
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:728
 msgid "No."
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:728
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:756
 msgid "I seem to have triggered some sort of trap!"
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:734
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:762
 msgid "This must be another trap!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:832
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:860
 msgid "These glyphs are a trap!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:839
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:867
 msgid ""
 "I need to watch my steps more carefully.\n"
 "There may be other traps about."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:847
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:875
 msgid ""
 "I know not why I must keep running into these traps.\n"
 "I worry that an invisible force may be at play."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:855
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:883
 msgid "This is becoming absurd..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:891
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:919
 msgid ""
 "Some sort of strange contraption!\n"
 "Could this be the source of the curse?"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:935
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:963
 msgid "This appears to be a page torn out of another book."
 msgstr ""
 
 #. [show_journal_dialog]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:938
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:966
 msgid ""
 "At last! At last the Engine approaches completion! I stand at the precipice of the power of the void! As I have pursued the void, I now see that the void has pursued me. Whispering delightful and terrible secrets into my mind. Secrets which have helped to make the Engine a reality. Soon I shall activate the inner and outer containment fields and set the Engine to work!\n"
 "\n"
@@ -8235,12 +8243,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:974
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1002
 msgid "This metal box has some sort of glass window with glowing words!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1025
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1053
 msgid ""
 "Dominant!\n"
 "Malakar!\n"
@@ -8249,12 +8257,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1032
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1060
 msgid "...Theracar... is that you..."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1036
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1064
 msgid ""
 "Malakar!\n"
 "Thank the flame you are alive!\n"
@@ -8262,7 +8270,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1042
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1070
 msgid ""
 "We triggered some sort of... machine.\n"
 "I saw all of you frozen in place.\n"
@@ -8272,7 +8280,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1050
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1078
 msgid ""
 "We are yet hale.\n"
 "To us, it was as if you suddenly vanished and the sun advanced in the sky.\n"
@@ -8281,7 +8289,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1063
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1091
 msgid ""
 "I am heartened to hear of your survival.\n"
 "This evil machine must never be rebuilt!\n"
@@ -8291,7 +8299,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1074
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1102
 msgid ""
 "I am heartened to hear of your survival.\n"
 "This evil machine must never be rebuilt!\n"
@@ -8302,29 +8310,29 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1100
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1128
 msgid ""
 "This appears to be a journal.\n"
 "Perhaps it can tell me more about whoever built this place."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1112
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1140
 msgid "You can view the journal at any time by right-clicking and selecting “Journal...”"
 msgstr ""
 
 #. [set_menu_item]: id=aa_show_journal
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1118
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1146
 msgid "Journal..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1142
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1170
 msgid "These appear to be some sort of plans."
 msgstr ""
 
 #. [show_text_box_dialog]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1162
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1190
 msgid ""
 "<span size='xx-large' stretch='semiexpanded'><u>The Isle of Storms</u></span>\n"
 "<span size='large'><i>Mage Vonden of Aldril</i>\n"
@@ -8341,7 +8349,7 @@ msgid ""
 msgstr ""
 
 #. [show_text_box_dialog]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1190
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1218
 msgid ""
 "<span size='xx-large' stretch='semiexpanded'><u>On this Laboratory</u></span>\n"
 "<span size='large'>Apprentices, many of you wonder why my acquaintances have called you to venture to this remote and perilous island. To leave behind your former lives, your friends, even your families. As you will learn, there is no growth, no knowledge, without sacrifice. But to the point of this island and my grand Laboratory.\n"
@@ -8354,7 +8362,7 @@ msgid ""
 msgstr ""
 
 #. [show_text_box_dialog]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1215
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1243
 msgid ""
 "<span size='xx-large' stretch='semiexpanded'><u>Automata: Theory and Construction</u></span>\n"
 "<span size='large'>The Engine shall forever be known throughout all of history. Not only as my greatest work, but as the apex of what can be accomplished by the human mind and hands. MY mind and MY hands. Yet I have produced an enormous variety of lesser wonders as well. Most awesome among these are the Automata. These serve in many ways. As manual laborers which never tire, never sleep, never cease in their labors. Laborers that can survive conditions that would break even the hardiest of my mortal servants. Also as sentinels, both to maintain security in the Laboratory and as an army should others dare to interfere with my plans.\n"
@@ -8367,39 +8375,39 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1241
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1269
 msgid ""
 "A lever!\n"
 "I know not what would happen if I pull it."
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1244
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1272
 msgid "Pull the lever."
 msgstr ""
 
 #. [option]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1253
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1281
 msgid "Do nothing."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1271
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1299
 msgid "As I reach for this amulet I feel an odd sense of fortitude."
 msgstr ""
 
 #. [object]: id=resist_amulet
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1288
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1316
 msgid "Spellcrafter's Wardstone"
 msgstr ""
 
 #. [object]: id=resist_amulet
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1289
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1317
 msgid "This enchanted amulet provides 30% resistance to arcane and cold attacks."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1304
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1332
 msgid ""
 "Whoever wrote this is obsessed with some sort of 'void'.\n"
 "Whatever it is, this cannot be good."
@@ -8407,36 +8415,36 @@ msgstr ""
 
 #. [then]
 #. [else]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1325
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1336
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1349
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1353
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1364
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1377
 msgid "Find a way to free the flight"
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1326
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1354
 msgid "Destroy the Engine!"
 msgstr ""
 
 #. [note]: description=<b>
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1330
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1341
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1354
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1358
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1369
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1382
 msgid "Your gold stockpile is frozen during this scenario."
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1337
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1365
 msgid "Destroy the colored orbs"
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1350
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1378
 msgid "Explore the underground complex"
 msgstr ""
 
 #. [message]: id=Malakar
-#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1375
+#: Flight_Freedom/scenarios/11b_Solkans_Lair.cfg:1403
 msgid "I must find a way to free the flight before I leave!"
 msgstr ""
 
@@ -9075,6 +9083,8 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Elealonna
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:448
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:481
 #: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:437
 msgid "The undead are closing in... I pledge myself to your service, but if you wish to kill me... just be quick about it..."
 msgstr ""
@@ -9085,24 +9095,26 @@ msgid "Spare her."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:443
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:454
 msgid ""
 "You may live.\n"
 "But give even the slightest hint of betrayal and you will wish you were among the undead."
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:460
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:491
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:471
 msgid "Kill her."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:471
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:505
 msgid "Malakar, please! You ask me to kill her in cold blood!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:475
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:509
 msgid ""
 "I do not ask.\n"
 "I am your Dominant!\n"
@@ -9111,46 +9123,46 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:482
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:516
 msgid "Arr... so be it. I'm sorry, lass."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:516
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:731
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:550
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:749
 msgid "And so it ends... grant final rest to my companions, I beg you..."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:538
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:572
 msgid "Thano... my love... I can only hope you now find peace in the hereafter..."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:549
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:583
 msgid "Nana... my apprentice... I failed you, I'm so sorry..."
 msgstr ""
 
 #. [message]: speaker=Elealonna
 #. probably won't be reached, but the enemies can recruit Dark Adepts who could theoretically also advance to Liches:
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:558
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:592
 msgid "Seeing my fellow magi turning to darkness and lichdom... it pains my heart."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:569
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:603
 msgid "The undead are growing too powerful! We cannot prevail!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:573
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:607
 msgid ""
 "The undead are growing too powerful!\n"
 "We cannot prevail!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:586
+#: Flight_Freedom/scenarios/14_Hordes_of_the_Foul_Undead.cfg:620
 msgid ""
 "The undead are weakening.\n"
 "We must move on before they regroup!"
@@ -9158,7 +9170,7 @@ msgstr ""
 
 #. [label]
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:96
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:99
 #: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:4
 msgid "Gate of Storms"
 msgstr ""
@@ -9173,29 +9185,29 @@ msgstr ""
 #. [then]
 #. [event]
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:686
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:749
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:100
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:704
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:767
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:103
 msgid "Destroy the Gate of Storms"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:101
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:104
 msgid "Move a unit onto the Gate of Storms"
 msgstr ""
 
 #. [unit]: type=Major Spirit, id=Thromor
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:185
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:187
 msgid "Thromor"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:239
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:241
 msgid "There, beyond that castle! This is the Gate of Storms!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:243
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:245
 msgid ""
 "I want three scouts sent south and east.\n"
 "Find a safe path past the Gate.\n"
@@ -9203,22 +9215,22 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:249
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:251
 msgid "With respect, Malakar, the Gate is open. It probably doesn't matter what we do - in time, this island, Wesnoth and all of Morogor will be overrun and destroyed. You can run to the ends of the world, and rotting corpses will still hound your steps..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:254
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:256
 msgid "*<i>growls</i>*"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:258
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:260
 msgid "...never sleeping, never stopping, never tiring, hungering only for blood..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:262
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:264
 msgid ""
 "I have new orders.\n"
 "I want any available scouts to investigate the Gate.\n"
@@ -9227,14 +9239,14 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:271
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:273
 msgid ""
 "There, beyond that castle!\n"
 "This must be the Gate of Storms!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:276
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:278
 msgid ""
 "I want three scouts sent south and east.\n"
 "Hopefully, we can slip past the Gate.\n"
@@ -9242,7 +9254,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:282
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:284
 msgid ""
 "The undead are seemingly without number.\n"
 "The thunder spirits have not ceased to assail us.\n"
@@ -9252,7 +9264,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:290
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:292
 msgid ""
 "Your counsel is wise, First Intendant.\n"
 "\n"
@@ -9263,7 +9275,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:310
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:312
 msgid ""
 "This gate is an abomination!\n"
 "Gar-Alagar wills its destruction.\n"
@@ -9271,66 +9283,70 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:369
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:368
 msgid "Join us... bring death to the humans... bring death to ALL!"
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:375
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:384
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:374
 msgid "I! Am! MALAKAR! And I reject your evil!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:384
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:394
 msgid "Death shall find you... in the end..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:388
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:398
 msgid ""
 "Then I shall live on in the memory of my flight.\n"
 "Begone!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:400
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:410
 msgid "Malakar gains the Fearless trait!"
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:406
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:425
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:416
 msgid "I... I must submit... I surrender to you..."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:430
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:448
 msgid "Then enter... embrace the End of all things!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:527
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:545
 msgid "Mal, what have you done???"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:531
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:549
 msgid ""
 "Malakar...\n"
 "You have betrayed the flight and I shall strike you down!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:536
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:554
 msgid "END."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:666
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:684
 msgid "The arcane energy density is too high, I cannot get close enough to touch the gate! Physical force will be worthless here!"
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:670
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:688
 msgid ""
 "Such... strange... power.\n"
 "I cannot get close enough to touch the gate.\n"
@@ -9338,12 +9354,12 @@ msgid ""
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:672
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:690
 msgid "Such... strange... power. I cannot get close enough to touch the gate. Physical force is worthless here!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:677
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:695
 msgid ""
 "The spirits are redoubling their efforts!\n"
 "\n"
@@ -9353,44 +9369,44 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:687
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:705
 msgid "Move a Drake Burner, Fire Drake, Inferno Drake, or Armageddon Drake onto the Gate of Storms"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:696
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:714
 msgid "A Fire, Inferno or Armageddon Drake is necessary to destroy the Gate of Storms."
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:711
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:729
 msgid "I... I feel a coldness, a terrible, crushing coldness in my chest... I fear my time is coming to a close..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:745
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:763
 msgid ""
 "My fire is too weak.\n"
 "We need a stronger firebreather!"
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:750
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:768
 msgid "Move a Fire, Inferno or Armageddon Drake onto the Gate of Storms"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:765
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:783
 msgid "I call upon Gar-Hagar, god of all that is burning and favored child of Gar-Alagar, to destroy this portal of evil!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:836
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:858
 msgid "Wow, that was quite the fiery display! I just wonder if it could have been even more fiery..."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:840
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:862
 msgid ""
 "The portal seems to have closed.\n"
 "We must hope it remains closed for the foreseeable future...\n"
@@ -9398,46 +9414,46 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:848
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:870
 msgid "Noble drakes... you have my gratitude. Now I can die in peace..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:876
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:898
 msgid ""
 "The Gate is still open!\n"
 "Close it quickly before any more monsters come through!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:889
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:911
 msgid "I feel a growing sensation of evil. As if the undead are growing stronger before our eyes!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:893
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:915
 msgid ""
 "I feel a growing sensation of evil.\n"
 "As if the undead are growing stronger before our eyes!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:905
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:927
 msgid "Indeed the dark magic in the air thickens... we must stop the thaumic flow at its source... destabilize the planar vortex... asymmetric local perturbation of entropy should initiate cascading harmonic failure and interrupt transdimensional flux..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:909
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:931
 msgid "Speak plainly, human!"
 msgstr ""
 
 #. [message]: speaker=Elealonna
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:913
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:935
 msgid "Apologies... we must set the gate on fire... that should close it..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:919
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:941
 msgid ""
 "I too feel the undead menace growing.\n"
 "We must close the gate quickly.\n"
@@ -9445,24 +9461,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:966
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:988
 msgid "Focus on the gate!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1184
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1206
 msgid ""
 "The Gate...\n"
 "It is glowing..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1267
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1289
 msgid "Get... out... of... my... HEAD!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1275
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1297
 msgid ""
 "No...\n"
 "These voices compel me...\n"
@@ -9471,39 +9487,39 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1282
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1304
 msgid ""
 "Malakar, hold fast!\n"
 "You must not let this evil overtake you!"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1302
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1324
 msgid "doom to all turn back TURN BACK nightmare of ending doom destruction desolation death DEATH to the world"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1303
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1325
 msgid "darkness awaits all YOU CANNOT PREVAIL failure despair empty death void hatred misery enmity black HATE"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1304
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1326
 msgid "evil will NOT BE DENIED all must die ALL MUST END torture PAIN agony terror suffering why fight the inevitable"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1305
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1327
 msgid "all must die YOU WILL DIE DARKNESS OBLIVION give up GIVE UP ALL IS DEATH death awaits you DIE DIE DIE"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1324
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1346
 msgid "Some sort of barrier is keeping me from approaching the lich!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1413
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1435
 msgid "We must destroy the Gate!"
 msgstr ""
 
@@ -9543,85 +9559,85 @@ msgstr ""
 
 #. [unit]: type=Pirate, gender=male, id=Rhys
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:146
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:329
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:549
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:923
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:984
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:147
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:332
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:552
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:926
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:987
 msgid "Rhys"
 msgstr ""
 
 #. [unit]: type=Pirate, gender=male, id=Davies
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:173
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:355
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:564
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:917
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:174
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:358
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:567
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:920
 msgid "Davies"
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:190
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:191
 msgid "Captain Kogw! Captain Kogw!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:194
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:195
 msgid "Rhys?"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:198
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:199
 msgid "You old scoundrel! How in blazes are you still alive?"
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:202
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:203
 msgid "You think a few measly warships could really stop the Unforgiver? We played 'possum until they were fully docked, then high-tailed it back North."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:206
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:207
 msgid "North? Wouldn't a, y'know, daring rescue been more appropriate?"
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:210
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:211
 msgid "Well, that's what I said, but Davies, here..."
 msgstr ""
 
 #. [message]: speaker=Davies
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:214
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:215
 msgid "Leave me out of this, bilge-rat."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:218
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:219
 msgid "Anyways, the wind blew us back and we've been circling the island since, trying to resupply without getting attacked."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:222
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:223
 msgid "The Unforgiver is still in one piece? That's wonderful! We'll have the ocean's finest ride all the way to Morogor!"
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:226
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:227
 msgid "Yep, it's just off-shore to the northwest."
 msgstr ""
 
 #. [message]: speaker=Davies
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:237
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:238
 msgid "Surprising number of unfriendly-types around here. Real strange chaps too for army deserters; something's not right on this island."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:241
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:242
 msgid "If it's supplies you need..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:245
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:246
 msgid ""
 "Drakes!\n"
 "Clear the area of interference immediately.\n"
@@ -9629,76 +9645,76 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:251
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:252
 msgid "Speaking of which, I think I saw a skeleton last week. Craziest thing..."
 msgstr ""
 
 #. [message]: speaker=Davies
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:255
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:256
 msgid "Oh, and we've scraped together a few coins. We kind of figured we'd be using them to buy our way out of here, but as long as you're alive I suppose they're yours."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:266
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:267
 msgid "Also, the village we were staying in is friendly."
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:275
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:276
 msgid "Death of Rhys"
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:276
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:277
 msgid "Death of Davies"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:305
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:307
 msgid "We're ready for some action, Cap'n!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:314
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:316
 msgid "A mere four days of travel later, the flight found themselves on familiar ground."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:371
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:374
 msgid "Drakes! Do you bring word of Kogw?"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:375
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:378
 msgid ""
 "Thinskin.\n"
 "Tell me the way to Morogor."
 msgstr ""
 
 #. [message]: speaker=Davies
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:380
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:383
 msgid "Rhys, here, says that he's got a map. But first, tell us of our captain!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:384
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:387
 msgid ""
 "The captain is dead.\n"
 "He was killed by the elves."
 msgstr ""
 
 #. [message]: speaker=s16_peasant
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:399
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:402
 msgid "We all heard how the elves killed a pirate in the forest! Oh dearie... 'twas so horrible... I swear we could hear his screams for days..."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:403
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:406
 msgid "And you drakes let him die!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:407
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:410
 msgid ""
 "Hand over the map now, thinskin.\n"
 "Or you will join your captain.\n"
@@ -9706,23 +9722,23 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Davies
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:413
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:416
 msgid "Rhys, let's go. We've scraped together a few coins, we can buy a way out of here with the deserters."
 msgstr ""
 
 #. [else]
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:449
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1052
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:452
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1055
 msgid "Capture the pirates"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:591
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:594
 msgid "Dominant, we have found the pirates!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:597
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:600
 msgid ""
 "The map.\n"
 "Hand it over.\n"
@@ -9730,22 +9746,22 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:603
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:606
 msgid "You betrayed my captain! I'll rip it to shreds it before I ever give it to you monsters!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:621
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:624
 msgid "Drake, kill his companion."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:627
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:630
 msgid "Kill his companion."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:676
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:679
 msgid ""
 "Listen to me well, thinskin.\n"
 "\n"
@@ -9756,106 +9772,106 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:686
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:689
 msgid "I... I... h-h-here you go... t-t-take the map... please don't kill me... please don't kill me!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:690
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:693
 msgid ""
 "Very well.\n"
 "Now stand and face your end!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:728
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:731
 msgid ""
 "This map points the way to Morogor!\n"
 "Now we must drive away these stragglers so we can prepare to depart this cursed island."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:756
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:759
 msgid "Oh no... on no!!!"
 msgstr ""
 
 #. [message]: speaker=Davies
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:824
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:827
 msgid "Yo! We need passage off this island! We will pay you all that we have!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:828
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:831
 msgid "That can be arranged... for the right price."
 msgstr ""
 
 #. [message]: speaker=Rhys
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:833
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:836
 msgid "I trust this will be enough."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:837
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:840
 msgid "Indeed so! Come on, lads. Let's get you two out of here."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:843
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:846
 msgid ""
 "No!\n"
 "Without the map we will never find our way back home!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:874
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:877
 msgid "No! Without my navigator, we cannot sail!"
 msgstr ""
 
 #. [message]: speaker=Davies
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:902
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:919
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:905
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:922
 msgid "Hey, Rhys. I have a new guess about what's wrong with this island."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:925
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:928
 msgid "Hopefully they still answer to gold..."
 msgstr ""
 
 #. [message]: speaker=Rhys
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:969
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:986
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:972
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:989
 msgid "See! A skeleton! I told you so!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1009
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1012
 msgid "No! Without my helmsman, we cannot sail!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1048
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1051
 msgid ""
 "We have slain the deserter leaders.\n"
 "We must still track down the pirates and their map!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1094
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1096
 msgid "The wind is dying down. We cannot sail away!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1105
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1107
 msgid ""
 "We are exhausted from the fighting...\n"
 "We cannot fly against the winds!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1113
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1115
 msgid ""
 "We still have not found the map!\n"
 "Doubtlessly the pirates have escaped.\n"
@@ -9863,7 +9879,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1135
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1137
 msgid ""
 "Drakes!\n"
 "We have a hard flight ahead of us.\n"
@@ -9874,12 +9890,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1146
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1148
 msgid "To Morogor!"
 msgstr ""
 
 #. [message]: speaker=Unforgiver
-#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1156
+#: Flight_Freedom/scenarios/16_The_Exodus.cfg:1158
 msgid "Cap'n, glad to have you aboard again! It's a shame we couldn't kill more of these rabble..."
 msgstr ""
 
@@ -10180,61 +10196,65 @@ msgid ""
 "Even long pig."
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:700
 #: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:690
 msgid "We are better than the humans, and we always will be! We shall not defile their dead."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:695
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:706
 msgid ""
 "Very well, Dominant.\n"
 "Just let us hope we find enough to eat in this sandy wasteland."
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:701
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:721
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:712
 msgid "The health of my flight must come before propriety. We shall feast on the flesh of our enemies this day!"
 msgstr ""
 
 #. [message]: role=angry_dune
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:715
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:737
 msgid "The monsters are eating our dead!"
 msgstr ""
 
 #. [message]: speaker=Nibir_alNassim
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:719
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:741
 msgid "Men of the dunes! The drakes have brought unspeakable evil to our island. Slaughter them all! Do not rest until every fiend is dead! I, Nibir al-Nassim, shall lead you to victory!"
 msgstr ""
 
 #. [command]
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:725
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:747
 msgid "Hunt enemies for food"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:807
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:829
 msgid ""
 "We barely have scraps left to eat.\n"
 "We need to find more food quickly or we will never make it to Morogor!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:816
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:838
 msgid ""
 "Our strength is spent here...\n"
 "We cannot go on."
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:825
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:847
 msgid ""
 "We have the food we need.\n"
 "Malakar, let us plunder this island for ourselves!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:830
+#: Flight_Freedom/scenarios/17b_Parched_Sands.cfg:852
 msgid ""
 "No.\n"
 "Every day we spend on this island is another day Morogor remains unguarded.\n"
@@ -10982,77 +11002,81 @@ msgid ""
 "I must decide what I will do with the saurians."
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1529
 #: Flight_Freedom/scenarios/19_Liberation.cfg:1519
 msgid "I shall take command of the saurians."
 msgstr ""
 
 #. [message]: speaker=Kamalar
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1524
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1535
 msgid "Use them well."
 msgstr ""
 
+#. [message]: speaker=Malakar
 #. [option]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1533
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1553
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1544
 msgid "The saurians will try to outflank the humans."
 msgstr ""
 
 #. [message]: speaker=Kamalar
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1537
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1559
 msgid ""
 "Very well.\n"
 "They will arrive at the third dawn."
 msgstr ""
 
 #. [message]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1777
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1799
 msgid "Slaves! By order of Grand Marshal Yrynyc, you are to be executed for your treason, to the last drake!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1813
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1835
 msgid "This gate has been sealed shut!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1829
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1851
 msgid "There was a key in this box!"
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1840
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1862
 msgid ""
 "There is enough wood here to finish the bridge.\n"
 "It is awkward to carry but surprisingly light."
 msgstr ""
 
 #. [event]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1841
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1863
 msgid "There's enough wood here to finish the bridge. It's awkward to carry, but surprisingly light."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1860
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1882
 msgid "The bridge is almost finished -- one could almost jump across."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1866
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1888
 msgid "The bridge is almost finished -- I could almost jump across."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1904
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1926
 msgid "The bridge is complete!"
 msgstr ""
 
 #. [message]: speaker=Cicyn
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1964
+#: Flight_Freedom/scenarios/19_Liberation.cfg:1986
 msgid "Wake up! Wake up, you fools! The slaves have rebelled!"
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1988
+#: Flight_Freedom/scenarios/19_Liberation.cfg:2010
 msgid ""
 "There is a large human garrison sleeping here.\n"
 "The door is locked from the inside.\n"
@@ -11060,7 +11084,7 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Flight_Freedom/scenarios/19_Liberation.cfg:1990
+#: Flight_Freedom/scenarios/19_Liberation.cfg:2012
 msgid "There is a large human garrison sleeping here. We could attack them in their sleep, but the door is locked from the inside."
 msgstr ""
 
