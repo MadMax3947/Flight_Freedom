@@ -23,6 +23,13 @@ function Room:set_dimensions(r_height, s_height)
 	self.s_height = s_height
 end
 
+--Get dimensions of this Room
+---@return integer #Dimension of the room in r axis (NE to SW)
+---@return integer #Dimension of the room in s axis (NW to SE)
+function Room:get_dimensions()
+	return {self.r_height, self.s_height}
+end
+
 ---Move a Room by its left corner (which will be part of its wall)
 ---@param x integer #x-coordinate of left corner
 ---@param y integer #y-coordinate of left corner
@@ -410,6 +417,14 @@ function DungeonMapGen:find_room_placement(room, min_x, max_x, min_y, max_y, ess
 	local attempts = 0
 	local max_attempts = 200
 	local placed = false
+	local r_height, s_height = table.unpack(room:get_dimensions())
+	local map_size_x = wesnoth.current.map.playable_width
+	local map_size_y = wesnoth.current.map.playable_height
+	--avoid guessing coordinates that blatantly won't fit on the map
+	min_x = math.max(min_x, 1)
+	max_x = math.min(max_x, map_size_x - (r_height + s_height) + 2)
+	min_y = math.max(min_y, math.floor(r_height / 2))
+	max_y = math.min(max_y, map_size_y - math.floor(s_height / 2))
 	while not placed do
 		local x1 = mathx.random(min_x, max_x)
 		local y1 = mathx.random(min_y, max_y)
@@ -440,9 +455,7 @@ end
 ---@param essential boolean #If false, then give up after 200 attempts to find a suitable positioning
 ---@return boolean #true if room placed, otherwise returns false
 function DungeonMapGen:find_placement_anywhere(room, essential)
-	local map_size_x = wesnoth.current.map.playable_width
-	local map_size_y = wesnoth.current.map.playable_height
-	return self:find_room_placement(room, 1, map_size_x, 1, map_size_y, essential)
+	return self:find_room_placement(room, 1, 999, 1, 999, essential)
 end
 
 ---Identify hexes along a specified corridor
