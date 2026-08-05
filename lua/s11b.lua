@@ -93,9 +93,36 @@ end
 local journal_window_def = wml.load('~add-ons/Flight_Freedom/gui/journal_window.cfg')
 gui.add_widget_definition("window", "journal", wml.get_child(journal_window_def, "window_definition"))
 
+local function permute_text_size(text, base_size, spread)
+	spread = spread or base_size / 12.0
+	local new_text = ""
+	local post_translate_text = stringx.vformat("$s",{s=text})
+	local parsing_markup = false
+	for i = 1, #post_translate_text do
+		local c = string.sub(post_translate_text, i, i)
+		if c == "<" then
+			parsing_markup = true
+		end
+		if not parsing_markup then
+			-- no real science to these constants, besides [-spread, spread] range, exponent should be odd, and index multiplier should be prime
+			local size_delta = (((((string.byte(c) + (61 * i)) % 100) / 50.0) - 1) ^ 5) * spread
+			local size = base_size + size_delta
+			local rise = (((((string.byte(c) + (37 * i)) % 100) / 50.0) - 1) ^ 5) * (spread / 5.0)
+			new_text = new_text .. "<span size='" .. string.format("%.2f", size) .. "pt' rise='" .. string.format("%.2f", rise) .. "pt'>" .. c .. "</span>"
+		else
+			new_text = new_text .. c
+		end
+		if c == ">" then
+			parsing_markup = false
+		end
+	end
+	return new_text
+end
+
 local function show_journal_dialog(text, font)
+	font = font or "WesScript"
 	local function pre_show(self)
-		self.text.label = "<span font_family='WesScript' size='xx-large' color='#000000'>" .. text .. "</span>"
+		self.text.label = "<span font_family='" .. font .. "' color='#000000'>" .. permute_text_size(text, 30, 3) .. "</span>"
 	end
 	local dialog_wml = wml.load("~add-ons/Flight_Freedom/gui/journal_dialog.cfg")
 	gui.show_dialog(wml.get_child(dialog_wml, 'resolution'), pre_show)
