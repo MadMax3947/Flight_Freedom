@@ -1382,7 +1382,7 @@ function wesnoth.wml_actions.engine_activation_sequence(cfg)
 		mult = mult or 1
 		local tremor_coordinates = { {5,0},{-10,0},{-5,5},{0,-10},{0,5} } -- adapted from Wesnoth Lua Pack
 		for i, c in ipairs(tremor_coordinates) do
-			wesnoth.interface.scroll(c[1] * mult, c[2] * mult)
+			wesnoth.interface.scroll(mathx.round(c[1] * mult), mathx.round(c[2] * mult))
 			wesnoth.interface.delay(50)
 		end
 	end
@@ -1542,10 +1542,12 @@ function wesnoth.wml_actions.engine_activation_sequence(cfg)
 	local throw_y = nil
 	local throw_steps = nil
 	theta = find_angle_between_hexes(machine_x, machine_y, retreat_x, retreat_y)
+	local hit_wall = false
 	for i = 1, 16 do
 		local test_x, test_y = find_offset_hex_polar(retreat_x, retreat_y, (i / 2.0), theta)
 		local terrain_code = wesnoth.current.map[{test_x, test_y}]
 		if string.sub(terrain_code, 1, 1) == "X" then
+			hit_wall = true
 			break
 		else
 			-- we want the last hex before the wall
@@ -1583,6 +1585,10 @@ function wesnoth.wml_actions.engine_activation_sequence(cfg)
 		unit_img = unit_img_base .. "~ROTATE(-90)~NO_TOD_SHIFT()"
 	end
 	wesnoth.interface.add_item_image(throw_x, throw_y, unit_img)
+	wesnoth.wml_actions.redraw{}
+	if hit_wall then
+		tremor(0.5)
+	end
 	for i = 1, 6 do
 		wesnoth.interface.color_adjust(-40 * i, -40 * i, -40 * i)
 		wesnoth.interface.delay(200)
