@@ -29,9 +29,6 @@ function StormHandler:init()
 	wml.variables["y_offset"] = y_offset
 	local z_offset = mathx.random(0,99999)
 	wml.variables["z_offset"] = z_offset
-	if wesnoth.scenario.difficulty == "EASY" then self.lightning_threshold = 0.57
-	elseif wesnoth.scenario.difficulty == "HARD" then self.lightning_threshold = 0.55
-	end
 end
 
 -- x: input
@@ -201,6 +198,14 @@ function StormHandler:debug_show_cloud_map()
 	end
 end
 
+function StormHandler:get_built_turn()
+	return self.built_turn
+end
+
+function StormHandler:set_lightning_threshold(lightning_threshold)
+	self.lightning_threshold = lightning_threshold
+end
+
 storm_handler = StormHandler:new()
 
 function add_hex_highlights(locs)
@@ -239,6 +244,11 @@ if wml.variables["storm_initial_setup"] == 1 then
 	storm_handler:build_cloud_map_3d(wesnoth.current.turn)
 end
 
+-- adjust threshold for difficulty
+if wesnoth.scenario.difficulty == "EASY" then storm_handler:set_lightning_threshold(0.57)
+elseif wesnoth.scenario.difficulty == "HARD" then storm_handler:set_lightning_threshold(0.55)
+end
+
 -- must be done in prestart instead of preload for replay safety
 function storm_initial_setup()
 	storm_handler:init()
@@ -252,14 +262,12 @@ function storm_initial_setup()
 end
 
 function storm_turn_update()
-	if wesnoth.current.turn >= 2 then
-		local lightning_locs = storm_handler:get_lightning_hexes()
-		lightning_strike_damage(lightning_locs)
-		remove_hex_highlights(lightning_locs)
-		storm_handler:update_map_3d(wesnoth.current.turn)
-		lightning_locs = storm_handler:get_lightning_hexes()
-		add_hex_highlights(lightning_locs)
-	end
+	local lightning_locs = storm_handler:get_lightning_hexes()
+	lightning_strike_damage(lightning_locs)
+	remove_hex_highlights(lightning_locs)
+	storm_handler:update_map_3d(wesnoth.current.turn + 1)
+	lightning_locs = storm_handler:get_lightning_hexes()
+	add_hex_highlights(lightning_locs)
 	--storm_handler:debug_show_cloud_map()
 	--storm_handler:update_cloud_gfx()
 end
