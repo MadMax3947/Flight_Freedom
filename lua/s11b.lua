@@ -1523,6 +1523,8 @@ function wesnoth.wml_actions.engine_activation_sequence(cfg)
 	tremor(5)
 	wesnoth.interface.color_adjust(100, 0, 0)
 	wesnoth.audio.play("explosion-big.ogg")
+	wesnoth.interface.remove_item(machine_x, machine_y, "scenery/sentinel.png")
+	wesnoth.interface.add_item_halo(machine_x, machine_y, "scenery/sentinel-broken.png")
 	for i = 1, 8 do
 		local img_path = "halo/explosion-big-" .. tostring(i) .. ".png"
 		wesnoth.interface.add_item_halo(machine_x, machine_y, img_path)
