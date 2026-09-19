@@ -1088,6 +1088,7 @@ local function generate_journal()
 			end
 		end
 		table.insert(journal_days, day)
+		assert(day)
 		journal_entries_by_day[day] = distractor_journal_entries[i]
 	end
 
@@ -1321,6 +1322,7 @@ function wesnoth.wml_actions.handle_prison_lever(cfg)
 			break
 		end
 	end
+	assert(door_hex)
 	add_terrain_overlay(door_hex[1], door_hex[2], "Pr\\o")
 	wesnoth.wml_actions.redraw{clear_shroud=true}
 	wml.variables["prison_cell_idx"] = table.concat(prison_cell_idx, ",")

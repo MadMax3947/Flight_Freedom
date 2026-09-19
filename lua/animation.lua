@@ -438,7 +438,7 @@ function interpolation_methods.cubic_spline(state, x_locs, y_locs, num_locs )
 
 		local function reached_point(point)
 			state.index = point+1
-			state.delta_x = x_locs[point+1] - x_locs[point] or 0
+			state.delta_x = (x_locs[point+1] - x_locs[point]) or 0
 		end
 
 		local function get_location(offset)

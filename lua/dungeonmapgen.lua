@@ -6,6 +6,7 @@ wesnoth.dofile('~add-ons/Flight_Freedom/lua/graph_utils.lua')
 
 -- x1 and y1 refer to left corner on Wesnoth map
 -- r and s refer to room size in cubic coordinates, inclusive of corners
+---@class Room
 Room = {x1 = 0, y1 = 0, r_height = 0, s_height = 0}
 
 function Room:new(o)
@@ -24,8 +25,7 @@ function Room:set_dimensions(r_height, s_height)
 end
 
 --Get dimensions of this Room
----@return integer #Dimension of the room in r axis (NE to SW)
----@return integer #Dimension of the room in s axis (NW to SE)
+---@treturn {integer, integer} #Dimension of the room in r axis (NE to SW) and s axis (NW to SE)
 function Room:get_dimensions()
 	return {self.r_height, self.s_height}
 end
@@ -39,13 +39,13 @@ function Room:set_left_corner(x, y)
 end
 
 ---Get coordinates of this Room's left corner
----@return location
+---@treturn {integer, integer} #hex of the Room's left corner
 function Room:left_corner()
 	return {self.x1, self.y1}
 end
 
 ---Get coordinates of this Room's top corner
----@return location
+---@treturn {integer, integer} #hex of the Room's top corner
 function Room:top_corner()
 	local q, r, s = table.unpack(get_cubic({self.x1, self.y1}))
 	q = q + (self.r_height - 1)
@@ -54,7 +54,7 @@ function Room:top_corner()
 end
 
 ---Get coordinates of this Room's bottom corner
----@return location
+---@treturn {integer, integer} #hex of the Room's bottom corner
 function Room:bottom_corner()
 	local q, r, s = table.unpack(get_cubic({self.x1, self.y1}))
 	q = q + (self.s_height - 1)
@@ -63,7 +63,7 @@ function Room:bottom_corner()
 end
 
 ---Get coordinates of this Room's right corner
----@return location
+---@treturn {integer, integer} #hex of the Room's right corner
 function Room:right_corner()
 	local q, r, s = table.unpack(get_cubic({self.x1, self.y1}))
 	q = q + (self.r_height - 1) + (self.s_height - 1)
@@ -74,7 +74,7 @@ end
 
 ---Get coordinates of this Room's approximate center tile
 ---If the Room's center would fall in between tiles, return one of the tiles that would border its center
----@return location
+---@treturn {integer, integer} #hex of the Room's approximate center tile
 function Room:get_approx_center()
 	local q, r, s = table.unpack(get_cubic({self.x1, self.y1}))
 	local half_r_height = math.ceil(self.r_height / 2)
@@ -145,7 +145,7 @@ function Room:contains_hex(x, y)
 end
 
 ---Obtain list of the wall/edge hexes of this Room
----@return location[]
+---@treturn {integer, integer}[] list of wall/edge hexes
 function Room:get_edge_hexes()
 	local edge_hexes = {}
 	local x1 = self.x1
@@ -179,10 +179,10 @@ function Room:get_edge_hexes()
 end
 
 ---Obtain lists of the wall/edge hexes of this Room, separated by direction
----@return location[] #Hexes along the NW edge
----@return location[] #Hexes along the NE edge
----@return location[] #Hexes along the SW edge
----@return location[] #Hexes along the SE edge
+---@treturn {integer, integer}[] #Hexes along the NW edge
+---@treturn {integer, integer}[] #Hexes along the NE edge
+---@treturn {integer, integer}[] #Hexes along the SW edge
+---@treturn {integer, integer}[] #Hexes along the SE edge
 function Room:get_specific_edge_hexes()
 	local nw_edge_hexes = {}
 	local ne_edge_hexes = {}
@@ -238,7 +238,7 @@ function Room:set_wall_terrain(terrain)
 end
 
 ---Obtain list of the inner hexes (i.e. not part of the walls) of this Room
----@return location[]
+---@treturn {integer, integer}[] list of inner hexes
 function Room:get_inner_hexes()
 	local inner_hexes = {}
 	local x1 = self.x1
@@ -313,10 +313,10 @@ end
 ---Obtain the approximate direction of Room r2 from this Room
 ---@param r2 Room
 ---@alias presenting_side
----| se #r2 is to the SE of this Room
----| sw #r2 is to the SW of this Room
----| ne #r2 is to the NE of this Room
----| nw #r2 is to the NW of this Room
+---| "se" #r2 is to the SE of this Room
+---| "sw" #r2 is to the SW of this Room
+---| "ne" #r2 is to the NE of this Room
+---| "nw" #r2 is to the NW of this Room
 ---@return presenting_side string #The direction to Room r2
 function Room:presenting_side_to(r2)
 	-- find sides closest to each other
@@ -381,6 +381,7 @@ end
 ----- DungeonMapGen class for main map generator functions
 ------------------------
 
+---@class DungeonMapGen
 DungeonMapGen = {
 	rooms_list = {}
 	}
@@ -464,12 +465,12 @@ end
 ---@param s integer #s coordinate of starting hex (in cubic coordinates)
 ---@param corridor_width integer #Width of corridor in hexes
 ---@alias instruction
----| nw #Extend the corridor NW
----| ne #Extend the corridor NE
----| sw #Extend the corridor SW
----| se #Extend the corridor SE
+---| "nw" #Extend the corridor NW
+---| "ne" #Extend the corridor NE
+---| "sw" #Extend the corridor SW
+---| "se" #Extend the corridor SE
 ---@param inst_list instruction[] #List of instructions to extend the tunnel
----@return location[]
+---@treturn {integer, integer}[] the hexes along the specified corridor
 function DungeonMapGen:plot_corridor(q, r, s, corridor_width, inst_list)
 	local corridor_tiles = {}
 	local half_corridor_width = math.floor(corridor_width / 2)
@@ -540,7 +541,7 @@ end
 ---Any Room with max_degree set will have no more than that number of connecting corridors
 ---Note: corridors will only paint over wall terrain (i.e. terrain codes that begin with 'X')
 ---@param terrain_type string #The terrain code to paint
----@return graph #Graph object containing connections between Rooms. Node indices correspond to the order of registered Rooms in the DungeonMapGen object.
+---@return Graph #Graph object containing connections between Rooms. Node indices correspond to the order of registered Rooms in the DungeonMapGen object.
 ---@return boolean #true if algorithm was able to connect all rooms, otherwise false
 function DungeonMapGen:place_corridors(terrain_type)
 	local map_size_x = wesnoth.current.map.playable_width
@@ -570,6 +571,7 @@ function DungeonMapGen:place_corridors(terrain_type)
 				origin_room_selected = true
 			end
 		end
+		assert(origin_room)
 		local center_x, center_y = table.unpack(origin_room:get_approx_center())
 		--print("Source hex: " .. tostring(center_x) .. ", " .. tostring(center_y))
 		local theta = mathx.random() * math.pi * 2.0
@@ -620,6 +622,8 @@ function DungeonMapGen:place_corridors(terrain_type)
 										dest_hex_list = dest_room:get_specific_edge_hexes()[4]
 									end
 									-- exclude left and right corners as possible connection points
+									assert(source_hex_list)
+									assert(dest_hex_list)
 									table.remove(source_hex_list)
 									table.remove(source_hex_list, 1)
 									table.remove(dest_hex_list)
@@ -805,7 +809,7 @@ function DungeonMapGen:place_corridors(terrain_type)
 			break
 		end
 	end
-	return {graph, successful}
+	return graph, successful
 end
 
 ---Execute the pre_corridor_setup of all registered Rooms

@@ -1,6 +1,7 @@
 -- implements a graph class and functions
 -- so far used in S11A and S11B
 
+---@class Graph
 Graph = {adjacency_mat = {}}
 
 function Graph:new(o)

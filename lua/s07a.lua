@@ -111,7 +111,7 @@ function StormHandler:update_map_2d(turn_number)
 				local noise = self:noise_2d(x, y)
 				table.insert(column, noise)
 			end
-			table.insert(self.cloud_map, column, 1)
+			table.insert(self.cloud_map, 1, column)
 		end
 	end
 	self.built_turn = turn_number
