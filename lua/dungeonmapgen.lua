@@ -7,10 +7,10 @@ wesnoth.dofile('~add-ons/Flight_Freedom/lua/graph_utils.lua')
 -- x1 and y1 refer to left corner on Wesnoth map
 -- r and s refer to room size in cubic coordinates, inclusive of corners
 ---@class Room
-Room = {x1 = 0, y1 = 0, r_height = 0, s_height = 0}
+Room = {x1 = 0, y1 = 0, q = 0, r = 0, s = 0, r_height = 0, s_height = 0}
 
 function Room:new(o)
-	o = o or {}
+	local o = o or {}
 	setmetatable(o, self)
 	self.__index = self
 	return o
@@ -36,6 +36,10 @@ end
 function Room:set_left_corner(x, y)
 	self.x1 = x
 	self.y1 = y
+	local q, r, s = table.unpack(get_cubic({x, y}))
+	self.q = q
+	self.r = r
+	self.s = s
 end
 
 ---Get coordinates of this Room's left corner
@@ -47,28 +51,27 @@ end
 ---Get coordinates of this Room's top corner
 ---@treturn {integer, integer} #hex of the Room's top corner
 function Room:top_corner()
-	local q, r, s = table.unpack(get_cubic({self.x1, self.y1}))
-	q = q + (self.r_height - 1)
-	r = r - (self.r_height - 1)
+	local q = self.q + (self.r_height - 1)
+	local r = self.r - (self.r_height - 1)
+	local s = self.s
 	return from_cubic(q, r, s)
 end
 
 ---Get coordinates of this Room's bottom corner
 ---@treturn {integer, integer} #hex of the Room's bottom corner
 function Room:bottom_corner()
-	local q, r, s = table.unpack(get_cubic({self.x1, self.y1}))
-	q = q + (self.s_height - 1)
-	s = s - (self.s_height - 1)
+	local q = self.q + (self.s_height - 1)
+	local r = self.r
+	local s = self.s - (self.s_height - 1)
 	return from_cubic(q, r, s)
 end
 
 ---Get coordinates of this Room's right corner
 ---@treturn {integer, integer} #hex of the Room's right corner
 function Room:right_corner()
-	local q, r, s = table.unpack(get_cubic({self.x1, self.y1}))
-	q = q + (self.r_height - 1) + (self.s_height - 1)
-	r = r - (self.r_height - 1)
-	s = s - (self.s_height - 1)
+	local q = self.q + (self.r_height - 1) + (self.s_height - 1)
+	local r = self.r - (self.r_height - 1)
+	local s = self.s - (self.s_height - 1)
 	return from_cubic(q, r, s)
 end
 
@@ -76,12 +79,11 @@ end
 ---If the Room's center would fall in between tiles, return one of the tiles that would border its center
 ---@treturn {integer, integer} #hex of the Room's approximate center tile
 function Room:get_approx_center()
-	local q, r, s = table.unpack(get_cubic({self.x1, self.y1}))
 	local half_r_height = math.ceil(self.r_height / 2)
 	local half_s_height = math.ceil(self.s_height / 2)
-	q = q + (half_r_height - 1) + (half_s_height - 1)
-	r = r - (half_r_height - 1)
-	s = s - (half_s_height - 1)
+	local q = self.q + (half_r_height - 1) + (half_s_height - 1)
+	local r = self.r - (half_r_height - 1)
+	local s = self.s - (half_s_height - 1)
 	return from_cubic(q, r, s)
 end
 
@@ -114,34 +116,8 @@ end
 ---@param y integer
 ---@return boolean
 function Room:contains_hex(x, y)
--- start at left corner, iterate across width of room (in x-coordinate), and check y coordinates
-	local in_room = false
-	local x1 = self.x1
-	local x2 = self.x1 + (self.r_height - 1) + (self.s_height - 1)
-	local y1 = self.y1
-	local y2 = self.y1
-	for x_cur = x1, x2 do
-		local x_dist = x_cur - x1 + 1
-		if x_cur == x and y >= y1 and y <= y2 then
-			in_room = true
-			break
-		end
-		if x_dist < self.r_height then
-			-- y1 moves up
-			y1 = y1 - (x_cur % 2)
-		else
-			-- y1 moves down
-			y1 = y1 + ((x_cur - 1) % 2)
-		end
-		if x_dist < self.s_height then
-			-- y2 moves down
-			y2 = y2 + ((x_cur - 1) % 2)
-		else
-			-- y2 moves up
-			y2 = y2 - (x_cur % 2)
-		end
-	end
-	return in_room
+	local q1, r1, s1 = table.unpack(get_cubic({x, y}))
+	return r1 <= self.r and r1 >= (self.r - self.r_height + 1) and s1 <= self.s and s1 >= (self.s - self.s_height + 1)
 end
 
 ---Obtain list of the wall/edge hexes of this Room
@@ -387,7 +363,7 @@ DungeonMapGen = {
 	}
 
 function DungeonMapGen:new(o)
-	o = o or {}
+	local o = o or {}
 	setmetatable(o, self)
 	self.__index = self
 	return o
@@ -560,6 +536,20 @@ function DungeonMapGen:place_corridors(terrain_type)
 	local rays_failed = 0
 	local starting_max_ray_length = 15 -- restrict maximum distance algorithm will try to connect rooms
 	local successful = true
+	local presenting_side_cache = {}
+	local min_dist_cache = {}
+	for i = 1, num_rooms do
+		presenting_side_cache[i] = {}
+		min_dist_cache[i] = {}
+		for j = 1, num_rooms do
+			if i ~= j then
+				local room1 = current_rooms[i]
+				local room2 = current_rooms[j]
+				presenting_side_cache[i][j] = room1:presenting_side_to(room2)
+				min_dist_cache[i][j] = room1:minimum_wall_distance(room2)
+			end
+		end
+	end
 	while not graph:is_connected() do
 		local origin_room_selected = false
 		local origin_room_num = nil
@@ -601,7 +591,7 @@ function DungeonMapGen:place_corridors(terrain_type)
 									corridor_created = true
 									local corridor_width = 2 -- mathx.random(2, 3)
 									local half_corridor_width = math.floor(corridor_width / 2)
-									local presenting_side = origin_room:presenting_side_to(dest_room)
+									local presenting_side = presenting_side_cache[origin_room_num][i]
 									local source_hex_list = nil
 									local dest_hex_list = nil
 									if presenting_side == "se" then
@@ -633,7 +623,7 @@ function DungeonMapGen:place_corridors(terrain_type)
 									local source_hex = nil
 									local dest_hex = nil
 									-- if rooms are sufficiently close try to find a straight path
-									local min_wall_dist = origin_room:minimum_wall_distance(dest_room)
+									local min_wall_dist = min_dist_cache[origin_room_num][i]
 									if min_wall_dist <= 6 then
 										for j, hex1 in ipairs(source_hex_list) do
 											local q1, r1, s1 = table.unpack(get_cubic(hex1))
@@ -731,24 +721,22 @@ function DungeonMapGen:place_corridors(terrain_type)
 									-- make sure that side direction is at least slightly offset from room wall
 									if #inst > 1 and (inst[1] ~= inst[2] or inst[#inst] ~= inst[#inst - 1]) then
 										corridor_created = false
-										corridor_tiles = {}
-										corridor_attempts = corridor_attempts + 1
-										break
-									end
-									corridor_tiles = self:plot_corridor(q1, r1, s1, corridor_width, inst)
-									for t = 1, #corridor_tiles do
-										local hex_x = corridor_tiles[t][1]
-										local hex_y = corridor_tiles[t][2]
-										-- make sure corridor doesn't go off edge of map
-										if not (hex_x >= 1 and hex_x <= map_size_x and hex_y >=1 and hex_y <= map_size_y) then
-												corridor_created = false
-												break
-										end
-										-- make sure we won't exceed max_degree of a room
-										for k = 1, num_rooms do
-											if current_rooms[k]:contains_hex(hex_x, hex_y) and current_rooms[k].max_degree ~= nil and graph:degree(k) >= current_rooms[k].max_degree then
-												corridor_created = false
-												break
+									else
+										corridor_tiles = self:plot_corridor(q1, r1, s1, corridor_width, inst)
+										for t = 1, #corridor_tiles do
+											local hex_x = corridor_tiles[t][1]
+											local hex_y = corridor_tiles[t][2]
+											-- make sure corridor doesn't go off edge of map
+											if not (hex_x >= 1 and hex_x <= map_size_x and hex_y >=1 and hex_y <= map_size_y) then
+													corridor_created = false
+													break
+											end
+											-- make sure we won't exceed max_degree of a room
+											for k = 1, num_rooms do
+												if current_rooms[k]:contains_hex(hex_x, hex_y) and current_rooms[k].max_degree ~= nil and graph:degree(k) >= current_rooms[k].max_degree then
+													corridor_created = false
+													break
+												end
 											end
 										end
 									end
