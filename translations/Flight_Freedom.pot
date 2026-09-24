@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-09-24 00:34 UTC\n"
+"POT-Creation-Date: 2026-09-24 00:57 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2409,7 +2409,7 @@ msgstr ""
 
 #. [part]
 #: Flight_Freedom/macros/story.cfg:1279
-#: Flight_Freedom/macros/story.cfg:1336
+#: Flight_Freedom/macros/story.cfg:1337
 msgid ""
 "<u>MALAKAR</u>:\n"
 "The gate is silent and those thunder creatures have faded away.\n"
@@ -2472,7 +2472,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1342
+#: Flight_Freedom/macros/story.cfg:1344
 msgid ""
 "<u>THERACAR</u>:\n"
 "Now we must find our way back to Morogor.\n"
@@ -2482,7 +2482,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1350
+#: Flight_Freedom/macros/story.cfg:1353
 msgid ""
 "<u>MALAKAR</u>:\n"
 "We cannot search the entire ocean!\n"
@@ -2492,14 +2492,14 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1358
+#: Flight_Freedom/macros/story.cfg:1362
 msgid ""
 "<u>THERACAR</u>:\n"
 "Without their captain, they will likely have moved on by now."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1363
+#: Flight_Freedom/macros/story.cfg:1368
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Between the humans, orcs, undead, and elves, my greater fear is that there are no pirates left alive.\n"
@@ -2511,23 +2511,23 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1382
+#: Flight_Freedom/macros/story.cfg:1387
 msgid "And thus the Kakatar Flight took flight on their journey to Morogor. Gliders flew ahead of the flight, hunting fish and even the occasional whale to feed the flight while spotting the occasional reef or island for drakes to briefly rest tired wings."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1387
+#: Flight_Freedom/macros/story.cfg:1392
 msgid "But the journey was truly arduous. Food and especially fresh water were scarce. Rough winds and high seas assailed the drakes. Some, especially many Clashers who were less experienced in the air, simply could not fly onward and were lost below the waves."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1392
+#: Flight_Freedom/macros/story.cfg:1397
 msgid "And thus when the flight sighted an island about half-way to Morogor, Malakar ordered the flight to land and reprovision."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1409
-#: Flight_Freedom/macros/story.cfg:1491
+#: Flight_Freedom/macros/story.cfg:1414
+#: Flight_Freedom/macros/story.cfg:1496
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Morogor!\n"
@@ -2535,8 +2535,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1416
-#: Flight_Freedom/macros/story.cfg:1498
+#: Flight_Freedom/macros/story.cfg:1421
+#: Flight_Freedom/macros/story.cfg:1503
 msgid ""
 "<u>GLIDER</u>:\n"
 "By Gar-Alagar...\n"
@@ -2544,8 +2544,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1423
-#: Flight_Freedom/macros/story.cfg:1505
+#: Flight_Freedom/macros/story.cfg:1428
+#: Flight_Freedom/macros/story.cfg:1510
 msgid ""
 "<u>MALAKAR</u>:\n"
 "It is I.\n"
@@ -2553,22 +2553,22 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1430
-#: Flight_Freedom/macros/story.cfg:1512
+#: Flight_Freedom/macros/story.cfg:1435
+#: Flight_Freedom/macros/story.cfg:1517
 msgid ""
 "<u>GLIDER</u>:\n"
 "I have words, sir, for your ears only."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1436
+#: Flight_Freedom/macros/story.cfg:1441
 msgid ""
 "<u>KOGW</u>:\n"
 "Oi!"
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1442
+#: Flight_Freedom/macros/story.cfg:1447
 msgid ""
 "<u>MALAKAR</u>:\n"
 "You may speak in front of the captain.\n"
@@ -2576,8 +2576,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1449
-#: Flight_Freedom/macros/story.cfg:1524
+#: Flight_Freedom/macros/story.cfg:1454
+#: Flight_Freedom/macros/story.cfg:1529
 msgid ""
 "<u>GLIDER</u>:\n"
 "Oh, I.\n"
@@ -2586,16 +2586,16 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1462
-#: Flight_Freedom/macros/story.cfg:1537
+#: Flight_Freedom/macros/story.cfg:1467
+#: Flight_Freedom/macros/story.cfg:1542
 msgid ""
 "<u>GLIDER</u>:\n"
 "In the wake of your disappearance, the other flights were stirred to action."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1468
-#: Flight_Freedom/macros/story.cfg:1543
+#: Flight_Freedom/macros/story.cfg:1473
+#: Flight_Freedom/macros/story.cfg:1548
 msgid ""
 "<u>GLIDER</u>:\n"
 "Most thought your flight had met with foul play at the hands of the Outcast Flight.\n"
@@ -2607,8 +2607,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1479
-#: Flight_Freedom/macros/story.cfg:1554
+#: Flight_Freedom/macros/story.cfg:1484
+#: Flight_Freedom/macros/story.cfg:1559
 msgid ""
 "<u>GLIDER</u>:\n"
 "Their efficiency was incredible.\n"
@@ -2618,14 +2618,14 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1518
+#: Flight_Freedom/macros/story.cfg:1523
 msgid ""
 "<u>MALAKAR</u>:\n"
 "You may speak in front of First Intendant Theracar."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1565
+#: Flight_Freedom/macros/story.cfg:1570
 msgid ""
 "<u>GLIDER</u>:\n"
 "The quarries are mined day and night by teams of slaves.\n"
@@ -2635,7 +2635,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1574
+#: Flight_Freedom/macros/story.cfg:1579
 msgid ""
 "<u>GLIDER</u>:\n"
 "Even worse, the stone of Gar-Alagar is simply gone.\n"
@@ -2644,8 +2644,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1594
-#: Flight_Freedom/macros/story.cfg:1719
+#: Flight_Freedom/macros/story.cfg:1599
+#: Flight_Freedom/macros/story.cfg:1724
 msgid ""
 "<u>NAR</u>:\n"
 "By the smoke, it is good to see you again, Malakar!\n"
@@ -2654,8 +2654,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1603
-#: Flight_Freedom/macros/story.cfg:1728
+#: Flight_Freedom/macros/story.cfg:1608
+#: Flight_Freedom/macros/story.cfg:1733
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Dominant Nar.\n"
@@ -2663,8 +2663,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1610
-#: Flight_Freedom/macros/story.cfg:1735
+#: Flight_Freedom/macros/story.cfg:1615
+#: Flight_Freedom/macros/story.cfg:1740
 msgid ""
 "<u>NAR</u>:\n"
 "These are hard days in Morogor, Malakar.\n"
@@ -2675,8 +2675,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1621
-#: Flight_Freedom/macros/story.cfg:1746
+#: Flight_Freedom/macros/story.cfg:1626
+#: Flight_Freedom/macros/story.cfg:1751
 msgid ""
 "<u>GARETH ULL</u>:\n"
 "Nar speaks for all Morogor.\n"
@@ -2685,8 +2685,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1629
-#: Flight_Freedom/macros/story.cfg:1769
+#: Flight_Freedom/macros/story.cfg:1634
+#: Flight_Freedom/macros/story.cfg:1774
 msgid ""
 "<u>GARETH ULL</u>:\n"
 "After your flight's disappearance was discovered, tensions reached a breaking point.\n"
@@ -2697,8 +2697,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1639
-#: Flight_Freedom/macros/story.cfg:1779
+#: Flight_Freedom/macros/story.cfg:1644
+#: Flight_Freedom/macros/story.cfg:1784
 msgid ""
 "<u>NAR</u>:\n"
 "And the humans arrived.\n"
@@ -2708,8 +2708,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1648
-#: Flight_Freedom/macros/story.cfg:1788
+#: Flight_Freedom/macros/story.cfg:1653
+#: Flight_Freedom/macros/story.cfg:1793
 msgid ""
 "<u>GARETH ULL</u>:\n"
 "Their primary focus appears to be the quarries.\n"
@@ -2718,7 +2718,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1656
+#: Flight_Freedom/macros/story.cfg:1661
 msgid ""
 "<u>NAR</u>:\n"
 "And their thirst for wealth has not stopped below ground.\n"
@@ -2729,8 +2729,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1666
-#: Flight_Freedom/macros/story.cfg:1805
+#: Flight_Freedom/macros/story.cfg:1671
+#: Flight_Freedom/macros/story.cfg:1810
 msgid ""
 "<u>NAR</u>:\n"
 "And, although it pains me to say, none know where the Stone of Gar-Alagar is.\n"
@@ -2738,8 +2738,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1674
-#: Flight_Freedom/macros/story.cfg:1813
+#: Flight_Freedom/macros/story.cfg:1679
+#: Flight_Freedom/macros/story.cfg:1818
 msgid ""
 "<u>GARETH ULL</u>:\n"
 "Nar, with respect, not all of us believe in that... superstition.\n"
@@ -2748,8 +2748,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1682
-#: Flight_Freedom/macros/story.cfg:1821
+#: Flight_Freedom/macros/story.cfg:1687
+#: Flight_Freedom/macros/story.cfg:1826
 msgid ""
 "<u>NAR</u>:\n"
 "Supers...?\n"
@@ -2758,8 +2758,8 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1690
-#: Flight_Freedom/macros/story.cfg:1829
+#: Flight_Freedom/macros/story.cfg:1695
+#: Flight_Freedom/macros/story.cfg:1834
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Enough.\n"
@@ -2768,28 +2768,28 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1698
+#: Flight_Freedom/macros/story.cfg:1703
 msgid ""
 "<u>KOGW</u>:\n"
 "Er, hi. I'm Kogw. When the fighting gets going, it'd be great if no one kills me."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1704
+#: Flight_Freedom/macros/story.cfg:1709
 msgid ""
 "<u>OTHER DRAKES</u>:\n"
 "..."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1710
+#: Flight_Freedom/macros/story.cfg:1715
 msgid ""
 "<u>KOGW</u>:\n"
 "Super. What's the plan, Mal?"
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1754
+#: Flight_Freedom/macros/story.cfg:1759
 msgid ""
 "<u>THERACAR</u>:\n"
 "We still have a score to settle, Nar.\n"
@@ -2797,7 +2797,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1761
+#: Flight_Freedom/macros/story.cfg:1766
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Hold your tongue, Intendant!\n"
@@ -2806,7 +2806,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1796
+#: Flight_Freedom/macros/story.cfg:1801
 msgid ""
 "<u>NAR</u>:\n"
 "And their thirst for wealth has not stopped below ground.\n"
@@ -2816,93 +2816,93 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1853
+#: Flight_Freedom/macros/story.cfg:1858
 msgid "With the eruption of Mount Morogor, the human armies were devastated. The scant survivors were desperate and alone, easy prey for the vengeful drakes."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1858
+#: Flight_Freedom/macros/story.cfg:1863
 msgid "But the price of victory was truly grave. The drakes themselves were decimated. The land sundered, and entire flights shattered. Soon after the humans were purged from Morogor, Malakar himself was set upon and unceremoniously murdered by a mob of angry drakes."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1863
+#: Flight_Freedom/macros/story.cfg:1868
 msgid "Without strong leadership, the Kakatar Flight dissolved. The ruins of Morogor were soon a wasteland where every drake fought for himself. Hartholar survived for a time to become a warlord of minor repute, enjoying a brief reign of terror before a fatherless hatchling plunged a knife into his back. Though humans never again dared to invade Morogor, many drakes eventually departed the island to seek fortune elsewhere."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1868
+#: Flight_Freedom/macros/story.cfg:1873
 msgid "New flights eventually emerged, shaped by common hardship and strife. Yet every drake alive today still remembers Malakar of the former Kakatar Flight. Some as a hero forced to make impossible choices to save what could be saved of his flight and his people. Many more as a villain who sacrificed his own kin in the pursuit of power. But all share a burning hatred for humanity and a fierce resolve to defend their homes and way of life to the end."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1877
+#: Flight_Freedom/macros/story.cfg:1882
 msgid "And thus the story of Malakar came to its End. None know the events that transpired after that fateful day, when Malakar was consumed by nothingness and transmuted into oblivion."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1881
+#: Flight_Freedom/macros/story.cfg:1886
 msgid "Perhaps it is because the Ending arose to become fully manifest in reality, and none remain to tell of it. An Ending to life, to Irdya, to time and existence itself. Or perhaps the Ending itself was brought to its end, and none can speak of that which was not."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1885
+#: Flight_Freedom/macros/story.cfg:1890
 msgid "But if the concept of truth survived, one such truth was clear: the End had come for the thread of destiny. A thread that could have possibly led to justice, to freedom for Malakar, his flight, and all drakes."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1889
+#: Flight_Freedom/macros/story.cfg:1894
 msgid "A thread that would never be."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1903
-#: Flight_Freedom/macros/story.cfg:1930
+#: Flight_Freedom/macros/story.cfg:1908
+#: Flight_Freedom/macros/story.cfg:1935
 msgid "With the seizure of the Temple, Morogor was once again the homeland of the Drakes."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1908
+#: Flight_Freedom/macros/story.cfg:1913
 msgid "The remaining flights rallied around Malakar, accepting him as the first King of Morogor. With their might behind him, Malakar struck the remaining human strongholds and liberated those still in bondage. Within six weeks, Kogw and his pirates were the only humans on the island."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1912
+#: Flight_Freedom/macros/story.cfg:1917
 msgid "What followed was a time of peace, rebuilding, and -- eventually -- prosperity. Malakar ruled wisely and well, and historians consider his rise to power the beginning of the second Golden Age of the Drakes. He lived to the ripe old age of 63; and it is said that a massive firestorm erupted when he died, visible from every corner of Morogor."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1917
+#: Flight_Freedom/macros/story.cfg:1922
 msgid "Kogw lived to be 47, and served as a privateer and a noble in Malakar's court. Thanks to his daring ocean raids backed by the elite of the Gliders, he was able to personally provide nearly a third of the jewels and other precious stones needed to rebuild the island's many temples."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1922
+#: Flight_Freedom/macros/story.cfg:1927
 msgid "Although the divisions between the flights have long since reappeared, every drake alive today still remembers and honors Malakar of the Kakatar Flight. Every grudging contact with the humans is still based on a silent hope of finding another Kogw among them; and every hatchling still begs in their nest, night after night, to hear the legend of the Flight to Freedom just one more time."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1935
+#: Flight_Freedom/macros/story.cfg:1940
 msgid "The remaining flights rallied around Malakar, accepting him as the first King of Morogor. With their might behind him, Malakar struck the remaining human strongholds and liberated those still in bondage. Within six weeks, not a single human was left alive on the island."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1940
+#: Flight_Freedom/macros/story.cfg:1945
 msgid "What followed was a time of rebuilding. Malakar ruled wisely and well, and historians consider his rise to power the beginning of the second Golden Age of the Drakes. He lived to the ripe old age of 63; and it is said that a massive firestorm erupted when he died, visible from every corner of Morogor."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1945
+#: Flight_Freedom/macros/story.cfg:1950
 msgid "Theracar lived to be 58, serving as Morogor's chief general. He instituted a system of patrols such that nearby ships were quickly set upon; within only a couple of years sailors the world over learned to give all of Morogor a very wide berth indeed."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1950
+#: Flight_Freedom/macros/story.cfg:1955
 msgid "To this day, the drakes' hatred for humanity burns bright. Although the divisions between the flights have long since reappeared, every drake alive today still remembers and honors Malakar of the Kakatar Flight; and every hatchling still begs in their nest, night after night, to hear the legend of the Flight to Freedom just one more time."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1967
+#: Flight_Freedom/macros/story.cfg:1972
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Many have died today.\n"
@@ -2910,7 +2910,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1974
+#: Flight_Freedom/macros/story.cfg:1979
 msgid ""
 "<u>HARTHOLAR</u>:\n"
 "Malakar, I must admit that you have great prowess, both martial and intellectual.\n"
@@ -2919,7 +2919,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1982
+#: Flight_Freedom/macros/story.cfg:1987
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Very well, Hartholar.\n"
@@ -2929,7 +2929,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1991
+#: Flight_Freedom/macros/story.cfg:1996
 msgid ""
 "<u>HARTHOLAR</u>:\n"
 "He is Kzzklk, the leader of the saurians that opposed you earlier under my directive.\n"
@@ -2937,7 +2937,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:1998
+#: Flight_Freedom/macros/story.cfg:2003
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Even with the might of both of our flights, we cannot fight the humans by ourselves.\n"
@@ -2946,14 +2946,14 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2006
+#: Flight_Freedom/macros/story.cfg:2011
 msgid ""
 "<u>KZZKLK</u>:\n"
 "My sssaurians will ssstand wwittth youuu."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2012
+#: Flight_Freedom/macros/story.cfg:2017
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Kzzklk, I am honored.\n"
@@ -2963,21 +2963,21 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2021
+#: Flight_Freedom/macros/story.cfg:2026
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Our ultimate goal should be the Obsidian Citadel, the dwelling place of the High Magi."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2027
+#: Flight_Freedom/macros/story.cfg:2032
 msgid ""
 "<u>HARTHOLAR</u>:\n"
 "Malakar, I know not how you will convince them to leave their cloisters and join us."
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2033
+#: Flight_Freedom/macros/story.cfg:2038
 msgid ""
 "<u>MALAKAR</u>:\n"
 "They are our only hope.\n"
@@ -2987,7 +2987,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2042
+#: Flight_Freedom/macros/story.cfg:2047
 msgid ""
 "<u>HARTHOLAR</u>:\n"
 "You speak wisdom, Malakar.\n"
@@ -2997,7 +2997,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2051
+#: Flight_Freedom/macros/story.cfg:2056
 msgid ""
 "<u>MALAKAR</u>:\n"
 "I agree.\n"
@@ -3005,14 +3005,14 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2058
+#: Flight_Freedom/macros/story.cfg:2063
 msgid ""
 "<u>KZZKLK</u>:\n"
 "Yesss. Wwweee ssshall bbbleed the humanssss by a thousssssandd cutsssss!"
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2064
+#: Flight_Freedom/macros/story.cfg:2069
 msgid ""
 "<u>MALAKAR</u>:\n"
 "I accept their offer.\n"
@@ -3020,7 +3020,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2071
+#: Flight_Freedom/macros/story.cfg:2076
 msgid ""
 "<u>HARTHOLAR</u>:\n"
 "The route to the Citadel will be treacherous.\n"
@@ -3031,7 +3031,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2081
+#: Flight_Freedom/macros/story.cfg:2086
 msgid ""
 "<u>HARTHOLAR</u>:\n"
 "But I am decided.\n"
@@ -3039,7 +3039,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2088
+#: Flight_Freedom/macros/story.cfg:2093
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Yes.\n"
@@ -3049,7 +3049,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2103
+#: Flight_Freedom/macros/story.cfg:2108
 msgid ""
 "<u>MALAKAR</u>:\n"
 "The fog is thickening down there.\n"
@@ -3057,7 +3057,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2116
+#: Flight_Freedom/macros/story.cfg:2121
 msgid ""
 "<u>HARTHOLAR</u>:\n"
 "The mighty stronghold of Mogradesh lies before us.\n"
@@ -3066,7 +3066,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2124
+#: Flight_Freedom/macros/story.cfg:2129
 msgid ""
 "<u>MALAKAR</u>:\n"
 "We cannot rest now.\n"
@@ -3075,7 +3075,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2138
+#: Flight_Freedom/macros/story.cfg:2143
 msgid ""
 "<u>QUAHGAKAR</u>:\n"
 "Dominants, it is time for you to learn our greatest secret.\n"
@@ -3083,7 +3083,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2145
+#: Flight_Freedom/macros/story.cfg:2150
 msgid ""
 "<u>QUAHGAKAR</u>:\n"
 "It is often said in the legends of the other races that we are the children of dragons.\n"
@@ -3092,14 +3092,14 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2153
+#: Flight_Freedom/macros/story.cfg:2158
 msgid ""
 "<u>MALAKAR</u>:\n"
 "This is no time for jests!"
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2159
+#: Flight_Freedom/macros/story.cfg:2164
 msgid ""
 "<u>QUEMAR</u>:\n"
 "The headmaster speaks truth.\n"
@@ -3108,7 +3108,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2167
+#: Flight_Freedom/macros/story.cfg:2172
 msgid ""
 "<u>QUAHGAKAR</u>:\n"
 "As the caterpillar is to the butterfly.\n"
@@ -3117,7 +3117,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2175
+#: Flight_Freedom/macros/story.cfg:2180
 msgid ""
 "<u>HARTHOLAR</u>:\n"
 "I do not see how this helps us.\n"
@@ -3125,7 +3125,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2182
+#: Flight_Freedom/macros/story.cfg:2187
 msgid ""
 "<u>QUAHGAKAR</u>:\n"
 "We of the magi have discovered a way to mature drakes into true dragons.\n"
@@ -3133,7 +3133,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2189
+#: Flight_Freedom/macros/story.cfg:2194
 msgid ""
 "<u>QUEMAR</u>:\n"
 "One of us must be the first drake to undergo the metamorphosis.\n"
@@ -3145,7 +3145,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2200
+#: Flight_Freedom/macros/story.cfg:2205
 msgid ""
 "<u>QUAHGAKAR</u>:\n"
 "The ritual also requires strength in magic.\n"
@@ -3156,7 +3156,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2210
+#: Flight_Freedom/macros/story.cfg:2215
 msgid ""
 "<u>MALAKAR</u>:\n"
 "The thinskins approach relentlessly.\n"
@@ -3164,7 +3164,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2217
+#: Flight_Freedom/macros/story.cfg:2222
 msgid ""
 "<u>QUEMAR</u>:\n"
 "The ritual can only be performed at the mouth of Mount Morogor itself.\n"
@@ -3178,7 +3178,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Flight_Freedom/macros/story.cfg:2230
+#: Flight_Freedom/macros/story.cfg:2235
 msgid ""
 "<u>MALAKAR</u>:\n"
 "Then we travel to Mount Morogor!\n"
