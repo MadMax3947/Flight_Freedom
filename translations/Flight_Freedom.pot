@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-09-24 00:57 UTC\n"
+"POT-Creation-Date: 2026-09-24 22:49 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6404,7 +6404,7 @@ msgstr ""
 #. [message]: speaker=Kogw
 #: Flight_Freedom/scenarios/08a_Landfall.cfg:925
 #: Flight_Freedom/scenarios/09_The_Drake_Escape.cfg:837
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1009
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1012
 msgid "A spirit has attacked!"
 msgstr ""
 
@@ -6876,7 +6876,7 @@ msgstr ""
 
 #. [fading_message]: id=Hartholar
 #: Flight_Freedom/scenarios/08b_Apocalypse.cfg:1690
-msgid "Quahgakar, what's happening?"
+msgid "Quahgakar, what is happening?"
 msgstr ""
 
 #. [fading_message]: id=Quahgakar
@@ -9479,24 +9479,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1019
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1022
 msgid "Focus on the gate!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1241
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1244
 msgid ""
 "The Gate...\n"
 "It is glowing..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1324
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1327
 msgid "Get... out... of... my... HEAD!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1332
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1335
 msgid ""
 "No...\n"
 "These voices compel me...\n"
@@ -9505,49 +9505,49 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Morlin Ka
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1339
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1342
 msgid ""
 "Malakar, hold fast!\n"
 "You must not let this evil overtake you!"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1359
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1362
 msgid "doom to all turn back TURN BACK nightmare of ending doom destruction desolation death DEATH to the world"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1360
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1363
 msgid "darkness awaits all YOU CANNOT PREVAIL failure despair empty death void hatred misery enmity black HATE"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1361
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1364
 msgid "evil will NOT BE DENIED all must die ALL MUST END torture PAIN agony terror suffering why fight the inevitable"
 msgstr ""
 
 #. [scenario]: id=Gate_Storms
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1362
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1365
 msgid "all must die YOU WILL DIE DARKNESS OBLIVION give up GIVE UP ALL IS DEATH death awaits you DIE DIE DIE"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1381
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1384
 msgid "Some sort of barrier is keeping me from approaching the lich!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1661
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1664
 msgid "We must destroy the Gate!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1693
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1696
 msgid "I feel the air thickening, as if the world itself is being pulled into the Gate!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1698
+#: Flight_Freedom/scenarios/15_Gate_of_Storms.cfg:1701
 msgid "Units close to the Gate of Storms will only be able to move one hex per turn."
 msgstr ""
 
@@ -12243,7 +12243,7 @@ msgstr ""
 
 #. [attack]: type=impact
 #: Flight_Freedom/units/elementals/Air_Avatar.cfg:99
-#: Flight_Freedom/units/elementals/Air_Elemental.cfg:67
+#: Flight_Freedom/units/elementals/Air_Elemental.cfg:64
 #: Flight_Freedom/units/elementals/Air_God.cfg:98
 msgid "hurricane"
 msgstr ""
@@ -12271,7 +12271,7 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=arcane
-#: Flight_Freedom/units/elementals/Air_Elemental.cfg:79
+#: Flight_Freedom/units/elementals/Air_Elemental.cfg:76
 msgid "small lightning"
 msgstr ""
 
@@ -12304,7 +12304,7 @@ msgid "Avatars of the earth, though colossal, are slow-moving, hobbled by the we
 msgstr ""
 
 #. [attack]: type=impact
-#: Flight_Freedom/units/elementals/Earth_Avatar.cfg:63
+#: Flight_Freedom/units/elementals/Earth_Avatar.cfg:61
 #: Flight_Freedom/units/elementals/Earth_Elemental.cfg:73
 #: Flight_Freedom/units/elementals/Earth_God.cfg:65
 #: Flight_Freedom/units/elementals/Earth_God.cfg:77
