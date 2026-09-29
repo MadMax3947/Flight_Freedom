@@ -170,13 +170,14 @@ for i, s in pairs(colors_list) do
 	orb_colors_desc[s] = orb_colors_desc_tr[i]
 end
 
-StartRoom = Room:new()
+StartRoom = {}
+setmetatable(StartRoom, {__index = Room})
+StartRoom.__index = StartRoom
 
-function StartRoom:new(o)
-	o = o or Room:new()
+function StartRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
-	self:set_dimensions(8, 8)
+	o:set_dimensions(8, 8)
 	return o
 end
 
@@ -203,13 +204,14 @@ function StartRoom:initial_setup()
 	wesnoth.interface.add_item_image(malakar_start_x, malakar_start_y, "scenery/castle-ruins3.png")
 end
 
-ControlRoom = Room:new()
+ControlRoom = {}
+setmetatable(ControlRoom, {__index = Room})
+ControlRoom.__index = ControlRoom
 
-function ControlRoom:new(o)
-	o = o or Room:new()
+function ControlRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
-	self:set_dimensions(11, 9)
+	o:set_dimensions(11, 9)
 	return o
 end
 
@@ -256,14 +258,15 @@ function ControlRoom:pre_corridor_setup()
 	hex_list_to_wml_var(self:get_inner_hexes(), "control_room_x", "control_room_y")
 end
 
-OrbRoom = Room:new()
+OrbRoom = {}
+setmetatable(OrbRoom, {__index = Room})
+OrbRoom.__index = OrbRoom
 
-function OrbRoom:new(o)
-	o = o or Room:new()
+function OrbRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
 	o.color = ""
-	self:set_dimensions(5, 5)
+	o:set_dimensions(5, 5)
 	return o
 end
 
@@ -289,13 +292,14 @@ function OrbRoom:pre_corridor_setup()
 	wesnoth.interface.add_item_image(orb_x, orb_y - 1, "units/monsters/automaton-defender.png~RC(magenta>green)~NO_TOD_SHIFT()")
 end
 
-LibraryRoom = Room:new()
+LibraryRoom = {}
+setmetatable(LibraryRoom, {__index = Room})
+LibraryRoom.__index = LibraryRoom
 
-function LibraryRoom:new(o)
-	o = o or Room:new()
+function LibraryRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
-	self:set_dimensions(12, 7)
+	o:set_dimensions(12, 7)
 	return o
 end
 
@@ -397,13 +401,14 @@ function LibraryRoom:post_corridor_setup()
 end
 
 -- Sol'kan's living quarters
-BedRoom = Room:new()
+BedRoom = {}
+setmetatable(BedRoom, {__index = Room})
+BedRoom.__index = BedRoom
 
-function BedRoom:new(o)
-	o = o or Room:new()
+function BedRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
-	self:set_dimensions(7, 5)
+	o:set_dimensions(7, 5)
 	return o
 end
 
@@ -435,13 +440,14 @@ function BedRoom:pre_corridor_setup()
 	wesnoth.interface.add_item_image(wardrobe_x, wardrobe_y, "scenery/wardrobe-drawer-open.png")
 end
 
-PrisonRoom = Room:new()
+PrisonRoom = {}
+setmetatable(PrisonRoom, {__index = Room})
+PrisonRoom.__index = PrisonRoom
 
-function PrisonRoom:new(o)
-	o = o or Room:new()
+function PrisonRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
-	self:set_dimensions(12, 9)
+	o:set_dimensions(12, 9)
 	return o
 end
 
@@ -514,13 +520,14 @@ function PrisonRoom:pre_corridor_setup()
 	wml.variables["prison_cell_idx"] = table.concat(prison_cell_idx, ",")
 end
 
-OperatingRoom = Room:new()
+OperatingRoom = {}
+setmetatable(OperatingRoom, {__index = Room})
+OperatingRoom.__index = OperatingRoom
 
-function OperatingRoom:new(o)
-	o = o or Room:new()
+function OperatingRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
-	self:set_dimensions(9, 10)
+	o:set_dimensions(9, 10)
 	return o
 end
 
@@ -560,13 +567,14 @@ function OperatingRoom:post_corridor_setup()
 	wesnoth.interface.add_item_image(item_x, item_y, "scenery/surgical.png")
 end
 
-WorkshopRoom = Room:new()
+WorkshopRoom = {}
+setmetatable(WorkshopRoom, {__index = Room})
+WorkshopRoom.__index = WorkshopRoom
 
-function WorkshopRoom:new(o)
-	o = o or Room:new()
+function WorkshopRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
-	self:set_dimensions(9, 9)
+	o:set_dimensions(9, 9)
 	return o
 end
 
@@ -585,12 +593,13 @@ function WorkshopRoom:pre_corridor_setup()
 	end
 end
 
-UndeadRoom = Room:new()
+UndeadRoom = {}
+setmetatable(UndeadRoom, {__index = Room})
+UndeadRoom.__index = UndeadRoom
 
-function UndeadRoom:new(o)
-	o = o or Room:new()
+function UndeadRoom:new()
+	local o = Room:new()
 	setmetatable(o, self)
-	self.__index = self
 	o.undead_levels = {}
 	return o
 end
@@ -644,7 +653,15 @@ function UndeadRoom:pre_corridor_setup()
 	end
 end
 
-MessHallRoom = Room:new()
+MessHallRoom = {}
+setmetatable(MessHallRoom, {__index = Room})
+MessHallRoom.__index = MessHallRoom
+
+function MessHallRoom:new()
+	local o = Room:new()
+	setmetatable(o, self)
+	return o
+end
 
 function MessHallRoom:pre_corridor_setup()
 	self:set_inner_terrain("Isa")
@@ -676,7 +693,15 @@ function MessHallRoom:post_corridor_setup()
 	end
 end
 
-SupplyRoom = Room:new()
+SupplyRoom = {}
+setmetatable(SupplyRoom, {__index = Room})
+SupplyRoom.__index = SupplyRoom
+
+function SupplyRoom:new()
+	local o = Room:new()
+	setmetatable(o, self)
+	return o
+end
 
 function SupplyRoom:pre_corridor_setup()
 	self:set_inner_terrain("Isa")
@@ -699,7 +724,15 @@ function SupplyRoom:pre_corridor_setup()
 	end
 end
 
-ClassRoom = Room:new()
+ClassRoom = {}
+setmetatable(ClassRoom, {__index = Room})
+ClassRoom.__index = ClassRoom
+
+function ClassRoom:new()
+	local o = Room:new()
+	setmetatable(o, self)
+	return o
+end
 
 function ClassRoom:pre_corridor_setup()
 	self:set_inner_terrain("Isa")
@@ -726,7 +759,15 @@ function ClassRoom:pre_corridor_setup()
 	wesnoth.interface.add_item_image(hex_x, hex_y, "scenery/chairSW-fancier.png")
 end
 
-EmptyRoom = Room:new()
+EmptyRoom = {}
+setmetatable(EmptyRoom, {__index = Room})
+EmptyRoom.__index = EmptyRoom
+
+function EmptyRoom:new()
+	local o = Room:new()
+	setmetatable(o, self)
+	return o
+end
 
 function EmptyRoom:pre_corridor_setup()
 	self:set_inner_terrain("Isa")

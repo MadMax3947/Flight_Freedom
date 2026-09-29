@@ -7,12 +7,30 @@ wesnoth.dofile('~add-ons/Flight_Freedom/lua/graph_utils.lua')
 -- x1 and y1 refer to left corner on Wesnoth map
 -- r and s refer to room size in cubic coordinates, inclusive of corners
 ---@class Room
-Room = {x1 = 0, y1 = 0, q = 0, r = 0, s = 0, r_height = 0, s_height = 0}
+---@field x1 integer #x-coordinate of left corner
+---@field y1 integer #y-coordinate of left corner
+---@field q integer #cached q-coordinate of left corner
+---@field r integer #cached r-coordinate of left corner
+---@field s integer #cached s-coordinate of left corner
+---@field r_height integer #height of the room in r axis
+---@field s_height integer #height of the room in s axis
+---@field max_degree integer #maximum number of connections DungeonMapGen is allowed to make to this room, can be nil
+---@field id string #arbitrary ID string, can be nil
+Room = {}
+Room.__index = Room
 
-function Room:new(o)
-	local o = o or {}
-	setmetatable(o, self)
-	self.__index = self
+function Room:new()
+	local o = {}
+	setmetatable(o, Room)
+	o.x1 = 0
+	o.y1 = 0
+	o.q = 0
+	o.r = 0
+	o.s = 0
+	o.r_height = 0
+	o.s_height = 0
+	o.max_degree = nil
+	o.id = nil
 	return o
 end
 
@@ -358,14 +376,18 @@ end
 ------------------------
 
 ---@class DungeonMapGen
-DungeonMapGen = {
-	rooms_list = {}
-	}
+---@field rooms_list Room[]
+DungeonMapGen = {}
+DungeonMapGen.__index = DungeonMapGen
 
-function DungeonMapGen:new(o)
-	local o = o or {}
+function DungeonMapGen:new()
+	local o = {}
 	setmetatable(o, self)
-	self.__index = self
+	o.rooms_list = {}
+	o.dungeon_min_x = 1
+	o.dungeon_min_y = 1
+	o.dungeon_max_x = wesnoth.current.map.playable_width
+	o.dungeon_max_y = wesnoth.current.map.playable_height
 	return o
 end
 
@@ -379,6 +401,44 @@ end
 ---@return Room[]
 function DungeonMapGen:get_rooms_list()
 	return self.rooms_list
+end
+
+---Constrain the dungeon to the specified hexes
+---By default, dungeon will include the entire map
+---@param min_x integer #Minimum x coordinate for the dungeon
+---@param min_y integer #Minimum y coordinate for the dungeon
+---@param max_x integer #Maximum x coordinate for the dungeon
+---@param max_y integer #Maximum y coordinate for the dungeon
+function DungeonMapGen:set_boundaries(min_x, max_x, min_y, max_y)
+	self.dungeon_min_x = min_x
+	self.dungeon_max_x = max_x
+	self.dungeon_min_y = min_y
+	self.dungeon_max_y = max_y
+end
+
+---Test if this Room would fit within the bounds of this dungeon
+---Differs from Room:fits_in_map() as that function checks if the room fits anywhere in the entire map
+---@param room Room #The Room to check
+---@return boolean #true if room fits, otherwise returns false
+function DungeonMapGen:room_fits(room)
+	local fits = true
+	local x1, y1 = table.unpack(room:left_corner())
+	if (x1 < self.dungeon_min_x) or (y1 < self.dungeon_min_y) or (x1 > self.dungeon_max_x) or (y1 > self.dungeon_max_y) then
+		fits = false
+	end
+	x1, y1 = table.unpack(room:top_corner())
+	if (x1 < self.dungeon_min_x) or (y1 < self.dungeon_min_y) or (x1 > self.dungeon_max_x) or (y1 > self.dungeon_max_y) then
+		fits = false
+	end
+	x1, y1 = table.unpack(room:bottom_corner())
+	if (x1 < self.dungeon_min_x) or (y1 < self.dungeon_min_y) or (x1 > self.dungeon_max_x) or (y1 > self.dungeon_max_y) then
+		fits = false
+	end
+	x1, y1 = table.unpack(room:right_corner())
+	if (x1 < self.dungeon_min_x) or (y1 < self.dungeon_min_y) or (x1 > self.dungeon_max_x) or (y1 > self.dungeon_max_y) then
+		fits = false
+	end
+	return fits
 end
 
 ---Attempt to place a Room on the map within desired parameters
@@ -395,21 +455,19 @@ function DungeonMapGen:find_room_placement(room, min_x, max_x, min_y, max_y, ess
 	local max_attempts = 200
 	local placed = false
 	local r_height, s_height = table.unpack(room:get_dimensions())
-	local map_size_x = wesnoth.current.map.playable_width
-	local map_size_y = wesnoth.current.map.playable_height
 	--avoid guessing coordinates that blatantly won't fit on the map
-	min_x = math.max(min_x, 1)
-	max_x = math.min(max_x, map_size_x - (r_height + s_height) + 2)
-	min_y = math.max(min_y, math.floor(r_height / 2))
-	max_y = math.min(max_y, map_size_y - math.floor(s_height / 2))
+	min_x = math.max(min_x, self.dungeon_min_x)
+	max_x = math.min(max_x, self.dungeon_max_x - (r_height + s_height) + 2)
+	min_y = math.max(min_y, math.floor(r_height / 2) + (self.dungeon_min_y - 1))
+	max_y = math.min(max_y, self.dungeon_max_y - math.floor(s_height / 2))
 	while not placed do
 		local x1 = mathx.random(min_x, max_x)
 		local y1 = mathx.random(min_y, max_y)
 		room:set_left_corner(x1, y1)
-		if room:fits_in_map() then
+		if self:room_fits(room) then
 			local intersects = false
 			for i, r2 in ipairs(self.rooms_list) do
-				if room:intersects_with(r2) then
+				if room ~= r2 and room:intersects_with(r2) then
 					intersects = true
 					break
 				end
@@ -520,8 +578,6 @@ end
 ---@return Graph #Graph object containing connections between Rooms. Node indices correspond to the order of registered Rooms in the DungeonMapGen object.
 ---@return boolean #true if algorithm was able to connect all rooms, otherwise false
 function DungeonMapGen:place_corridors(terrain_type)
-	local map_size_x = wesnoth.current.map.playable_width
-	local map_size_y = wesnoth.current.map.playable_height
 	local current_rooms = self.rooms_list
 	-- build graph of all rooms
 	local num_rooms = #current_rooms
@@ -573,7 +629,7 @@ function DungeonMapGen:place_corridors(terrain_type)
 		local max_ray_length = starting_max_ray_length + math.floor(rays_failed / 100)
 		while casting_ray do
 			local test_x, test_y = find_offset_hex_polar(center_x, center_y, radius, theta)
-			if test_x >= 1 and test_x <= map_size_x and test_y >= 1 and test_y <= map_size_y and radius <= max_ray_length then
+			if test_x >= self.dungeon_min_x and test_x <= self.dungeon_max_x and test_y >= self.dungeon_min_y and test_y <= self.dungeon_max_y and radius <= max_ray_length then
 				--print("Eval hex: " .. tostring(test_x) .. ", " .. tostring(test_y))
 				for i = 1, num_rooms do
 					if i ~= origin_room_num then
@@ -727,7 +783,7 @@ function DungeonMapGen:place_corridors(terrain_type)
 											local hex_x = corridor_tiles[t][1]
 											local hex_y = corridor_tiles[t][2]
 											-- make sure corridor doesn't go off edge of map
-											if not (hex_x >= 1 and hex_x <= map_size_x and hex_y >=1 and hex_y <= map_size_y) then
+											if not (hex_x >= self.dungeon_min_x and hex_x <= self.dungeon_max_x and hex_y >= self.dungeon_min_y and hex_y <= self.dungeon_max_y) then
 													corridor_created = false
 													break
 											end

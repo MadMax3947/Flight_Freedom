@@ -2,12 +2,13 @@
 -- so far used in S11A and S11B
 
 ---@class Graph
-Graph = {adjacency_mat = {}}
+Graph = {}
+Graph.__index = Graph
 
-function Graph:new(o)
-	local o = o or {}
-	setmetatable(o, self)
-	self.__index = self
+function Graph:new()
+	local o = {}
+	setmetatable(o, Graph)
+	o.adjacency_mat = {}
 	return o
 end
 
