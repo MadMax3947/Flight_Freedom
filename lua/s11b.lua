@@ -762,6 +762,11 @@ end
 ----- room setup functions
 ------------------------
 
+local function split_to_number(s, sep)
+	local separator = sep or ","
+	return functional.map(stringx.split(s, separator), function(j) return tonumber(j) end)
+end
+
 -- keep this separate for name-indexed dictionaries (making them upfront causes wmlxgettext to choke)
 local colors_list = {"red", "blue", "green", "white", "black", "yellow"}
 local orb_colors_desc_tr = {
@@ -1219,8 +1224,8 @@ function wesnoth.wml_actions.handle_orb(cfg)
 	malakar.moves = 0
 	malakar.attacks_left = 0
 	local orb_colors = stringx.split(wml.variables["orb_colors"], ",")
-	local orbs_x = functional.map(stringx.split(wml.variables["orbs_x"], ","), function(s) return tonumber(s) end)
-	local orbs_y = functional.map(stringx.split(wml.variables["orbs_y"], ","), function(s) return tonumber(s) end)
+	local orbs_x = split_to_number(wml.variables["orbs_x"])
+	local orbs_y = split_to_number(wml.variables["orbs_y"])
 	if orb_colors[1] ~= orb_color then
 		-- player smashed orb out of sequence
 		wml.variables["alarms_triggered"] = wml.variables["alarms_triggered"] + 1
@@ -1325,9 +1330,9 @@ function wesnoth.wml_actions.handle_prison_lever(cfg)
 	wesnoth.interface.remove_item(x, y, "items/switch-left.png~XBRZ(2)")
 	wesnoth.interface.add_item_image(x, y, "items/switch-right.png~XBRZ(2)")
 	local q, r, s = table.unpack(get_cubic({x, y}))
-	local prison_levers_x = functional.map(stringx.split(wml.variables["prison_levers_x"], ","), function(s) return tonumber(s) end)
-	local prison_levers_y = functional.map(stringx.split(wml.variables["prison_levers_y"], ","), function(s) return tonumber(s) end)
-	local prison_cell_idx = functional.map(stringx.split(wml.variables["prison_cell_idx"], ","), function(s) return tonumber(s) end)
+	local prison_levers_x = split_to_number(wml.variables["prison_levers_x"])
+	local prison_levers_y = split_to_number(wml.variables["prison_levers_y"])
+	local prison_cell_idx = split_to_number(wml.variables["prison_cell_idx"])
 	local door_hex = nil
 	for j, idx in ipairs(prison_cell_idx) do
 		if prison_levers_x[j] == x and prison_levers_y[j] == y then
@@ -1662,8 +1667,8 @@ end
 function wesnoth.wml_actions.display_assistant_note(cfg)
 	local x = cfg.x
 	local y = cfg.y
-	local assistant_note_x = functional.map(stringx.split(wml.variables["assistant_note_x"], ","), function(s) return tonumber(s) end)
-	local assistant_note_y = functional.map(stringx.split(wml.variables["assistant_note_y"], ","), function(s) return tonumber(s) end)
+	local assistant_note_x = split_to_number(wml.variables["assistant_note_x"])
+	local assistant_note_y = split_to_number(wml.variables["assistant_note_y"])
 	local notes = {
 _"I've been stuck down here for months now. I pledged myself to Sol'kan to learn magic after Alduin rejected me. But all I've done is help with insane experiments, each more dangerous than the last. He hasn't taught me even one spell yet. Both of the only real friends I had down here are dead. Leofric died to a malfunctioning Automaton and Perrin was literally turned inside out. Sol'kan does not care. I've fantasized more than once about gutting him with a knife during one of his walks or while he's wrapped up in one of his experiments. And I know I'm not the only one who thinks about it.",
 _"That crazy bastard actually did it. The Engine is complete, and Sol'kan is making his final preparations. Already he has activated the containment fields. None of us can get in or out. I know that he promised us all eternal rewards from the void. But I don't believe him anymore. He'll have no need of us, and I think he'll just leave us to rot.\n\nI've talked to my mates and they're with me. He dies tonight. Then we plunder this place and get out of here.",
@@ -1690,8 +1695,8 @@ end
 
 -- for color-blind accessibility
 function wesnoth.wml_actions.label_orb_colors(cfg)
-	local orbs_x = functional.map(stringx.split(wml.variables["orbs_x"], ","), function(s) return tonumber(s) end)
-	local orbs_y = functional.map(stringx.split(wml.variables["orbs_y"], ","), function(s) return tonumber(s) end)
+	local orbs_x = split_to_number(wml.variables["orbs_x"])
+	local orbs_y = split_to_number(wml.variables["orbs_y"])
 	local orb_colors = stringx.split(wml.variables["orb_colors"], ",")
 	for i, color in ipairs(orb_colors) do
 		local x = orbs_x[i]
