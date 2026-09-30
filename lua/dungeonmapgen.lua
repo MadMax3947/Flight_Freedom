@@ -443,6 +443,7 @@ end
 
 ---Attempt to place a Room on the map within desired parameters
 ---Note that this does NOT register the room
+---CAUTION: if setting essential=true, you must guarantee that there is space in the designated zone!
 ---@param room Room #The Room (or more likely an instance of a Room subclass) to be placed
 ---@param min_x integer #Minimum x coordinate for Room's left corner
 ---@param min_y integer #Minimum y coordinate for Room's left corner
@@ -486,6 +487,7 @@ end
 
 ---Attempt to place a room anywhere on the map
 ---Note that this does NOT register the room
+---CAUTION: if setting essential=true, you must guarantee that there is space on the map!
 ---@param room Room #The Room (or more likely an instance of a Room subclass) to be placed
 ---@param essential boolean #If false, then give up after 200 attempts to find a suitable positioning
 ---@return boolean #true if room placed, otherwise returns false
@@ -804,7 +806,6 @@ function DungeonMapGen:place_corridors(terrain_type)
 											connect_attempts = connect_attempts + 1
 											corridor_created = true
 										end
-										break
 									end
 								end
 								local current_origin_room_num = origin_room_num

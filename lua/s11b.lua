@@ -11,7 +11,7 @@ wesnoth.dofile('~add-ons/Flight_Freedom/lua/dungeonmapgen.lua')
 
 -- since it's just Malakar and his loadout's quite variable
 -- overall difficulty scales based on Malakar and set difficulty
-function calc_difficulty_score()
+function wesnoth.wml_actions.calc_difficulty_score(cfg)
 	local score = 1
 	if wesnoth.scenario.difficulty == "NORMAL" then
 		score = score + 2
@@ -98,8 +98,8 @@ local function permute_text_size(text, base_size, spread)
 	local new_text = ""
 	local post_translate_text = stringx.vformat("$s",{s=text})
 	local parsing_markup = false
-	for i = 1, #post_translate_text do
-		local c = string.sub(post_translate_text, i, i)
+	for i, code in utf8.codes(post_translate_text) do
+		local c = utf8.char(code)
 		if c == "<" then
 			parsing_markup = true
 		end
@@ -154,21 +154,6 @@ end
 ------------------------
 ----- room definitions
 ------------------------
-
--- keep this separate for name-indexed dictionaries (making them upfront causes wmlxgettext to choke)
-local colors_list = {"red", "blue", "green", "white", "black", "yellow"}
-local orb_colors_desc_tr = {
-	_"Red Orb",
-	_"Blue Orb",
-	_"Green Orb",
-	_"White Orb",
-	_"Black Orb",
-	_"Yellow Orb",
-}
-local orb_colors_desc = {}
-for i, s in pairs(colors_list) do
-	orb_colors_desc[s] = orb_colors_desc_tr[i]
-end
 
 StartRoom = {}
 setmetatable(StartRoom, {__index = Room})
@@ -815,10 +800,8 @@ end
 
 local function place_orb_rooms(mapgen, num_orb_rooms)
 	local orb_colors = {}
-	local orb_colors_desc = {}
 	for i, s in pairs(colors_list) do
 		table.insert(orb_colors, s)
-		orb_colors_desc[s] = orb_colors_desc_tr[i]
 	end
 	mathx.shuffle(orb_colors)
 	orb_colors = {table.unpack(orb_colors, 1, num_orb_rooms)}
@@ -854,7 +837,7 @@ local function place_bedroom(mapgen)
 	local bedroom = BedRoom:new()
 	bedroom.id = "bedroom"
 	bedroom.max_degree = 1
-	-- library room in top left of map
+	-- bedroom in right side of map
 	mapgen:find_room_placement(bedroom, math.floor(map_size_x * 0.75), map_size_x, math.floor(map_size_y * 0.25), math.floor(map_size_y * 0.75), true)
 	mapgen:register_room(bedroom)
 end
@@ -889,9 +872,6 @@ end
 
 -- random rooms include empty rooms, non-unique monsters, etc.
 local function place_random_rooms(mapgen, num_random_rooms, num_undead_per_room, num_undead_rooms)
-	local malakar_start_x = wml.variables["malakar_start_x"]
-	local malakar_start_y = wml.variables["malakar_start_y"]
-
 	-- this includes walls
 	local random_room_dim_mean = 12
 	local random_room_dim_sd = 5
@@ -899,7 +879,7 @@ local function place_random_rooms(mapgen, num_random_rooms, num_undead_per_room,
 	local random_room_dim_max = 12
 
 	-- difficulty scores range from 3 to 11 (range is 8)
-	-- if easiest, all units will be level 2 (average)
+	-- if easiest, units will have average level 2
 	-- if hardest, all units will be level 3
 	-- otherwise, random combination of them
 	local undead_level_sum = (num_undead_per_room * num_undead_rooms * 2) + math.ceil(((num_undead_per_room * num_undead_rooms) / 8.0) * (wml.variables["difficulty_score"] - 3))
