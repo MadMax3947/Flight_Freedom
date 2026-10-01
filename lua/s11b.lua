@@ -1058,6 +1058,7 @@ table.insert(months_list, _"Verglas Bloom")
 table.insert(months_list, _"Blackfire")
 
 -- in case Irdya's months-per-year schedule is defined to be different from Earth's in the future
+-- also deciding to ignore whether not not Irdya has leap years
 local days_per_month = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
 local days_per_year = functional.reduce(days_per_month, function(a,b) return a+b end, 0)
 
@@ -1137,7 +1138,7 @@ end
 function randomize_scenario()
 	local map_size_x = wesnoth.current.map.playable_width
 	local map_size_y = wesnoth.current.map.playable_height
-	local mapgen = dungeonmapgen.DungeonMapGen:new()
+	local mapgen = dungeonmapgen.Generator:new()
 
 	local num_orb_rooms = 5
 	if wesnoth.scenario.difficulty == "EASY" then
@@ -1435,7 +1436,6 @@ function wesnoth.wml_actions.display_console_screen(cfg)
 	else
 		console_str = console_str .. insert_aligned_periods(_"ALARMS TRIGGERED", "<span color='green'>0</span>") .. "\n\n"
 	end
-	-- Sol'kan's folly occurred in 112 YW; it is now 331 YW
 	---@diagnostic disable-next-line: undefined-global
 	local date = os.date("!*t")
 	-- yes, this will roll over every new year but that's too small a detail to deal with
@@ -1443,7 +1443,8 @@ function wesnoth.wml_actions.display_console_screen(cfg)
 	local hour_str = string.format("%.2i",date["hour"])
 	local min_str = string.format("%.2i", date["min"])
 	local sec_str = string.format("%.2i", date["sec"])
-	local time_interval = stringx.vformat(_"$d|d $h|h $m|m $s|s", {d=79935+date["yday"], h=hour_str, m=min_str, s=sec_str})
+	-- Sol'kan's folly occurred in 112 YW; it is now 331 YW
+	local time_interval = stringx.vformat(_"$d|d $h|h $m|m $s|s", {d=(days_per_year * (331 - 112)) + date["yday"], h=hour_str, m=min_str, s=sec_str})
 	console_str = console_str .. insert_aligned_periods(_"KERNEL UPTIME", time_interval) .. "\n"
 	console_str = console_str .. "</span>"
 	show_text_box_borderless_dialog(console_str)

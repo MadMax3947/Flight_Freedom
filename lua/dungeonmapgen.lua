@@ -16,7 +16,7 @@ local dungeonmapgen = {}
 ---@field s integer #cached s-coordinate of left corner
 ---@field r_height integer #height of the room in r axis
 ---@field s_height integer #height of the room in s axis
----@field max_degree integer #maximum number of connections DungeonMapGen is allowed to make to this room, can be nil
+---@field max_degree integer #maximum number of connections Generator is allowed to make to this room, can be nil
 ---@field id string #arbitrary ID string, can be nil
 dungeonmapgen.Room = {}
 dungeonmapgen.Room.__index = dungeonmapgen.Room
@@ -373,15 +373,15 @@ function dungeonmapgen.Room:post_corridor_setup()
 end
 
 ------------------------
------ DungeonMapGen class for main map generator functions
+----- Generator class for main map generator functions
 ------------------------
 
----@class DungeonMapGen
+---@class Generator
 ---@field rooms_list Room[]
-dungeonmapgen.DungeonMapGen = {}
-dungeonmapgen.DungeonMapGen.__index = dungeonmapgen.DungeonMapGen
+dungeonmapgen.Generator = {}
+dungeonmapgen.Generator.__index = dungeonmapgen.Generator
 
-function dungeonmapgen.DungeonMapGen:new()
+function dungeonmapgen.Generator:new()
 	local o = {}
 	setmetatable(o, self)
 	o.rooms_list = {}
@@ -397,22 +397,22 @@ function dungeonmapgen.DungeonMapGen:new()
 	return o
 end
 
----Make this DungeonMapGen aware of a new Room
+---Make this Generator aware of a new Room
 ---@param room Room
-function dungeonmapgen.DungeonMapGen:register_room(room)
+function dungeonmapgen.Generator:register_room(room)
 	table.insert(self.rooms_list, room)
 end
 
 ---Obtain the list of currently registered Rooms
 ---@return Room[]
-function dungeonmapgen.DungeonMapGen:get_rooms_list()
+function dungeonmapgen.Generator:get_rooms_list()
 	return self.rooms_list
 end
 
 ---Set range of possible corridor widths (in hexes)
 ---@param min integer #Minimum corridor width
 ---@param max integer #Maximum corridor width
-function dungeonmapgen.DungeonMapGen:set_corridor_width_range(min, max)
+function dungeonmapgen.Generator:set_corridor_width_range(min, max)
 	self.min_corridor_width = min
 	self.max_corridor_width = max
 end
@@ -420,21 +420,21 @@ end
 ---Set the maximum distance (in hexes) to connect rooms with straight corridors
 ---Rooms separated by more than this distance will be connected with angled corridors
 ---@param max_straight_dist integer #Maximum straight connection distance
-function dungeonmapgen.DungeonMapGen:set_max_straight_corridor_dist(max_straight_dist)
+function dungeonmapgen.Generator:set_max_straight_corridor_dist(max_straight_dist)
 	self.straight_corridor_dist = max_straight_dist
 end
 
 ---Set a custom wall terrain prefix; by default this is 'X'
 ---Corridors will only paint over this wall terrain
 ---@param prefix string #Terrain code prefix for wall
-function dungeonmapgen.DungeonMapGen:set_wall_prefix(prefix)
+function dungeonmapgen.Generator:set_wall_prefix(prefix)
 	self.wall_terrain_prefix = prefix
 end
 
 ---Set the terrain to paint corridors with
 ---CAUTION: wall terrain prefix must not be a prefix of this terrain!
 ---@param corridor_terrain string #Terrain code for corridors
-function dungeonmapgen.DungeonMapGen:set_corridor_floor_terrain(corridor_terrain)
+function dungeonmapgen.Generator:set_corridor_floor_terrain(corridor_terrain)
 	self.corridor_floor_terrain = corridor_terrain
 end
 
@@ -444,7 +444,7 @@ end
 ---@param max_x integer #Maximum x coordinate for the dungeon
 ---@param min_y integer #Minimum y coordinate for the dungeon
 ---@param max_y integer #Maximum y coordinate for the dungeon
-function dungeonmapgen.DungeonMapGen:set_boundaries(min_x, max_x, min_y, max_y)
+function dungeonmapgen.Generator:set_boundaries(min_x, max_x, min_y, max_y)
 	self.dungeon_min_x = min_x
 	self.dungeon_max_x = max_x
 	self.dungeon_min_y = min_y
@@ -455,7 +455,7 @@ end
 ---Differs from Room:fits_in_map() as that function checks if the room fits anywhere in the entire map
 ---@param room Room #The Room to check
 ---@return boolean #true if room fits, otherwise returns false
-function dungeonmapgen.DungeonMapGen:room_fits(room)
+function dungeonmapgen.Generator:room_fits(room)
 	local fits = true
 	local x1, y1 = table.unpack(room:left_corner())
 	if (x1 < self.dungeon_min_x) or (y1 < self.dungeon_min_y) or (x1 > self.dungeon_max_x) or (y1 > self.dungeon_max_y) then
@@ -486,7 +486,7 @@ end
 ---@param max_y integer #Maximum y coordinate for Room's left corner
 ---@param essential boolean #If false, then give up after 200 attempts to find a suitable positioning
 ---@return boolean #true if room placed, otherwise returns false
-function dungeonmapgen.DungeonMapGen:find_room_placement(room, min_x, max_x, min_y, max_y, essential)
+function dungeonmapgen.Generator:find_room_placement(room, min_x, max_x, min_y, max_y, essential)
 	local attempts = 0
 	local max_attempts = 200
 	local placed = false
@@ -526,7 +526,7 @@ end
 ---@param room Room #The Room (or more likely an instance of a Room subclass) to be placed
 ---@param essential boolean #If false, then give up after 200 attempts to find a suitable positioning
 ---@return boolean #true if room placed, otherwise returns false
-function dungeonmapgen.DungeonMapGen:find_placement_anywhere(room, essential)
+function dungeonmapgen.Generator:find_placement_anywhere(room, essential)
 	return self:find_room_placement(room, 1, 999, 1, 999, essential)
 end
 
@@ -542,7 +542,7 @@ end
 ---| "se" #Extend the corridor SE
 ---@param inst_list instruction[] #List of instructions to extend the tunnel
 ---@treturn {integer, integer}[] the hexes along the specified corridor
-function dungeonmapgen.DungeonMapGen:plot_corridor(q, r, s, corridor_width, inst_list)
+function dungeonmapgen.Generator:plot_corridor(q, r, s, corridor_width, inst_list)
 	local corridor_tiles = {}
 	local half_corridor_width = math.floor(corridor_width / 2)
 	-- q, r, s track center of coordinate and vary along its length
@@ -611,9 +611,9 @@ end
 ---Calculate and paint corridors between all registered Rooms
 ---Any Room with max_degree set will have no more than that number of connecting corridors
 ---Note: corridors will only paint over wall terrain
----@return Graph #Graph object containing connections between Rooms. Node indices correspond to the order of registered Rooms in the DungeonMapGen object.
+---@return Graph #Graph object containing connections between Rooms. Node indices correspond to the order of registered Rooms in the Generator object.
 ---@return boolean #true if algorithm was able to connect all rooms, otherwise false
-function dungeonmapgen.DungeonMapGen:place_corridors()
+function dungeonmapgen.Generator:place_corridors()
 	local current_rooms = self.rooms_list
 	-- build graph of all rooms
 	local num_rooms = #current_rooms
@@ -894,21 +894,21 @@ function dungeonmapgen.DungeonMapGen:place_corridors()
 end
 
 ---Execute the pre_corridor_setup of all registered Rooms
-function dungeonmapgen.DungeonMapGen:pre_corridor_setup()
+function dungeonmapgen.Generator:pre_corridor_setup()
 	for i, r in ipairs(self.rooms_list) do
 		r:pre_corridor_setup()
 	end
 end
 
 ---Execute the post_corridor_setup of all registered Rooms
-function dungeonmapgen.DungeonMapGen:post_corridor_setup()
+function dungeonmapgen.Generator:post_corridor_setup()
 	for i, r in ipairs(self.rooms_list) do
 		r:post_corridor_setup()
 	end
 end
 
 ---Convenience method to execute pre-corridor setup, place corridors, then post-corridor setup
-function dungeonmapgen.DungeonMapGen:generate()
+function dungeonmapgen.Generator:generate()
 	self:pre_corridor_setup()
 	self:place_corridors()
 	self:post_corridor_setup()
@@ -916,7 +916,7 @@ end
 
 ---For debug purposes, label rooms in map
 ---Requires room.id to be set for every Room
-function dungeonmapgen.DungeonMapGen:label_rooms()
+function dungeonmapgen.Generator:label_rooms()
 	for i, room in ipairs(self.rooms_list) do
 		local center_x, center_y = table.unpack(room:get_approx_center())
 		wesnoth.map.add_label({x=center_x, y=center_y, text=room.id})
