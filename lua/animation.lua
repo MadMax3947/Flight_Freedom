@@ -24,7 +24,7 @@ local function calc_image_hex_offset(hex_x, hex_y, x, y)
 end
 
 --[=[
-[calc_image_hex_offset]
+[find_offset_hex_polar]
 Author: MadMax (username on the Battle for Wesnoth forum)
 
 Calculates the closest hex from an origin hex and an offest in polar coordinates.

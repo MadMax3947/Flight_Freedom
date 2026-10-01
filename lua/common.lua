@@ -12,6 +12,7 @@ function norm_pdf(x, mean, sd)
 end
 
 --- randomly generate k integers from 1 to n without replacement
+--- integers are returned in sorted order
 function random_sample_wor(k, n)
 	local reservoir = {}
 	for i = 1, k do

@@ -300,7 +300,6 @@ end
 ---@param r2 Room
 ---@return boolean
 function Room:intersects_with(r2)
-	local intersects = false
 	return (Room.half_intersect(self, r2) or Room.half_intersect(r2, self))
 end
 
@@ -406,8 +405,8 @@ end
 ---Constrain the dungeon to the specified hexes
 ---By default, dungeon will include the entire map
 ---@param min_x integer #Minimum x coordinate for the dungeon
----@param min_y integer #Minimum y coordinate for the dungeon
 ---@param max_x integer #Maximum x coordinate for the dungeon
+---@param min_y integer #Minimum y coordinate for the dungeon
 ---@param max_y integer #Maximum y coordinate for the dungeon
 function DungeonMapGen:set_boundaries(min_x, max_x, min_y, max_y)
 	self.dungeon_min_x = min_x
@@ -446,8 +445,8 @@ end
 ---CAUTION: if setting essential=true, you must guarantee that there is space in the designated zone!
 ---@param room Room #The Room (or more likely an instance of a Room subclass) to be placed
 ---@param min_x integer #Minimum x coordinate for Room's left corner
----@param min_y integer #Minimum y coordinate for Room's left corner
 ---@param max_x integer #Maximum x coordinate for Room's left corner
+---@param min_y integer #Minimum y coordinate for Room's left corner
 ---@param max_y integer #Maximum y coordinate for Room's left corner
 ---@param essential boolean #If false, then give up after 200 attempts to find a suitable positioning
 ---@return boolean #true if room placed, otherwise returns false

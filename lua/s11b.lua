@@ -37,6 +37,7 @@ end
 -- generate a list of numbers of length list_length, summing to level_sum, with no number > max_level
 local function get_random_level_list(list_length, level_sum, max_level)
 	local levels = {}
+	assert(level_sum <= max_level * list_length, "Error: level_sum cannot be greater than max_level * list_length")
 	local breakpoints = random_sample_wor(list_length, level_sum)
 	local current_floor = 0
 	local total_levels = 0
@@ -329,7 +330,6 @@ function LibraryRoom:pre_corridor_setup()
 	q, r, s = table.unpack(get_cubic({self.x1 + 2, self.y1}))
 	for i = 1, 10 do
 		local hex = from_cubic(q, r, s)
-		local hex_to_check = from_cubic(q - 1, r, s + 1)
 		local full_shelf = mathx.random(1, 2)
 		if full_shelf == 1 then
 			wesnoth.interface.add_item_image(hex[1], hex[2], "scenery/bookshelf-full.png")
@@ -347,22 +347,18 @@ function LibraryRoom:pre_corridor_setup()
 		if #wesnoth.interface.get_items(hex[1], hex[2]) == 0 then
 			if num_books_placed == 0 then
 				wesnoth.interface.add_item_image(hex[1], hex[2], "items/blueprints.png")
-				wml.variables["blueprint_x"] = hex[1]
-				wml.variables["blueprint_y"] = hex[2]
+				hex_to_wml_var(hex, "blueprint_x", "blueprint_y")
 			elseif num_books_placed == 1 then
 				wesnoth.interface.add_item_image(hex[1], hex[2], "items/book3.png")
-				wml.variables["isle_book_x"] = hex[1]
-				wml.variables["isle_book_y"] = hex[2]
+				hex_to_wml_var(hex, "isle_book_x", "isle_book_y")
 			elseif num_books_placed == 2 then
 				wesnoth.interface.add_item_image(hex[1], hex[2], "items/book4.png")
-				wml.variables["lab_book_x"] = hex[1]
-				wml.variables["lab_book_y"] = hex[2]
+				hex_to_wml_var(hex, "lab_book_x", "lab_book_y")
 			elseif num_books_placed == 3 then
 				-- would like to have a factory room if there's suitable graphics
 				-- if so, this would be more appropriate going there
 				wesnoth.interface.add_item_image(hex[1], hex[2], "items/book6.png")
-				wml.variables["automata_book_x"] = hex[1]
-				wml.variables["automata_book_y"] = hex[2]
+				hex_to_wml_var(hex, "automata_book_x", "automata_book_y")
 				break
 			end
 			num_books_placed = num_books_placed + 1
@@ -443,8 +439,7 @@ function PrisonRoom:place_cell_content(hex, content_type)
 	elseif content_type == 2 then
 		-- magic resist amulet
 		wesnoth.interface.add_item_image(hex[1], hex[2], "items/bones.png~FL(horiz)~BLIT(items/ankh-necklace.png, 0, 10)")
-		wml.variables["resist_amulet_x"] = hex[1]
-		wml.variables["resist_amulet_y"] = hex[2]
+		hex_to_wml_var(hex, "resist_amulet_x", "resist_amulet_y")
 	elseif content_type == 3 then
 		wesnoth.units.to_map({type="Automaton Reaper", side=3}, hex[1], hex[2])
 	end
@@ -918,6 +913,10 @@ local function place_random_rooms(mapgen, num_random_rooms, num_undead_per_room,
 			rand_rooms_generated = rand_rooms_generated + 1
 			r.id = "random_" .. tostring(rand_rooms_generated)
 			mapgen:register_room(r)
+		else
+			-- if mapgen couldn't find an adequate room placement, try smaller rooms next
+			random_room_dim_mean = math.max(5, random_room_dim_mean - 2)
+			random_room_dim_max = math.max(5, random_room_dim_max - 1)
 		end
 	end
 end
@@ -1242,7 +1241,17 @@ function wesnoth.wml_actions.handle_orb(cfg)
 			wesnoth.interface.delay(1700)
 		end
 		wesnoth.interface.remove_item(x, y - 1, "units/monsters/automaton-defender.png~RC(magenta>green)~NO_TOD_SHIFT()")
+		-- in case there's another unit (e.g. an undead) on top of the automaton
+		local current_unit = nil
+		if wesnoth.units.get(x, y-1) ~= nil then
+			current_unit = wesnoth.units.get(x, y-1)
+			wesnoth.units.extract(current_unit)
+		end
 		wesnoth.units.to_map({type="Automaton Defender", side=3, facing="se"}, x, y - 1)
+		if current_unit ~= nil then
+			local current_unit_x, current_unit_y = wesnoth.paths.find_vacant_hex(x, y - 1, current_unit)
+			current_unit:to_map(current_unit_x, current_unit_y)
+		end
 		wesnoth.game_events.remove("guard_description")
 	else
 		if #orb_colors > 1 then
@@ -1702,5 +1711,16 @@ function wesnoth.wml_actions.label_orb_colors(cfg)
 		local x = orbs_x[i]
 		local y = orbs_y[i]
 		wesnoth.map.add_label({x=x, y=y, text=orb_colors_desc[color]})
+	end
+end
+
+function wesnoth.wml_actions.unlabel_orb_colors(cfg)
+	local orbs_x = split_to_number(wml.variables["orbs_x"])
+	local orbs_y = split_to_number(wml.variables["orbs_y"])
+	local orb_colors = stringx.split(wml.variables["orb_colors"], ",")
+	for i, color in ipairs(orb_colors) do
+		local x = orbs_x[i]
+		local y = orbs_y[i]
+		wesnoth.map.remove_label({x=x, y=y})
 	end
 end
