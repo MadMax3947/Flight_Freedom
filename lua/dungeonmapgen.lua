@@ -1,5 +1,18 @@
-wesnoth.dofile('~add-ons/Flight_Freedom/lua/graph_utils.lua')
+-- implements a map generator intended for artificially-constructed dungeons
+-- intended usage:
+--    * Define your rooms as subclasses of Room. For each Room subclass,
+--    override pre_corridor_setup() and post_corridor_setup() to set up and
+--    decorate the room as suits your scenario
+--    * Create a Generator object.
+--    * Create Room objects for each of your rooms. Can either place a room
+--    yourself with set_left_corner() (make sure they don't overlap) or use
+--    find_room_placement() to place it randomly within a desired region.
+--    * After each room is placed, register it with register_room()
+--    * Call generate() on the Generator object. Alternatively can call its
+--    pre_corridor_setup(), place_corridors(), and post_corridor_setup().
+--    FtF's scenario 11B (Sol'kan's Lair) offers an example usage.
 
+local graph_utils = wesnoth.require('~add-ons/Flight_Freedom/lua/graph_utils.lua')
 local dungeonmapgen = {}
 
 ------------------------
@@ -617,7 +630,7 @@ function dungeonmapgen.Generator:place_corridors()
 	local current_rooms = self.rooms_list
 	-- build graph of all rooms
 	local num_rooms = #current_rooms
-	local graph = Graph:new()
+	local graph = graph_utils.Graph:new()
 	graph:init_unconnected(num_rooms)
 	-- until graph is fully connected, i.e. all rooms are accessible:
 	--   pick random room

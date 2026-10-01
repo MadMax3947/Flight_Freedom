@@ -1,22 +1,24 @@
 -- implements a graph class and functions
 -- so far used in S11A and S11B
 
----@class Graph
-Graph = {}
-Graph.__index = Graph
+local graph_utils = {}
 
-function Graph:new()
+---@class Graph
+graph_utils.Graph = {}
+graph_utils.Graph.__index = graph_utils.Graph
+
+function graph_utils.Graph:new()
 	local o = {}
-	setmetatable(o, Graph)
+	setmetatable(o, graph_utils.Graph)
 	o.adjacency_mat = {}
 	return o
 end
 
-function Graph:init_adjacency_mat(adjacency_mat)
+function graph_utils.Graph:init_adjacency_mat(adjacency_mat)
 	self.adjacency_mat = adjacency_mat
 end
 
-function Graph:init_unconnected(num_nodes)
+function graph_utils.Graph:init_unconnected(num_nodes)
 	self.adjacency_mat = {}
 	for x = 1, num_nodes do
 		self.adjacency_mat[x] = {}
@@ -26,11 +28,11 @@ function Graph:init_unconnected(num_nodes)
 	end
 end
 
-function Graph:set_edge(node1, node2, value)
+function graph_utils.Graph:set_edge(node1, node2, value)
 	self.adjacency_mat[node1][node2] = value
 end
 
-function Graph:get_edge(node1, node2)
+function graph_utils.Graph:get_edge(node1, node2)
 	return self.adjacency_mat[node1][node2]
 end
 
@@ -60,7 +62,7 @@ local function list_shallow_copy(list1)
 	return new_list
 end
 
-function Graph:get_connections(node)
+function graph_utils.Graph:get_connections(node)
 	local row = self.adjacency_mat[node]
 	local connections = {}
 	for x = 1, #row do
@@ -72,7 +74,7 @@ function Graph:get_connections(node)
 end
 
 -- randomly traverse graph until a path (not necessarily an optimal one) is found from cur_node to dest_node
-function Graph:find_guaranteed_path(cur_node, cur_path, dest_node, max_guaranteed_path_length)
+function graph_utils.Graph:find_guaranteed_path(cur_node, cur_path, dest_node, max_guaranteed_path_length)
 	local path = nil
 	if #cur_path < max_guaranteed_path_length then
 		local connections = self:get_connections(cur_node)
@@ -98,7 +100,7 @@ function Graph:find_guaranteed_path(cur_node, cur_path, dest_node, max_guarantee
 end
 
 -- test if graph is connected
-function Graph:enumerate_connected_nodes(cur_node, visited_nodes)
+function graph_utils.Graph:enumerate_connected_nodes(cur_node, visited_nodes)
 	local connections = self:get_connections(cur_node)
 	local nodes_to_visit = {}
 	for x = 1, #connections do
@@ -114,24 +116,28 @@ function Graph:enumerate_connected_nodes(cur_node, visited_nodes)
 	return visited_nodes
 end
 
-function Graph:is_connected()
+function graph_utils.Graph:is_connected()
 	-- BFS from arbitrary node
 	local connected_nodes = self:enumerate_connected_nodes(1, {})
 	local result = false
 	local num_nodes_connected = 0
 	local num_nodes = #self.adjacency_mat
-	for x = 1, num_nodes do
-		if connected_nodes[x] ~= nil then
-			num_nodes_connected = num_nodes_connected + 1
-		end
-	end
-	if num_nodes_connected == num_nodes then
+	if num_nodes <= 1 then
 		result = true
+	else
+		for x = 1, num_nodes do
+			if connected_nodes[x] ~= nil then
+				num_nodes_connected = num_nodes_connected + 1
+			end
+		end
+		if num_nodes_connected == num_nodes then
+			result = true
+		end
 	end
 	return result
 end
 
-function Graph:degree(node)
+function graph_utils.Graph:degree(node)
 	local connections = 0
 	local row = self.adjacency_mat[node]
 	for x = 1, #row do
@@ -141,3 +147,5 @@ function Graph:degree(node)
 	end
 	return connections
 end
+
+return graph_utils
