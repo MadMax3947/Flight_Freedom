@@ -1365,6 +1365,34 @@ function wesnoth.wml_actions.handle_prison_lever(cfg)
 	wml.variables["prison_levers_y"] = table.concat(prison_levers_y, ",")
 end
 
+local function strip_pango_markup(input_str)
+	local parsing_markup = false
+	local output_str = ""
+	for i, code in utf8.codes(input_str) do
+		local c = utf8.char(code)
+		if c == "<" then
+			parsing_markup = true
+		end
+		if not parsing_markup then
+			output_str = output_str .. c
+		end
+		if c == ">" then
+			parsing_markup = false
+		end
+	end
+	return output_str
+end
+
+local function insert_aligned_periods(string1, string2, total_length)
+	total_length = total_length or 45
+	local post_po_string1 = stringx.vformat("$s",{s=string1})
+	local post_po_string2 = stringx.vformat("$s",{s=string2})
+	local current_periods = total_length - utf8.len(strip_pango_markup(post_po_string1)) - utf8.len(strip_pango_markup(post_po_string2))
+	current_periods = math.max(current_periods, 0)
+	local output_str = post_po_string1 .. string.rep(".", current_periods) .. post_po_string2
+	return output_str
+end
+
 function wesnoth.wml_actions.display_console_screen(cfg)
 	local orb_colors = stringx.split(wml.variables["orb_colors"], ",")
 	local orig_orb_colors = stringx.split(wml.variables["orig_orb_colors"], ",")
@@ -1372,14 +1400,14 @@ function wesnoth.wml_actions.display_console_screen(cfg)
 	local console_str = "<span font_family='DejaVuSansMono' size='large'>"
 	-- po: number of periods should vary so that status entries are aligned
 	if #orb_colors > 0 then
-		console_str = console_str .. _"VOID ENGINE STATUS............<span color='yellow'>INITIALIZING</span>" .. "\n\n"
-		console_str = console_str .. _"INNER CONTAINMENT FIELD.......<span color='yellow'>ENABLED</span>"
+		console_str = console_str .. insert_aligned_periods(_"VOID ENGINE STATUS", "<span color='yellow'>" .. _"INITIALIZING" .. "</span>") .. "\n\n"
+		console_str = console_str .. insert_aligned_periods(_"INNER CONTAINMENT FIELD", "<span color='yellow'>" .. _"ENABLED" .. "</span>")
 	else
-		console_str = console_str .. _"VOID ENGINE STATUS............<span color='green'>READY</span>" .. "\n\n"
-		console_str = console_str .. _"INNER CONTAINMENT FIELD.......DISABLED"
+		console_str = console_str .. insert_aligned_periods(_"VOID ENGINE STATUS", "<span color='green'>" .. _"READY" .. "</span>") .. "\n\n"
+		console_str = console_str .. insert_aligned_periods(_"INNER CONTAINMENT FIELD", _"DISABLED")
 	end
 	console_str = console_str .. "\n"
-	console_str = console_str .. _"OUTER CONTAINMENT FIELD.......<span color='red'>OFFLINE</span>"
+	console_str = console_str .. insert_aligned_periods(_"OUTER CONTAINMENT FIELD", "<span color='red'>" .. _"OFFLINE" .. "</span>")
 	console_str = console_str .. "\n\n"
 	local function list_contains(list, element)
 		local result = false
@@ -1394,18 +1422,27 @@ function wesnoth.wml_actions.display_console_screen(cfg)
 	for i, color in ipairs(orig_orb_colors) do
 		console_str = console_str .. stringx.vformat(_"ENERGY SOURCE $i:", {i=i}) .. "\n"
 		if list_contains(orb_colors, color) then
-			console_str = console_str .. _"   CHARGE.....................<span color='green'>100%</span>" .. "\n"
-			console_str = console_str .. _"   TRANSFER...................<span color='yellow'>STANDBY</span>" .. "\n\n"
+			console_str = console_str .. insert_aligned_periods(_"   CHARGE", "<span color='green'>" .. _"100%" .. "</span>") .. "\n"
+			console_str = console_str .. insert_aligned_periods(_"   TRANSFER", "<span color='yellow'>" .. _"STANDBY" .. "</span>") .. "\n\n"
 		else
-			console_str = console_str .. _"   CHARGE.....................<span color='red'>0%</span>" .. "\n"
-			console_str = console_str .. _"   TRANSFER...................<span color='green'>COMPLETED</span>" .. "\n\n"
+			console_str = console_str .. insert_aligned_periods(_"   CHARGE", "<span color='red'>" .. _"0%" .. "</span>") .. "\n"
+			console_str = console_str .. insert_aligned_periods(_"   TRANSFER", "<span color='green'>" .. _"COMPLETED" .. "</span>") .. "\n\n"
 		end
 	end
 	if alarms_triggered > 0 then
-		console_str = console_str .. stringx.vformat(_"ALARMS TRIGGERED..............<span color='red'>$i</span>", {i=alarms_triggered}) .. "\n"
+		console_str = console_str .. insert_aligned_periods(_"ALARMS TRIGGERED", stringx.vformat("<span color='red'>$i</span>", {i=alarms_triggered})) .. "\n\n"
 	else
-		console_str = console_str .. _"ALARMS TRIGGERED..............<span color='green'>0</span>" .. "\n"
+		console_str = console_str .. insert_aligned_periods(_"ALARMS TRIGGERED", "<span color='green'>0</span>") .. "\n\n"
 	end
+	-- Sol'kan's folly occurred in 112 YW; it is now 331 YW
+	---@diagnostic disable-next-line: undefined-global
+	local date = os.date("!*t")
+	-- yes, this will roll over every new year but that's too small a detail to deal with
+	local hour_str = string.format("%.2i",date["hour"])
+	local min_str = string.format("%.2i", date["min"])
+	local sec_str = string.format("%.2i", date["sec"])
+	local time_interval = stringx.vformat(_"$d|d $h|h $m|m $s|s", {d=79935+date["yday"], h=hour_str, m=min_str, s=sec_str})
+	console_str = console_str .. insert_aligned_periods(_"TIME SINCE LAST LOGIN", time_interval) .. "\n"
 	console_str = console_str .. "</span>"
 	show_text_box_borderless_dialog(console_str)
 end
