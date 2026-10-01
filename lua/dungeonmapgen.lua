@@ -1,5 +1,7 @@
 wesnoth.dofile('~add-ons/Flight_Freedom/lua/graph_utils.lua')
 
+local dungeonmapgen = {}
+
 ------------------------
 ----- Room base class that implements room tracking, collision checking, and basic terrain painting
 ------------------------
@@ -16,12 +18,12 @@ wesnoth.dofile('~add-ons/Flight_Freedom/lua/graph_utils.lua')
 ---@field s_height integer #height of the room in s axis
 ---@field max_degree integer #maximum number of connections DungeonMapGen is allowed to make to this room, can be nil
 ---@field id string #arbitrary ID string, can be nil
-Room = {}
-Room.__index = Room
+dungeonmapgen.Room = {}
+dungeonmapgen.Room.__index = dungeonmapgen.Room
 
-function Room:new()
+function dungeonmapgen.Room:new()
 	local o = {}
-	setmetatable(o, Room)
+	setmetatable(o, dungeonmapgen.Room)
 	o.x1 = 0
 	o.y1 = 0
 	o.q = 0
@@ -37,21 +39,21 @@ end
 ---Set dimensions of this Room
 ---@param r_height integer #Dimension of the room in r axis (NE to SW)
 ---@param s_height integer #Dimension of the room in s axis (NW to SE)
-function Room:set_dimensions(r_height, s_height)
+function dungeonmapgen.Room:set_dimensions(r_height, s_height)
 	self.r_height = r_height
 	self.s_height = s_height
 end
 
 --Get dimensions of this Room
 ---@treturn {integer, integer} #Dimension of the room in r axis (NE to SW) and s axis (NW to SE)
-function Room:get_dimensions()
+function dungeonmapgen.Room:get_dimensions()
 	return {self.r_height, self.s_height}
 end
 
 ---Move a Room by its left corner (which will be part of its wall)
 ---@param x integer #x-coordinate of left corner
 ---@param y integer #y-coordinate of left corner
-function Room:set_left_corner(x, y)
+function dungeonmapgen.Room:set_left_corner(x, y)
 	self.x1 = x
 	self.y1 = y
 	local q, r, s = table.unpack(get_cubic({x, y}))
@@ -62,13 +64,13 @@ end
 
 ---Get coordinates of this Room's left corner
 ---@treturn {integer, integer} #hex of the Room's left corner
-function Room:left_corner()
+function dungeonmapgen.Room:left_corner()
 	return {self.x1, self.y1}
 end
 
 ---Get coordinates of this Room's top corner
 ---@treturn {integer, integer} #hex of the Room's top corner
-function Room:top_corner()
+function dungeonmapgen.Room:top_corner()
 	local q = self.q + (self.r_height - 1)
 	local r = self.r - (self.r_height - 1)
 	local s = self.s
@@ -77,7 +79,7 @@ end
 
 ---Get coordinates of this Room's bottom corner
 ---@treturn {integer, integer} #hex of the Room's bottom corner
-function Room:bottom_corner()
+function dungeonmapgen.Room:bottom_corner()
 	local q = self.q + (self.s_height - 1)
 	local r = self.r
 	local s = self.s - (self.s_height - 1)
@@ -86,7 +88,7 @@ end
 
 ---Get coordinates of this Room's right corner
 ---@treturn {integer, integer} #hex of the Room's right corner
-function Room:right_corner()
+function dungeonmapgen.Room:right_corner()
 	local q = self.q + (self.r_height - 1) + (self.s_height - 1)
 	local r = self.r - (self.r_height - 1)
 	local s = self.s - (self.s_height - 1)
@@ -96,7 +98,7 @@ end
 ---Get coordinates of this Room's approximate center tile
 ---If the Room's center would fall in between tiles, return one of the tiles that would border its center
 ---@treturn {integer, integer} #hex of the Room's approximate center tile
-function Room:get_approx_center()
+function dungeonmapgen.Room:get_approx_center()
 	local half_r_height = math.ceil(self.r_height / 2)
 	local half_s_height = math.ceil(self.s_height / 2)
 	local q = self.q + (half_r_height - 1) + (half_s_height - 1)
@@ -107,7 +109,7 @@ end
 
 ---Test if this Room would fit within the bounds of the map
 ---@return boolean
-function Room:fits_in_map()
+function dungeonmapgen.Room:fits_in_map()
 	local map_size_x = wesnoth.current.map.playable_width
 	local map_size_y = wesnoth.current.map.playable_height
 	local fits = true
@@ -133,14 +135,14 @@ end
 ---@param x integer
 ---@param y integer
 ---@return boolean
-function Room:contains_hex(x, y)
+function dungeonmapgen.Room:contains_hex(x, y)
 	local q1, r1, s1 = table.unpack(get_cubic({x, y}))
 	return r1 <= self.r and r1 >= (self.r - self.r_height + 1) and s1 <= self.s and s1 >= (self.s - self.s_height + 1)
 end
 
 ---Obtain list of the wall/edge hexes of this Room
 ---@treturn {integer, integer}[] list of wall/edge hexes
-function Room:get_edge_hexes()
+function dungeonmapgen.Room:get_edge_hexes()
 	local edge_hexes = {}
 	local x1 = self.x1
 	local x2 = self.x1 + (self.r_height - 1) + (self.s_height - 1)
@@ -177,7 +179,7 @@ end
 ---@treturn {integer, integer}[] #Hexes along the NE edge
 ---@treturn {integer, integer}[] #Hexes along the SW edge
 ---@treturn {integer, integer}[] #Hexes along the SE edge
-function Room:get_specific_edge_hexes()
+function dungeonmapgen.Room:get_specific_edge_hexes()
 	local nw_edge_hexes = {}
 	local ne_edge_hexes = {}
 	local sw_edge_hexes = {}
@@ -222,7 +224,7 @@ end
 
 ---Paint the Room's wall hexes with the specified terrain
 ---@param terrain string #The terrain code to paint
-function Room:set_wall_terrain(terrain)
+function dungeonmapgen.Room:set_wall_terrain(terrain)
 	local edge_hexes = self:get_edge_hexes()
 	for i, hex in ipairs(edge_hexes) do
 		local x1 = hex[1]
@@ -233,7 +235,7 @@ end
 
 ---Obtain list of the inner hexes (i.e. not part of the walls) of this Room
 ---@treturn {integer, integer}[] list of inner hexes
-function Room:get_inner_hexes()
+function dungeonmapgen.Room:get_inner_hexes()
 	local inner_hexes = {}
 	local x1 = self.x1
 	local x2 = self.x1 + (self.r_height - 1) + (self.s_height - 1)
@@ -269,7 +271,7 @@ end
 
 ---Paint the Room's inner hexes with the specified terrain
 ---@param terrain string #The terrain code to paint
-function Room:set_inner_terrain(terrain)
+function dungeonmapgen.Room:set_inner_terrain(terrain)
 	local inner_hexes = self:get_inner_hexes()
 	for i, hex in ipairs(inner_hexes) do
 		local x1 = hex[1]
@@ -282,7 +284,7 @@ end
 ---@param r1 Room
 ---@param r2 Room
 ---@return boolean
-Room.half_intersect = function(r1, r2)
+local room_half_intersect = function(r1, r2)
 	local intersects = false
 	local edge_hexes = r1:get_edge_hexes()
 	for i, hex in ipairs(edge_hexes) do
@@ -299,8 +301,8 @@ end
 ---Check if this Room intersects with another
 ---@param r2 Room
 ---@return boolean
-function Room:intersects_with(r2)
-	return (Room.half_intersect(self, r2) or Room.half_intersect(r2, self))
+function dungeonmapgen.Room:intersects_with(r2)
+	return (room_half_intersect(self, r2) or room_half_intersect(r2, self))
 end
 
 ---Obtain the approximate direction of Room r2 from this Room
@@ -311,7 +313,7 @@ end
 ---| "ne" #r2 is to the NE of this Room
 ---| "nw" #r2 is to the NW of this Room
 ---@return presenting_side string #The direction to Room r2
-function Room:presenting_side_to(r2)
+function dungeonmapgen.Room:presenting_side_to(r2)
 	-- find sides closest to each other
 	local center_x, center_y = table.unpack(self:get_approx_center())
 	local r2_center_x, r2_center_y = table.unpack(r2:get_approx_center())
@@ -331,7 +333,7 @@ end
 ---Find the shortest distance between any wall tile of this Room to any wall tile of Room r2
 ---@param r2 Room
 ---@return integer
-function Room:minimum_wall_distance(r2)
+function dungeonmapgen.Room:minimum_wall_distance(r2)
 	local presenting_side = self:presenting_side_to(r2)
 	local source_hex_list = nil
 	local dest_hex_list = nil
@@ -362,12 +364,12 @@ end
 
 ---Code to set up room before corridors are plotted
 ---Intended to be overriden by user-defined derived classes
-function Room:pre_corridor_setup()
+function dungeonmapgen.Room:pre_corridor_setup()
 end
 
 ---Code to set up room after corridors are plotted
 ---Intended to be overriden by user-defined derived classes
-function Room:post_corridor_setup()
+function dungeonmapgen.Room:post_corridor_setup()
 end
 
 ------------------------
@@ -376,10 +378,10 @@ end
 
 ---@class DungeonMapGen
 ---@field rooms_list Room[]
-DungeonMapGen = {}
-DungeonMapGen.__index = DungeonMapGen
+dungeonmapgen.DungeonMapGen = {}
+dungeonmapgen.DungeonMapGen.__index = dungeonmapgen.DungeonMapGen
 
-function DungeonMapGen:new()
+function dungeonmapgen.DungeonMapGen:new()
 	local o = {}
 	setmetatable(o, self)
 	o.rooms_list = {}
@@ -387,19 +389,53 @@ function DungeonMapGen:new()
 	o.dungeon_min_y = 1
 	o.dungeon_max_x = wesnoth.current.map.playable_width
 	o.dungeon_max_y = wesnoth.current.map.playable_height
+	o.min_corridor_width = 2
+	o.max_corridor_width = 2
+	o.straight_corridor_dist = 6
+	o.wall_terrain_prefix = "X"
+	o.corridor_floor_terrain = "Isa"
 	return o
 end
 
 ---Make this DungeonMapGen aware of a new Room
 ---@param room Room
-function DungeonMapGen:register_room(room)
+function dungeonmapgen.DungeonMapGen:register_room(room)
 	table.insert(self.rooms_list, room)
 end
 
 ---Obtain the list of currently registered Rooms
 ---@return Room[]
-function DungeonMapGen:get_rooms_list()
+function dungeonmapgen.DungeonMapGen:get_rooms_list()
 	return self.rooms_list
+end
+
+---Set range of possible corridor widths (in hexes)
+---@param min integer #Minimum corridor width
+---@param max integer #Maximum corridor width
+function dungeonmapgen.DungeonMapGen:set_corridor_width_range(min, max)
+	self.min_corridor_width = min
+	self.max_corridor_width = max
+end
+
+---Set the maximum distance (in hexes) to connect rooms with straight corridors
+---Rooms separated by more than this distance will be connected with angled corridors
+---@param max_straight_dist integer #Maximum straight connection distance
+function dungeonmapgen.DungeonMapGen:set_max_straight_corridor_dist(max_straight_dist)
+	self.straight_corridor_dist = max_straight_dist
+end
+
+---Set a custom wall terrain prefix; by default this is 'X'
+---Corridors will only paint over this wall terrain
+---@param prefix string #Terrain code prefix for wall
+function dungeonmapgen.DungeonMapGen:set_wall_prefix(prefix)
+	self.wall_terrain_prefix = prefix
+end
+
+---Set the terrain to paint corridors with
+---CAUTION: wall terrain prefix must not be a prefix of this terrain!
+---@param corridor_terrain string #Terrain code for corridors
+function dungeonmapgen.DungeonMapGen:set_corridor_floor_terrain(corridor_terrain)
+	self.corridor_floor_terrain = corridor_terrain
 end
 
 ---Constrain the dungeon to the specified hexes
@@ -408,7 +444,7 @@ end
 ---@param max_x integer #Maximum x coordinate for the dungeon
 ---@param min_y integer #Minimum y coordinate for the dungeon
 ---@param max_y integer #Maximum y coordinate for the dungeon
-function DungeonMapGen:set_boundaries(min_x, max_x, min_y, max_y)
+function dungeonmapgen.DungeonMapGen:set_boundaries(min_x, max_x, min_y, max_y)
 	self.dungeon_min_x = min_x
 	self.dungeon_max_x = max_x
 	self.dungeon_min_y = min_y
@@ -419,7 +455,7 @@ end
 ---Differs from Room:fits_in_map() as that function checks if the room fits anywhere in the entire map
 ---@param room Room #The Room to check
 ---@return boolean #true if room fits, otherwise returns false
-function DungeonMapGen:room_fits(room)
+function dungeonmapgen.DungeonMapGen:room_fits(room)
 	local fits = true
 	local x1, y1 = table.unpack(room:left_corner())
 	if (x1 < self.dungeon_min_x) or (y1 < self.dungeon_min_y) or (x1 > self.dungeon_max_x) or (y1 > self.dungeon_max_y) then
@@ -450,7 +486,7 @@ end
 ---@param max_y integer #Maximum y coordinate for Room's left corner
 ---@param essential boolean #If false, then give up after 200 attempts to find a suitable positioning
 ---@return boolean #true if room placed, otherwise returns false
-function DungeonMapGen:find_room_placement(room, min_x, max_x, min_y, max_y, essential)
+function dungeonmapgen.DungeonMapGen:find_room_placement(room, min_x, max_x, min_y, max_y, essential)
 	local attempts = 0
 	local max_attempts = 200
 	local placed = false
@@ -490,7 +526,7 @@ end
 ---@param room Room #The Room (or more likely an instance of a Room subclass) to be placed
 ---@param essential boolean #If false, then give up after 200 attempts to find a suitable positioning
 ---@return boolean #true if room placed, otherwise returns false
-function DungeonMapGen:find_placement_anywhere(room, essential)
+function dungeonmapgen.DungeonMapGen:find_placement_anywhere(room, essential)
 	return self:find_room_placement(room, 1, 999, 1, 999, essential)
 end
 
@@ -506,7 +542,7 @@ end
 ---| "se" #Extend the corridor SE
 ---@param inst_list instruction[] #List of instructions to extend the tunnel
 ---@treturn {integer, integer}[] the hexes along the specified corridor
-function DungeonMapGen:plot_corridor(q, r, s, corridor_width, inst_list)
+function dungeonmapgen.DungeonMapGen:plot_corridor(q, r, s, corridor_width, inst_list)
 	local corridor_tiles = {}
 	local half_corridor_width = math.floor(corridor_width / 2)
 	-- q, r, s track center of coordinate and vary along its length
@@ -574,11 +610,10 @@ end
 
 ---Calculate and paint corridors between all registered Rooms
 ---Any Room with max_degree set will have no more than that number of connecting corridors
----Note: corridors will only paint over wall terrain (i.e. terrain codes that begin with 'X')
----@param terrain_type string #The terrain code to paint
+---Note: corridors will only paint over wall terrain
 ---@return Graph #Graph object containing connections between Rooms. Node indices correspond to the order of registered Rooms in the DungeonMapGen object.
 ---@return boolean #true if algorithm was able to connect all rooms, otherwise false
-function DungeonMapGen:place_corridors(terrain_type)
+function dungeonmapgen.DungeonMapGen:place_corridors()
 	local current_rooms = self.rooms_list
 	-- build graph of all rooms
 	local num_rooms = #current_rooms
@@ -646,8 +681,10 @@ function DungeonMapGen:place_corridors(terrain_type)
 								local corridor_attempts = 0
 								while not corridor_created do
 									corridor_created = true
-									local corridor_width = 2 -- mathx.random(2, 3)
-									local half_corridor_width = math.floor(corridor_width / 2)
+									local corridor_width = self.min_corridor_width
+									if self.min_corridor_width ~= self.max_corridor_width then
+										corridor_width = mathx.random(self.min_corridor_width, self.max_corridor_width)
+									end
 									local presenting_side = presenting_side_cache[origin_room_num][i]
 									local source_hex_list = nil
 									local dest_hex_list = nil
@@ -681,7 +718,7 @@ function DungeonMapGen:place_corridors(terrain_type)
 									local dest_hex = nil
 									-- if rooms are sufficiently close try to find a straight path
 									local min_wall_dist = min_dist_cache[origin_room_num][i]
-									if min_wall_dist <= 6 then
+									if min_wall_dist <= self.straight_corridor_dist then
 										for j, hex1 in ipairs(source_hex_list) do
 											local q1, r1, s1 = table.unpack(get_cubic(hex1))
 											for k = 1, min_wall_dist do
@@ -831,8 +868,8 @@ function DungeonMapGen:place_corridors(terrain_type)
 										end
 									end
 									-- only overwrite wall terrains
-									if string.sub(wesnoth.current.map[{hex_x, hex_y}], 1, 1) == "X" then
-										wesnoth.current.map[{hex_x, hex_y}] = terrain_type
+									if string.sub(wesnoth.current.map[{hex_x, hex_y}], 1, #self.wall_terrain_prefix) == self.wall_terrain_prefix then
+										wesnoth.current.map[{hex_x, hex_y}] = self.corridor_floor_terrain
 									end
 									connect_attempts = 0
 								end
@@ -857,24 +894,33 @@ function DungeonMapGen:place_corridors(terrain_type)
 end
 
 ---Execute the pre_corridor_setup of all registered Rooms
-function DungeonMapGen:pre_corridor_setup()
+function dungeonmapgen.DungeonMapGen:pre_corridor_setup()
 	for i, r in ipairs(self.rooms_list) do
 		r:pre_corridor_setup()
 	end
 end
 
 ---Execute the post_corridor_setup of all registered Rooms
-function DungeonMapGen:post_corridor_setup()
+function dungeonmapgen.DungeonMapGen:post_corridor_setup()
 	for i, r in ipairs(self.rooms_list) do
 		r:post_corridor_setup()
 	end
 end
 
+---Convenience method to execute pre-corridor setup, place corridors, then post-corridor setup
+function dungeonmapgen.DungeonMapGen:generate()
+	self:pre_corridor_setup()
+	self:place_corridors()
+	self:post_corridor_setup()
+end
+
 ---For debug purposes, label rooms in map
 ---Requires room.id to be set for every Room
-function DungeonMapGen:label_rooms()
+function dungeonmapgen.DungeonMapGen:label_rooms()
 	for i, room in ipairs(self.rooms_list) do
 		local center_x, center_y = table.unpack(room:get_approx_center())
 		wesnoth.map.add_label({x=center_x, y=center_y, text=room.id})
 	end
 end
+
+return dungeonmapgen

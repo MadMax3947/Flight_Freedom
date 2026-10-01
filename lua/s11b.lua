@@ -3,7 +3,7 @@
 local _ = wesnoth.textdomain "wesnoth-Flight_Freedom"
 
 local functional = wesnoth.require("functional")
-wesnoth.dofile('~add-ons/Flight_Freedom/lua/dungeonmapgen.lua')
+local dungeonmapgen = wesnoth.require('~add-ons/Flight_Freedom/lua/dungeonmapgen.lua')
 
 ------------------------
 ----- dynamic difficulty handling functions
@@ -157,11 +157,11 @@ end
 ------------------------
 
 StartRoom = {}
-setmetatable(StartRoom, {__index = Room})
+setmetatable(StartRoom, {__index = dungeonmapgen.Room})
 StartRoom.__index = StartRoom
 
 function StartRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o:set_dimensions(8, 8)
 	return o
@@ -191,11 +191,11 @@ function StartRoom:initial_setup()
 end
 
 ControlRoom = {}
-setmetatable(ControlRoom, {__index = Room})
+setmetatable(ControlRoom, {__index = dungeonmapgen.Room})
 ControlRoom.__index = ControlRoom
 
 function ControlRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o:set_dimensions(11, 9)
 	return o
@@ -245,11 +245,11 @@ function ControlRoom:pre_corridor_setup()
 end
 
 OrbRoom = {}
-setmetatable(OrbRoom, {__index = Room})
+setmetatable(OrbRoom, {__index = dungeonmapgen.Room})
 OrbRoom.__index = OrbRoom
 
 function OrbRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o.color = ""
 	o:set_dimensions(5, 5)
@@ -279,11 +279,11 @@ function OrbRoom:pre_corridor_setup()
 end
 
 LibraryRoom = {}
-setmetatable(LibraryRoom, {__index = Room})
+setmetatable(LibraryRoom, {__index = dungeonmapgen.Room})
 LibraryRoom.__index = LibraryRoom
 
 function LibraryRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o:set_dimensions(12, 7)
 	return o
@@ -383,11 +383,11 @@ end
 
 -- Sol'kan's living quarters
 BedRoom = {}
-setmetatable(BedRoom, {__index = Room})
+setmetatable(BedRoom, {__index = dungeonmapgen.Room})
 BedRoom.__index = BedRoom
 
 function BedRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o:set_dimensions(7, 5)
 	return o
@@ -422,11 +422,11 @@ function BedRoom:pre_corridor_setup()
 end
 
 PrisonRoom = {}
-setmetatable(PrisonRoom, {__index = Room})
+setmetatable(PrisonRoom, {__index = dungeonmapgen.Room})
 PrisonRoom.__index = PrisonRoom
 
 function PrisonRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o:set_dimensions(12, 9)
 	return o
@@ -501,11 +501,11 @@ function PrisonRoom:pre_corridor_setup()
 end
 
 OperatingRoom = {}
-setmetatable(OperatingRoom, {__index = Room})
+setmetatable(OperatingRoom, {__index = dungeonmapgen.Room})
 OperatingRoom.__index = OperatingRoom
 
 function OperatingRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o:set_dimensions(9, 10)
 	return o
@@ -548,11 +548,11 @@ function OperatingRoom:post_corridor_setup()
 end
 
 WorkshopRoom = {}
-setmetatable(WorkshopRoom, {__index = Room})
+setmetatable(WorkshopRoom, {__index = dungeonmapgen.Room})
 WorkshopRoom.__index = WorkshopRoom
 
 function WorkshopRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o:set_dimensions(9, 9)
 	return o
@@ -574,11 +574,11 @@ function WorkshopRoom:pre_corridor_setup()
 end
 
 UndeadRoom = {}
-setmetatable(UndeadRoom, {__index = Room})
+setmetatable(UndeadRoom, {__index = dungeonmapgen.Room})
 UndeadRoom.__index = UndeadRoom
 
 function UndeadRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	o.undead_levels = {}
 	return o
@@ -634,11 +634,11 @@ function UndeadRoom:pre_corridor_setup()
 end
 
 MessHallRoom = {}
-setmetatable(MessHallRoom, {__index = Room})
+setmetatable(MessHallRoom, {__index = dungeonmapgen.Room})
 MessHallRoom.__index = MessHallRoom
 
 function MessHallRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	return o
 end
@@ -674,11 +674,11 @@ function MessHallRoom:post_corridor_setup()
 end
 
 SupplyRoom = {}
-setmetatable(SupplyRoom, {__index = Room})
+setmetatable(SupplyRoom, {__index = dungeonmapgen.Room})
 SupplyRoom.__index = SupplyRoom
 
 function SupplyRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	return o
 end
@@ -705,11 +705,11 @@ function SupplyRoom:pre_corridor_setup()
 end
 
 ClassRoom = {}
-setmetatable(ClassRoom, {__index = Room})
+setmetatable(ClassRoom, {__index = dungeonmapgen.Room})
 ClassRoom.__index = ClassRoom
 
 function ClassRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	return o
 end
@@ -740,11 +740,11 @@ function ClassRoom:pre_corridor_setup()
 end
 
 EmptyRoom = {}
-setmetatable(EmptyRoom, {__index = Room})
+setmetatable(EmptyRoom, {__index = dungeonmapgen.Room})
 EmptyRoom.__index = EmptyRoom
 
 function EmptyRoom:new()
-	local o = Room:new()
+	local o = dungeonmapgen.Room:new()
 	setmetatable(o, self)
 	return o
 end
@@ -1137,7 +1137,7 @@ end
 function randomize_scenario()
 	local map_size_x = wesnoth.current.map.playable_width
 	local map_size_y = wesnoth.current.map.playable_height
-	local mapgen = DungeonMapGen:new()
+	local mapgen = dungeonmapgen.DungeonMapGen:new()
 
 	local num_orb_rooms = 5
 	if wesnoth.scenario.difficulty == "EASY" then
@@ -1165,9 +1165,8 @@ function randomize_scenario()
 	place_random_rooms(mapgen, num_random_rooms, num_undead_per_room, num_undead_rooms)
 	place_messhall_room(mapgen)
 
-	mapgen:pre_corridor_setup()
-	mapgen:place_corridors("Isa")
-	mapgen:post_corridor_setup()
+	mapgen:set_corridor_floor_terrain("Isa")
+	mapgen:generate()
 
 	-- scatter healing and damage glyphs
 	local healing_glyphs = place_healing_glyphs(mapgen:get_rooms_list(), num_healing_glyphs)
@@ -1385,6 +1384,8 @@ end
 
 local function insert_aligned_periods(string1, string2, total_length)
 	total_length = total_length or 45
+	string1 = string1 or ""
+	string2 = string2 or ""
 	local post_po_string1 = stringx.vformat("$s",{s=string1})
 	local post_po_string2 = stringx.vformat("$s",{s=string2})
 	local current_periods = total_length - utf8.len(strip_pango_markup(post_po_string1)) - utf8.len(strip_pango_markup(post_po_string2))
@@ -1438,11 +1439,12 @@ function wesnoth.wml_actions.display_console_screen(cfg)
 	---@diagnostic disable-next-line: undefined-global
 	local date = os.date("!*t")
 	-- yes, this will roll over every new year but that's too small a detail to deal with
+	-- it's also purely cosmetic so does not need to be consistent across replays
 	local hour_str = string.format("%.2i",date["hour"])
 	local min_str = string.format("%.2i", date["min"])
 	local sec_str = string.format("%.2i", date["sec"])
 	local time_interval = stringx.vformat(_"$d|d $h|h $m|m $s|s", {d=79935+date["yday"], h=hour_str, m=min_str, s=sec_str})
-	console_str = console_str .. insert_aligned_periods(_"TIME SINCE LAST LOGIN", time_interval) .. "\n"
+	console_str = console_str .. insert_aligned_periods(_"KERNEL UPTIME", time_interval) .. "\n"
 	console_str = console_str .. "</span>"
 	show_text_box_borderless_dialog(console_str)
 end
