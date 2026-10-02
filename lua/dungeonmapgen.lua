@@ -12,8 +12,8 @@
 --    pre_corridor_setup(), place_corridors(), and post_corridor_setup().
 --    FtF's scenario 11B (Sol'kan's Lair) offers an example usage.
 
-local graph_utils = wesnoth.require('graph_utils')
-local hexutils = wesnoth.require('hexutils')
+local graph_utils = wesnoth.require("graph_utils")
+local hexutils = wesnoth.require("hexutils")
 local dungeonmapgen = {}
 
 local get_cubic = hexutils.get_cubic

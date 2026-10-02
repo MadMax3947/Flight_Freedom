@@ -1,6 +1,6 @@
 -- Lua code used by scenario 11A (River of Skulls)
 
-local graph_utils = wesnoth.require('~add-ons/Flight_Freedom/lua/graph_utils.lua')
+local graph_utils = wesnoth.require("graph_utils")
 
 local start_node = 1
 local dest_node = 23

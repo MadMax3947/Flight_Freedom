@@ -1,7 +1,7 @@
 -- Lua code used by scenario 7A (The Open Ocean)
 
-local hexutils = wesnoth.require('hexutils')
-local simplex = wesnoth.require('simplex')
+local hexutils = wesnoth.require("hexutils")
+local simplex = wesnoth.require("simplex")
 
 StormHandler = {
 	-- lower threshold corresponds to more lightning

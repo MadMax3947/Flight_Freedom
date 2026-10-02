@@ -3,8 +3,8 @@
 local _ = wesnoth.textdomain "wesnoth-Flight_Freedom"
 
 local functional = wesnoth.require("functional")
-local hexutils = wesnoth.require('hexutils')
-local dungeonmapgen = wesnoth.require('~add-ons/Flight_Freedom/lua/dungeonmapgen.lua')
+local hexutils = wesnoth.require("hexutils")
+local dungeonmapgen = wesnoth.require("dungeonmapgen")
 
 local get_cubic = hexutils.get_cubic
 local from_cubic = hexutils.from_cubic
