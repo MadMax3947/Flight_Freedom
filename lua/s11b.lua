@@ -532,8 +532,12 @@ function OperatingRoom:post_corridor_setup()
 	r = r - 2
 	item_x, item_y = table.unpack(from_cubic(q, r, s))
 	wesnoth.interface.add_item_image(item_x, item_y, "scenery/sink-metal.png")
-	q = q - 4
-	s = s + 4
+	q = q - 3
+	s = s + 3
+	item_x, item_y = table.unpack(from_cubic(q, r, s))
+	wesnoth.interface.add_item_image(item_x, item_y, "scenery/ivpole.png")
+	q = q - 1
+	s = s + 1
 	item_x, item_y = table.unpack(from_cubic(q, r, s))
 	wesnoth.interface.add_item_image(item_x, item_y, "scenery/cabinet-metal.png")
 	q = q - 2
