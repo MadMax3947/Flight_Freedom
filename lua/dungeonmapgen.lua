@@ -684,7 +684,7 @@ function dungeonmapgen.Generator:place_corridors()
 		-- so that far-away rooms eventually do get connected
 		local max_ray_length = starting_max_ray_length + math.floor(rays_failed / 100)
 		while casting_ray do
-			local test_x, test_y = hexutils.find_offset_hex_polar(center_x, center_y, radius, theta)
+			local test_x, test_y = hexutils.find_offset_hex_polar_cartesian(center_x, center_y, radius, theta)
 			if test_x >= self.dungeon_min_x and test_x <= self.dungeon_max_x and test_y >= self.dungeon_min_y and test_y <= self.dungeon_max_y and radius <= max_ray_length then
 				--print("Eval hex: " .. tostring(test_x) .. ", " .. tostring(test_y))
 				for i = 1, num_rooms do
