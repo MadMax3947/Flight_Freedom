@@ -732,8 +732,8 @@ function dungeonmapgen.Generator:place_corridors()
 									table.remove(source_hex_list, 1)
 									table.remove(dest_hex_list)
 									table.remove(dest_hex_list, 1)
-									mathx.shuffle(source_hex_list)
-									mathx.shuffle(dest_hex_list)
+									mathx.shuffle(source_hex_list, random)
+									mathx.shuffle(dest_hex_list, random)
 									local source_hex = nil
 									local dest_hex = nil
 									-- if rooms are sufficiently close try to find a straight path
@@ -946,7 +946,7 @@ end
 ---to allow for different random function, e.g. deterministic unit testing
 ---by calling math.randomseed() and passing math.random()
 function dungeonmapgen.set_rng(rng_func)
-	dungeonmapgen.random = rng_func
+	random = rng_func
 end
 
 return dungeonmapgen
