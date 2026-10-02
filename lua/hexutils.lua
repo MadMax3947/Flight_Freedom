@@ -33,7 +33,7 @@ end
 function hexutils.angle_between_hexes_cartesian(x1, y1, x2, y2)
 	local x1_cartesian, y1_cartesian = hexutils.hex_to_cartesian_space(x1, y1)
 	local x2_cartesian, y2_cartesian = hexutils.hex_to_cartesian_space(x2, y2)
-	local theta = math.atan(math.abs(y2_cartesian - y1_cartesian) / math.abs(x2_cartesian - x1_cartesian))
+	local theta = math.atan(math.abs(y2_cartesian - y1_cartesian), math.abs(x2_cartesian - x1_cartesian))
 	-- y2 reversed here to account for flipped Y axis
 	if x1_cartesian >= x2_cartesian and y2_cartesian <= y1_cartesian then -- quadrant II
 		theta = math.pi - theta
