@@ -3,7 +3,11 @@
 local _ = wesnoth.textdomain "wesnoth-Flight_Freedom"
 
 local functional = wesnoth.require("functional")
+local hexutils = wesnoth.require('hexutils')
 local dungeonmapgen = wesnoth.require('~add-ons/Flight_Freedom/lua/dungeonmapgen.lua')
+
+local get_cubic = hexutils.get_cubic
+local from_cubic = hexutils.from_cubic
 
 ------------------------
 ----- dynamic difficulty handling functions
@@ -688,7 +692,7 @@ function SupplyRoom:pre_corridor_setup()
 	local center_hex = self:get_approx_center()
 	local hexes = self:get_inner_hexes()
 	for i, hex in ipairs(hexes) do
-		local distance = cartesian_distance_between_hexes(center_hex[1], center_hex[2], hex[1], hex[2])
+		local distance = hexutils.cartesian_distance_between_hexes(center_hex[1], center_hex[2], hex[1], hex[2])
 		local thingy_prob = norm_pdf(distance, 0, 4) * 4.0
 		if mathx.random() < thingy_prob then
 			local item = mathx.random_choice{
@@ -1549,13 +1553,13 @@ function wesnoth.wml_actions.engine_activation_sequence(cfg)
 		wesnoth.interface.delay(200)
 		wesnoth.wml_actions.redraw{}
 	end
-	local theta = find_angle_between_hexes(machine_x, machine_y, unit_x, unit_y)
+	local theta = hexutils.find_angle_between_hexes(machine_x, machine_y, unit_x, unit_y)
 	local retreat_x = nil
 	local retreat_y = nil
 	-- in case player debug-teleports to the machine
 	if unit_x ~= machine_x or unit_y ~= machine_y then
 		for i = 1, 10 do
-			local test_x, test_y = find_offset_hex_polar(machine_x, machine_y, i, theta)
+			local test_x, test_y = hexutils.find_offset_hex_polar(machine_x, machine_y, i, theta)
 			local terrain_code = wesnoth.current.map[{test_x, test_y}]
 			if retreat_x == nil and terrain_code == "Fypd" then
 				-- first hex outside machine along a line from machine center to unit's position
@@ -1620,10 +1624,10 @@ function wesnoth.wml_actions.engine_activation_sequence(cfg)
 	local throw_x = nil
 	local throw_y = nil
 	local throw_steps = nil
-	theta = find_angle_between_hexes(machine_x, machine_y, retreat_x, retreat_y)
+	theta = hexutils.find_angle_between_hexes(machine_x, machine_y, retreat_x, retreat_y)
 	local hit_wall = false
 	for i = 1, 16 do
-		local test_x, test_y = find_offset_hex_polar(retreat_x, retreat_y, (i / 2.0), theta)
+		local test_x, test_y = hexutils.find_offset_hex_polar(retreat_x, retreat_y, (i / 2.0), theta)
 		local terrain_code = wesnoth.current.map[{test_x, test_y}]
 		if string.sub(terrain_code, 1, 1) == "X" then
 			hit_wall = true

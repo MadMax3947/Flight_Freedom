@@ -1,72 +1,4 @@
-
-local function calc_image_hex_offset(hex_x, hex_y, x, y)
-	-- given a reference hex and an offset in pixels
-	-- find the hex closest to the target and adjust the offset to be relative to that hex
-	-- returns the new hex coordinates followed by the new pixel offset
-	local hex_off_x = math.floor((x + 27) / 54)
-	local k = 0
-	if math.abs(hex_off_x) % 2 == 1 then
-		if math.abs(hex_x) % 2 == 0 then
-			k = 36
-		else
-			y = y - 36
-		end
-	end
-	local hex_off_y = math.floor((y + 36) / 72)
-	local new_x = x - hex_off_x * 54
-	local new_y = y - (hex_off_y * 72) + k
-	if new_y > 36 then
-		new_y = new_y - 72
-		hex_off_y = hex_off_y+1
-	end
-
-	return hex_x+hex_off_x, hex_y+hex_off_y, new_x, new_y
-end
-
---[=[
-[find_offset_hex_polar]
-Author: MadMax (username on the Battle for Wesnoth forum)
-
-Calculates the closest hex from an origin hex and an offest in polar coordinates.
-
-Required keys:
-origin_x, origin_y: the first tile
-radius: vector length in tiles
-theta: angle in radians; note that this is counterclockwise (i.e. not with reversed Y-axis)
-
-Optional keys:
-new_x_variable, new_y_variable: variable names to store new hex coordinates
-	If not specified, will default to "new_x" and "new_y" respectively
-
-Example:
-[find_offset_hex_polar]
-	origin_x=30
-	origin_y=10
-	radius=9
-	theta=$(pi()/4)
-[/find_offset_hex_polar]
-]=]
-
-function find_offset_hex_polar(origin_x, origin_y, radius, theta)
-	local radius = radius * 72.0
-	local theta = theta * -1
-	local offset_x = math.cos(theta) * radius
-	local offset_y = math.sin(theta) * radius
-	local new_x,new_y = calc_image_hex_offset(origin_x, origin_y, offset_x, offset_y)
-	return new_x, new_y
-end
-
-function wesnoth.wml_actions.find_offset_hex_polar(cfg)
-	local origin_x = tonumber(cfg.origin_x)
-	local origin_y = tonumber(cfg.origin_y)
-	local radius = tonumber(cfg.radius)
-	local theta = tonumber(cfg.theta)
-	local new_x, new_y = find_offset_hex_polar(origin_x, origin_y, radius, theta)
-	local new_x_varname = cfg.new_x_variable or "new_x"
-	local new_y_varname = cfg.new_y_variable or "new_y"
-	wml.variables[new_x_varname] = new_x
-	wml.variables[new_y_varname] = new_y
-end
+local hexutils = wesnoth.require("hexutils")
 
 --[=[
 [animate_path]
@@ -557,7 +489,7 @@ function wesnoth.wml_actions.animate_path(cfg)
 			if animation[j].transpose then
 				x, y = y, x
 			end
-			animation[j].target_hex_x, animation[j].target_hex_y, x, y = calc_image_hex_offset(animation[j].hex_x,animation[j].hex_y,x,y)
+			animation[j].target_hex_x, animation[j].target_hex_y, x, y = hexutils.calc_image_hex_offset(animation[j].hex_x,animation[j].hex_y,x,y)
 			animation[j].image_name = get_image_name_with_offset(x, y, animation[j].images[i%animation[j].num_images])
 			wesnoth.interface.add_hex_overlay(animation[j].target_hex_x, animation[j].target_hex_y, {
 				x = animation[j].target_hex_x,

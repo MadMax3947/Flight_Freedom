@@ -12,8 +12,14 @@
 --    pre_corridor_setup(), place_corridors(), and post_corridor_setup().
 --    FtF's scenario 11B (Sol'kan's Lair) offers an example usage.
 
-local graph_utils = wesnoth.require('~add-ons/Flight_Freedom/lua/graph_utils.lua')
+local graph_utils = wesnoth.require('graph_utils')
+local hexutils = wesnoth.require('hexutils')
 local dungeonmapgen = {}
+
+local get_cubic = hexutils.get_cubic
+local from_cubic = hexutils.from_cubic
+
+local random = mathx.random
 
 ------------------------
 ----- Room base class that implements room tracking, collision checking, and basic terrain painting
@@ -60,6 +66,7 @@ end
 --Get dimensions of this Room
 ---@treturn {integer, integer} #Dimension of the room in r axis (NE to SW) and s axis (NW to SE)
 function dungeonmapgen.Room:get_dimensions()
+	-- in general, we return tables rather than multiple values to match wesnoth's native cubic coordinate functions
 	return {self.r_height, self.s_height}
 end
 
@@ -510,8 +517,8 @@ function dungeonmapgen.Generator:find_room_placement(room, min_x, max_x, min_y, 
 	min_y = math.max(min_y, math.floor(r_height / 2) + (self.dungeon_min_y - 1))
 	max_y = math.min(max_y, self.dungeon_max_y - math.floor(s_height / 2))
 	while not placed do
-		local x1 = mathx.random(min_x, max_x)
-		local y1 = mathx.random(min_y, max_y)
+		local x1 = random(min_x, max_x)
+		local y1 = random(min_y, max_y)
 		room:set_left_corner(x1, y1)
 		if self:room_fits(room) then
 			local intersects = false
@@ -660,7 +667,7 @@ function dungeonmapgen.Generator:place_corridors()
 		local origin_room_num = nil
 		local origin_room = nil
 		while not origin_room_selected do
-			origin_room_num = mathx.random(1, num_rooms)
+			origin_room_num = random(1, num_rooms)
 			origin_room = current_rooms[origin_room_num]
 			if origin_room.max_degree == nil or graph:degree(origin_room_num) < origin_room.max_degree then
 				origin_room_selected = true
@@ -669,7 +676,7 @@ function dungeonmapgen.Generator:place_corridors()
 		assert(origin_room)
 		local center_x, center_y = table.unpack(origin_room:get_approx_center())
 		--print("Source hex: " .. tostring(center_x) .. ", " .. tostring(center_y))
-		local theta = mathx.random() * math.pi * 2.0
+		local theta = random() * math.pi * 2.0
 		--print("Theta: " .. (theta * 180.0 / math.pi))
 		local radius = 1
 		local casting_ray = true
@@ -677,7 +684,7 @@ function dungeonmapgen.Generator:place_corridors()
 		-- so that far-away rooms eventually do get connected
 		local max_ray_length = starting_max_ray_length + math.floor(rays_failed / 100)
 		while casting_ray do
-			local test_x, test_y = find_offset_hex_polar(center_x, center_y, radius, theta)
+			local test_x, test_y = hexutils.find_offset_hex_polar(center_x, center_y, radius, theta)
 			if test_x >= self.dungeon_min_x and test_x <= self.dungeon_max_x and test_y >= self.dungeon_min_y and test_y <= self.dungeon_max_y and radius <= max_ray_length then
 				--print("Eval hex: " .. tostring(test_x) .. ", " .. tostring(test_y))
 				for i = 1, num_rooms do
@@ -696,7 +703,7 @@ function dungeonmapgen.Generator:place_corridors()
 									corridor_created = true
 									local corridor_width = self.min_corridor_width
 									if self.min_corridor_width ~= self.max_corridor_width then
-										corridor_width = mathx.random(self.min_corridor_width, self.max_corridor_width)
+										corridor_width = random(self.min_corridor_width, self.max_corridor_width)
 									end
 									local presenting_side = presenting_side_cache[origin_room_num][i]
 									local source_hex_list = nil
@@ -773,7 +780,7 @@ function dungeonmapgen.Generator:place_corridors()
 									local s_dist = s2 - s1
 									local inst = {}
 									-- middle direction occurs anywhere from 25% to 75% of the way down corridor
-									local first_prop = mathx.random() * 0.5 + 0.25
+									local first_prop = random() * 0.5 + 0.25
 									if presenting_side == "sw" or presenting_side == "ne" then
 										-- connecting SW:NE, so move in r, then s, then r
 										local r1 = math.floor(r_dist * first_prop)
@@ -934,6 +941,12 @@ function dungeonmapgen.Generator:label_rooms()
 		local center_x, center_y = table.unpack(room:get_approx_center())
 		wesnoth.map.add_label({x=center_x, y=center_y, text=room.id})
 	end
+end
+
+---to allow for different random function, e.g. deterministic unit testing
+---by calling math.randomseed() and passing math.random()
+function dungeonmapgen.set_rng(rng_func)
+	dungeonmapgen.random = rng_func
 end
 
 return dungeonmapgen

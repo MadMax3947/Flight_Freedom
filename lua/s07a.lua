@@ -1,6 +1,7 @@
 -- Lua code used by scenario 7A (The Open Ocean)
 
-local simplex = wesnoth.require('~add-ons/Flight_Freedom/lua/simplex.lua')
+local hexutils = wesnoth.require('hexutils')
+local simplex = wesnoth.require('simplex')
 
 StormHandler = {
 	-- lower threshold corresponds to more lightning
@@ -46,7 +47,7 @@ function StormHandler:rational_sigmoid(x, k)
 end
 
 function StormHandler:noise_2d(hex_x, hex_y)
-	local x_pixel, y_pixel = hex_to_cartesian_space(hex_x, hex_y)
+	local x_pixel, y_pixel = hexutils.hex_to_cartesian_space(hex_x, hex_y)
 	local x = (x_pixel * self.cloud_scale_x) + wml.variables["x_offset"]
 	local y = (y_pixel * self.cloud_scale_y) + wml.variables["y_offset"]
 	-- simplex noise ranges [-1, 1]; we want our average to be 0.5
@@ -56,7 +57,7 @@ end
 
 -- by moving linearly down the z-axis can simulate cloud shifts
 function StormHandler:noise_3d(hex_x, hex_y, time_z)
-	local x_pixel, y_pixel = hex_to_cartesian_space(hex_x, hex_y)
+	local x_pixel, y_pixel = hexutils.hex_to_cartesian_space(hex_x, hex_y)
 	local x = (x_pixel * self.cloud_scale_x) + wml.variables["x_offset"]
 	local y = (y_pixel * self.cloud_scale_y) + wml.variables["y_offset"]
 	local z = (time_z * self.time_scale) + wml.variables["z_offset"]

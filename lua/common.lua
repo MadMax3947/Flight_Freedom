@@ -39,48 +39,6 @@ function trunc(n)
 	end
 end
 
--- useful reference for cubic grid math: https://www.redblobgames.com/grids/hexagons/
--- wesnoth is even-q
-
--- since mainline wesnoth.map.from_cubic is broken as of 1.19.13, reimplement it here
--- (c++ backend expects a cubic_location struct which isn't accessible to lua)
-function from_cubic(q, r, s)
-	local x = q
-	local y = r + trunc((q + (math.abs(q) % 2)) / 2)
-	return({x, y})
-end
-
-get_cubic = wesnoth.map.get_cubic
-
-function hex_to_cartesian_space(x, y)
-	local q, r, s = table.unpack(get_cubic({x, y}))
-	local x_pixel = 1.5 * q / math.sqrt(3.0)
-	local y_pixel = ((q / 2.0) + r)
-	return x_pixel, y_pixel
-end
-
-function find_angle_between_hexes(x1, y1, x2, y2)
-	local x1_pixel, y1_pixel = hex_to_cartesian_space(x1, y1)
-	local x2_pixel, y2_pixel = hex_to_cartesian_space(x2, y2)
-	local theta = math.atan(math.abs(y2_pixel - y1_pixel) / math.abs(x2_pixel - x1_pixel))
-	-- y2 reversed here to account for flipped Y axis
-	if x1_pixel >= x2_pixel and y2_pixel <= y1_pixel then -- quadrant II
-		theta = math.pi - theta
-	elseif x1_pixel >= x2_pixel and y2_pixel > y1_pixel then -- quadrant III
-		theta = math.pi + theta
-	elseif x1_pixel < x2_pixel and y2_pixel > y1_pixel then -- quadrant IV
-		theta = (math.pi * 2) - theta
-	end
-	return theta
-end
-
--- find the distance between two hexes in a straight line between them
-function cartesian_distance_between_hexes(x1, y1, x2, y2)
-	local x1_pixel, y1_pixel = hex_to_cartesian_space(x1, y1)
-	local x2_pixel, y2_pixel = hex_to_cartesian_space(x2, y2)
-	return math.sqrt(((x1_pixel - x2_pixel) ^ 2) + ((y1_pixel - y2_pixel) ^ 2))
-end
-
 --- adjusts side numbers in the sidebar to 'skip over' listed sides
 --- e.g. in 17A (Blockade) used so that depthstalkers appear the same side as the main naga force
 function conceal_sides_sidebar(side_list)
