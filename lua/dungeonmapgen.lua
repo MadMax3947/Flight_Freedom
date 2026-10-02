@@ -678,7 +678,7 @@ function dungeonmapgen.Generator:place_corridors()
 		--print("Source hex: " .. tostring(center_x) .. ", " .. tostring(center_y))
 		local theta = random() * math.pi * 2.0
 		--print("Theta: " .. (theta * 180.0 / math.pi))
-		local radius = 1
+		local radius = 1.0
 		local casting_ray = true
 		-- start with trying to make shorter connections, but gradually extend the reach
 		-- so that far-away rooms eventually do get connected
@@ -899,7 +899,7 @@ function dungeonmapgen.Generator:place_corridors()
 						end
 					end
 				end
-				radius = radius + 1
+				radius = radius + 0.5
 			else
 				casting_ray = false
 				rays_failed = rays_failed + 1
