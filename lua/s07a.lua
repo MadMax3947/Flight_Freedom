@@ -24,11 +24,11 @@ function StormHandler:new(o)
 end
 
 function StormHandler:init()
-	local x_offset = mathx.random(0,99999)
+	local x_offset = mathx.random(0,9999)
 	wml.variables["x_offset"] = x_offset
-	local y_offset = mathx.random(0,99999)
+	local y_offset = mathx.random(0,9999)
 	wml.variables["y_offset"] = y_offset
-	local z_offset = mathx.random(0,99999)
+	local z_offset = mathx.random(0,9999)
 	wml.variables["z_offset"] = z_offset
 end
 
@@ -87,7 +87,7 @@ end
 function StormHandler:update_map_2d(turn_number)
 	if math.abs(turn_number - self.built_turn) >= wesnoth.current.map.playable_width then
 		-- we've skipped too far off the cached map
-		self:build_cloud_map_3d(turn_number)
+		self:build_cloud_map_2d(turn_number)
 	elseif turn_number > self.built_turn then
 		-- moving forward in time
 		for i = self.built_turn + 1, turn_number do
@@ -259,6 +259,7 @@ function storm_initial_setup()
 	wml.variables["storm_initial_setup"] = 1
 	--storm_handler:debug_show_cloud_map()
 	-- too slow to actually use in game
+	-- if ever re-enabled would need a guard for AWaS availability
 	--storm_handler:update_cloud_gfx()
 end
 
