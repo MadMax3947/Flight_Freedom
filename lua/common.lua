@@ -1,8 +1,8 @@
 --- return a replay-safe (by default) random number sampled from specified normal distribution
 function random_norm(mean, sd, random_func)
 	random_func = random_func or mathx.random
-	local u = random_func()
-	local v = random_func()
+	local u = 1.0 - random_func()
+	local v = 1.0 - random_func()
 	local n = math.sqrt(-2.0 * math.log(u)) * math.cos(2.0 * math.pi * v)
 	local r = (n * sd) + mean
 	return r
@@ -17,19 +17,22 @@ end
 function random_sample_wor(k, n, random_func)
 	random_func = random_func or mathx.random
 	local reservoir = {}
-	for i = 1, k do
-		table.insert(reservoir, i)
-	end
-	local w = math.exp(math.log(random_func()) / k)
-	local i = k
-	while i <= n do
-		i = i + math.floor(math.log(random_func()) / math.log(1 - w)) + 1
-		if i <= n then
-			reservoir[random_func(1, k)] = i
-			w = w * math.exp(math.log(random_func()) / k)
+	assert(k <= n)
+	if k > 0 then
+		for i = 1, k do
+			table.insert(reservoir, i)
 		end
+		local w = math.exp(math.log(1.0 - random_func()) / k)
+		local i = k
+		while i <= n do
+			i = i + math.floor(math.log(1.0 - random_func()) / math.log(1 - w)) + 1
+			if i <= n then
+				reservoir[random_func(1, k)] = i
+				w = w * math.exp(math.log(1.0 - random_func()) / k)
+			end
+		end
+		table.sort(reservoir)
 	end
-	table.sort(reservoir)
 	return reservoir
 end
 
