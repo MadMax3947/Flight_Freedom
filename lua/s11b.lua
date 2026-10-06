@@ -1408,7 +1408,6 @@ function wesnoth.wml_actions.display_console_screen(cfg)
 	local orig_orb_colors = stringx.split(wml.variables["orig_orb_colors"], ",")
 	local alarms_triggered = wml.variables["alarms_triggered"]
 	local console_str = "<span font_family='DejaVuSansMono' size='large'>"
-	-- po: number of periods should vary so that status entries are aligned
 	if #orb_colors > 0 then
 		console_str = console_str .. insert_aligned_periods(_"VOID ENGINE STATUS", "<span color='yellow'>" .. _"INITIALIZING" .. "</span>") .. "\n\n"
 		console_str = console_str .. insert_aligned_periods(_"INNER CONTAINMENT FIELD", "<span color='yellow'>" .. _"ENABLED" .. "</span>")
