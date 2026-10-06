@@ -398,6 +398,34 @@ function select_tile(caption, validator_func, action_func, cancel_func)
 	end
 end
 
+-- Find the unit which matches provided SUF that is closest to target_x and target_y
+-- If multiple units are equidistant, which unit is selected is arbitrary
+function wesnoth.wml_actions.get_unit_closest_to(cfg)
+	cfg = wml.literal(cfg)
+	local varname = "closest_unit"
+	if cfg.variable ~= nil then
+		varname = cfg.variable
+		cfg.variable = nil
+	end
+	local target_x = tonumber(cfg.target_x)
+	local target_y = tonumber(cfg.target_y)
+	cfg.target_x = nil
+	cfg.target_y = nil
+	local units_list = wesnoth.units.find_on_map(cfg)
+	local return_unit_x = nil
+	local return_unit_y = nil
+	local current_dist = nil
+	for i,unit in ipairs(units_list) do
+		local dist = wesnoth.map.distance_between({unit.x, unit.y}, {target_x, target_y})
+		if current_dist == nil or dist < current_dist then
+			return_unit_x = unit.x
+			return_unit_y = unit.y
+			current_dist = dist
+		end
+	end
+	wml.fire("store_unit", {wml.tag.filter{x=return_unit_x, y=return_unit_y}, variable=varname})
+end
+
 ---
 -- misc functions from EoMA, primarily used to facilitate custom abilities for elementals
 ---
