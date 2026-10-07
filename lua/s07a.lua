@@ -3,33 +3,43 @@
 local hexutils = wesnoth.require("hexutils")
 local simplex = wesnoth.require("simplex")
 
-StormHandler = {
+StormHandler = {}
+StormHandler.__index = StormHandler
+
+function StormHandler:new()
+	local o = {}
+	setmetatable(o, self)
 	-- lower threshold corresponds to more lightning
 	-- 0.7 feels better with 2d noise, 0.55-0.57 or so feels better with 3d noise
-	lightning_threshold = 0.56,
+	o.lightning_threshold = 0.56
 	-- lower cloud scale corresponds with larger clouds along an axis
-	cloud_scale_x = 0.2,
-	cloud_scale_y = 0.2,
+	o.cloud_scale_x = 0.2
+	o.cloud_scale_y = 0.2
 	-- lower time scale corresponds with slower cloud changes per turn
-	time_scale = 0.05,
-	cloud_map = {},
-	built_turn = 0,
-}
-
-function StormHandler:new(o)
-	o = o or {}
-	setmetatable(o, self)
-	self.__index = self
+	o.time_scale = 0.05
+	o.cloud_map = {}
+	o.built_turn = 0
+	o.x_offset = nil
+	o.y_offset = nil
+	o.z_offset = nil
+	o.map_height = wesnoth.current.map.playable_height
+	o.map_width = wesnoth.current.map.playable_width
 	return o
 end
 
 function StormHandler:init()
-	local x_offset = mathx.random(0,9999)
-	wml.variables["x_offset"] = x_offset
-	local y_offset = mathx.random(0,9999)
-	wml.variables["y_offset"] = y_offset
-	local z_offset = mathx.random(0,9999)
-	wml.variables["z_offset"] = z_offset
+	self.x_offset = mathx.random(0,9999)
+	wml.variables["x_offset"] = self.x_offset
+	self.y_offset = mathx.random(0,9999)
+	wml.variables["y_offset"] = self.y_offset
+	self.z_offset = mathx.random(0,9999)
+	wml.variables["z_offset"] = self.z_offset
+end
+
+function StormHandler:reload_offsets()
+	self.x_offset = wml.variables["x_offset"]
+	self.y_offset = wml.variables["y_offset"]
+	self.z_offset = wml.variables["z_offset"]
 end
 
 -- x: input
@@ -48,8 +58,8 @@ end
 
 function StormHandler:noise_2d(hex_x, hex_y)
 	local x_pixel, y_pixel = hexutils.hex_to_cartesian_space(hex_x, hex_y)
-	local x = (x_pixel * self.cloud_scale_x) + wml.variables["x_offset"]
-	local y = (y_pixel * self.cloud_scale_y) + wml.variables["y_offset"]
+	local x = (x_pixel * self.cloud_scale_x) + self.x_offset
+	local y = (y_pixel * self.cloud_scale_y) + self.y_offset
 	-- simplex noise ranges [-1, 1]; we want our average to be 0.5
 	local r = (simplex.Noise2D(x, y) + 1.0) / 2.0
 	return r
@@ -58,9 +68,9 @@ end
 -- by moving linearly down the z-axis can simulate cloud shifts
 function StormHandler:noise_3d(hex_x, hex_y, time_z)
 	local x_pixel, y_pixel = hexutils.hex_to_cartesian_space(hex_x, hex_y)
-	local x = (x_pixel * self.cloud_scale_x) + wml.variables["x_offset"]
-	local y = (y_pixel * self.cloud_scale_y) + wml.variables["y_offset"]
-	local z = (time_z * self.time_scale) + wml.variables["z_offset"]
+	local x = (x_pixel * self.cloud_scale_x) + self.x_offset
+	local y = (y_pixel * self.cloud_scale_y) + self.y_offset
+	local z = (time_z * self.time_scale) + self.z_offset
 	local r = (simplex.Noise3D(x, y, z) + 1.0) / 2.0
 	return r
 end
@@ -69,9 +79,9 @@ end
 -- use: loaded a save or starting the scenario
 function StormHandler:build_cloud_map_2d(turn_number)
 	self.cloud_map = {}
-	for i = 1, wesnoth.current.map.playable_width do
+	for i = 1, self.map_width do
 		local column = {}
-		for j = 1, wesnoth.current.map.playable_height do
+		for j = 1, self.map_height do
 			-- lightning moves to the left
 			local x = i + turn_number
 			local y = j
@@ -85,7 +95,7 @@ end
 
 -- avoid sampling the whole map unless we have to
 function StormHandler:update_map_2d(turn_number)
-	if math.abs(turn_number - self.built_turn) >= wesnoth.current.map.playable_width then
+	if math.abs(turn_number - self.built_turn) >= self.map_width then
 		-- we've skipped too far off the cached map
 		self:build_cloud_map_2d(turn_number)
 	elseif turn_number > self.built_turn then
@@ -93,8 +103,8 @@ function StormHandler:update_map_2d(turn_number)
 		for i = self.built_turn + 1, turn_number do
 			table.remove(self.cloud_map, 1)
 			local column = {}
-			for j = 1, wesnoth.current.map.playable_height do
-				local x = i + wesnoth.current.map.playable_width
+			for j = 1, self.map_height do
+				local x = i + self.map_width
 				local y = j
 				local noise = self:noise_2d(x, y)
 				table.insert(column, noise)
@@ -106,7 +116,7 @@ function StormHandler:update_map_2d(turn_number)
 		for i = self.built_turn - 1, turn_number, -1 do
 			table.remove(self.cloud_map, #self.cloud_map)
 			local column = {}
-			for j = 1, wesnoth.current.map.playable_height do
+			for j = 1, self.map_height do
 				local x = i
 				local y = j
 				local noise = self:noise_2d(x, y)
@@ -120,9 +130,9 @@ end
 
 function StormHandler:build_cloud_map_3d(turn_number)
 	self.cloud_map = {}
-	for i = 1, wesnoth.current.map.playable_width do
+	for i = 1, self.map_width do
 		local column = {}
-		for j = 1, wesnoth.current.map.playable_height do
+		for j = 1, self.map_height do
 			-- lightning moves to the left
 			local x = i + turn_number
 			local y = j
@@ -141,8 +151,8 @@ end
 
 function StormHandler:get_lightning_hexes()
 	local lightning_locs = {}
-	for i = 1, wesnoth.current.map.playable_width do
-		for j = 1, wesnoth.current.map.playable_height do
+	for i = 1, self.map_width do
+		for j = 1, self.map_height do
 			if self.cloud_map[i][j] > self.lightning_threshold then
 				local hex = {i, j}
 				table.insert(lightning_locs, hex)
@@ -153,8 +163,8 @@ function StormHandler:get_lightning_hexes()
 end
 
 function StormHandler:update_cloud_gfx()
-	for i = 1, wesnoth.current.map.playable_width do
-		for j = 1, wesnoth.current.map.playable_height do
+	for i = 1, self.map_width do
+		for j = 1, self.map_height do
 			local item_id = "cloud_" .. tostring(i) .. "_" .. tostring(j)
 			wesnoth.interface.remove_hex_overlay(i, j, item_id)
 			local image_stem = "data/add-ons/Animated_Weather_and_Scenery/images/weather/mist_heavy/00"
@@ -191,8 +201,8 @@ function StormHandler:update_cloud_gfx()
 end
 
 function StormHandler:debug_show_cloud_map()
-	for i = 1, wesnoth.current.map.playable_width do
-		for j = 1, wesnoth.current.map.playable_height do
+	for i = 1, self.map_width do
+		for j = 1, self.map_height do
 			wesnoth.map.remove_label{x=i, y=j}
 			wesnoth.map.add_label{x=i, y=j, text=string.format("%.3f",self.cloud_map[i][j])}
 		end
@@ -242,6 +252,7 @@ end
 
 -- regenerate the cloud map on save load (when called by preload event)
 if wml.variables["storm_initial_setup"] == 1 then
+	storm_handler:reload_offsets()
 	storm_handler:build_cloud_map_3d(wesnoth.current.turn)
 end
 
