@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-10-06 00:39 UTC\n"
+"POT-Creation-Date: 2026-10-07 04:38 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -420,12 +420,12 @@ msgid "Graphics"
 msgstr ""
 
 #. [entry]
-#: Flight_Freedom/credits.cfg:317
+#: Flight_Freedom/credits.cfg:320
 msgid "and others"
 msgstr ""
 
 #. [about]
-#: Flight_Freedom/credits.cfg:321
+#: Flight_Freedom/credits.cfg:324
 msgid "Sounds and Music"
 msgstr ""
 
@@ -1197,7 +1197,7 @@ msgstr ""
 #: Flight_Freedom/macros/objectives.cfg:81
 #: Flight_Freedom/macros/objectives.cfg:89
 #: Flight_Freedom/scenarios/01_Desperate_Defense.cfg:205
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:272
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:273
 #: Flight_Freedom/scenarios/05b_Mogradesh.cfg:212
 #: Flight_Freedom/scenarios/10b_Freezing_Foothills.cfg:282
 #: Flight_Freedom/scenarios/16_The_Exodus.cfg:277
@@ -4950,13 +4950,13 @@ msgid "Wesnoth Royal Army"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:110
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:111
 msgid "This must be the Blue River. I know you are all tired. We rest for ten minutes."
 msgstr ""
 
 #. [unit]: type=Pirate, id=Kogw
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:124
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:125
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:230
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:288
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:302
@@ -4968,7 +4968,7 @@ msgid "Kogw"
 msgstr ""
 
 #. [message]: role=glidera
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:142
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:143
 msgid ""
 "Dominant Malakar.\n"
 "There are humans on the other side of the river.\n"
@@ -4976,12 +4976,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:148
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:149
 msgid "Spot of trouble with the army, eh?"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:152
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:153
 msgid ""
 "Who are you?\n"
 "Someone!\n"
@@ -4989,98 +4989,98 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:158
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:159
 msgid "All right, all right. I just thought you could use some help escaping from the, uh, humans."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:162
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:163
 msgid "Explain yourself, softskin."
 msgstr ""
 
 #. [message]: speaker=Kogw
 #. Kogw is using "adventurers" as a euphemism for "pirates" here:
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:167
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:168
 msgid "As it happens, I'm the leader of a band of... adventurers. We're good sorts, but those damn elves have been after us for no good reason!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:171
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:172
 msgid "You help us throw off the elves, and we'll join you."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:175
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:176
 msgid ""
 "Begone from here, softskin.\n"
 "We have no need of you and no need of your aid."
 msgstr ""
 
 #. [message]: speaker=rider
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:199
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:200
 msgid "Kogw! By the order of Lord Mandros and the entire Elder Council of the Elven Nations, I order you to lay down your weapons and surrender at once!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:203
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:204
 msgid "Look, friend, as one captain to another..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:207
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:208
 msgid "I am the Dominant of this flight!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:211
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:212
 msgid "If you've got trouble with Wesnoth's army, then no place here is safe. You need to leave these lands, and fast."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:215
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:216
 msgid ""
 "Ha!\n"
 "Stupid human, you see not the wings on our backs!"
 msgstr ""
 
 #. [message]: speaker=rider
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:220
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:221
 msgid "Kogw! This is your last warning!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:224
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:225
 msgid "The ocean winds blow with great speed. You can't fly against them. And what will become of your spearmen, with their heavy armor?"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:228
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:229
 msgid "How DARE you insult my clashers, puny softskin!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:232
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:233
 msgid "No offense meant, chief. It's just that you don't have the look of a seaman. Me, I know dozens of safe islands around here, and none of MY men will be abandoning their clothes and weapons to flee."
 msgstr ""
 
 #. [message]: speaker=rider
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:236
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:237
 msgid "Enough! Your time has come!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:240
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:241
 msgid "You're flying blind, friend; and I bet these guys will chase you once they see you've abandoned your armor and weapons. You've gotta choose: fly off into the wind, half-naked and praying you find land; or you let me take you in style anywhere you want to go."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:244
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:452
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:245
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:456
 msgid "*growls*"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:248
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:249
 msgid ""
 "You do speak some sense.\n"
 "You have my cooperation for now.\n"
@@ -5088,46 +5088,46 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=rider
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:254
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:255
 msgid "Stand aside, lizards!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:258
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:259
 msgid ""
 "We do not sail to some 'safe island.'\n"
 "We sail to Morogor."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:263
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:264
 msgid "Mor...? ...bloody... I mean, absolutely! We sail to Morogor the minute we get clear of these elves!"
 msgstr ""
 
 #. [message]: speaker=rider
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:288
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:289
 msgid "The vengeance of the elves shall pursue you forevermore, pirate! We shall not rest until you face your justice!"
 msgstr ""
 
 #. [message]: speaker=rider
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:302
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:303
 msgid "Drakes! You have made an enemy of the elves this day!"
 msgstr ""
 
 #. [message]: speaker=Mandros
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:313
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:314
 #: Flight_Freedom/scenarios/12a_Rockfall.cfg:437
 msgid "AAAAH!"
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:324
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:325
 msgid "Well, then. That's that. We will aid you, Chief."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:328
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:329
 msgid ""
 "I must have a guarantee that you will not kill us while we sleep.\n"
 "Swear on the fire of Gar-Alagar, king of the gods of Morogor.\n"
@@ -5135,19 +5135,19 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:334
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:335
 msgid "Upon the very eyes of the pirate gods I swear my loyalty."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:338
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:339
 msgid ""
 "Do not mention your 'gods' again, infidel human.\n"
 "I see I shall have to teach you manners."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:344
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:345
 msgid ""
 "Understand.\n"
 "You swear by Gar-Alagar, king of the gods of Morogor, in the future.\n"
@@ -5155,22 +5155,17 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:351
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:358
 msgid "You can now recruit Pirate Sloops."
 msgstr ""
 
-#. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:370
-msgid "Now if only I'd had a chance to... no, you know what, never mind. Onward!"
-msgstr ""
-
 #. [message]: speaker=unit
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:384
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:388
 msgid "Ahoy, mateys! Ready to sink some royals!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:397
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:401
 msgid ""
 "You!\n"
 "I am Malakar, Dominant of these Drakes.\n"
@@ -5178,39 +5173,39 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Omandro
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:403
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:407
 msgid "It is hardly by my wishes, drake. The Baron offered us a tremendous sum for slaves; we thought we could spare our own people if we gave you up, instead."
 msgstr ""
 
 #. [message]: speaker=Omandro
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:407
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:411
 msgid "I personally despise slavery; but I am sworn to the Crown, and the Crown is desperate."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:411
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:415
 msgid ""
 "You have not answered my question.\n"
 "Why are we pursued?"
 msgstr ""
 
 #. [message]: speaker=Omandro
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:416
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:420
 msgid "That, I do not know. Nearly a quarter of the Royal Army has been assigned to see that you are destroyed, even though most believe you've already done us a service by killing the necromancer Baron. The order makes no sense to me."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:420
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:424
 msgid "What forces do you have with you?"
 msgstr ""
 
 #. [message]: speaker=Omandro
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:424
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:428
 msgid "The nearest force advances from the south, but may be as far as a day behind."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:428
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:432
 msgid ""
 "Very well.\n"
 "You have one minute to go.\n"
@@ -5219,27 +5214,27 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Omandro
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:435
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:439
 msgid "Thank you, Malakar, Dominant of the Drakes, but I decline. I am still sworn to the Crown, and have given my oath to the King. I must fight to the last."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:440
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:444
 msgid "So be it."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:448
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:452
 msgid "Wow. Well, Mal, we'd best be getting..."
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:456
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:460
 msgid "... along before the winds shift. My ship is ready to go, when you are."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:460
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:464
 msgid ""
 "First we must bury the body of that one, Omandro.\n"
 "The others were merely puppets.\n"
@@ -5247,12 +5242,12 @@ msgid ""
 msgstr ""
 
 #. [message]: role=drakeb
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:477
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:481
 msgid "With all due respect, Malakar, we hardly have the time to..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:481
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:485
 msgid ""
 "Silence!\n"
 "\n"
@@ -5262,13 +5257,13 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:489
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:493
 #: Flight_Freedom/scenarios/18_Return_to_Morogor.cfg:830
 msgid " *gulp*"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:493
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:497
 msgid ""
 "However a few of them still have scant traces of honor.\n"
 "We respect those with honor.\n"
@@ -5277,7 +5272,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:502
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:506
 msgid ""
 "We respect those with honor.\n"
 "This man had honor.\n"
@@ -5285,7 +5280,17 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Kogw
-#: Flight_Freedom/scenarios/05a_Blue_River.cfg:532
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:520
+msgid "Now if only I'd had a chance to... no, you know what, never mind. Onward!"
+msgstr ""
+
+#. [message]: speaker=Kogw
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:548
+msgid "Hurry up! The guardships are surely fast approaching!"
+msgstr ""
+
+#. [message]: speaker=Kogw
+#: Flight_Freedom/scenarios/05a_Blue_River.cfg:557
 msgid "It's... it's the entire Royal Third Fleet! We've been cut off!"
 msgstr ""
 
@@ -8855,7 +8860,8 @@ msgstr ""
 #. [message]: speaker=Malakar
 #: Flight_Freedom/scenarios/13a_Betrayal.cfg:396
 msgid ""
-"Theracar's complaints were just though his methods were unforgivable.\n"
+"Theracar's complaints were just.\n"
+"Though his methods were unforgivable.\n"
 "There have been hard times for us all.\n"
 "We have all suffered much.\n"
 "Tonight we will hold a forum to discuss the future of our flight.\n"
@@ -8863,14 +8869,14 @@ msgid ""
 msgstr ""
 
 #. [message]: role=maddrake
-#: Flight_Freedom/scenarios/13a_Betrayal.cfg:412
+#: Flight_Freedom/scenarios/13a_Betrayal.cfg:413
 msgid ""
 "Malakar, with respect, these drakes have spilled our flight's blood.\n"
 "Surely you cannot..."
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/13a_Betrayal.cfg:417
+#: Flight_Freedom/scenarios/13a_Betrayal.cfg:418
 msgid ""
 "All are pardoned.\n"
 "\n"
@@ -8882,21 +8888,21 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/13a_Betrayal.cfg:508
+#: Flight_Freedom/scenarios/13a_Betrayal.cfg:509
 msgid ""
 "Kakatars!\n"
 "All hail your new Dominant!"
 msgstr ""
 
 #. [message]: speaker=Theracar
-#: Flight_Freedom/scenarios/13a_Betrayal.cfg:521
+#: Flight_Freedom/scenarios/13a_Betrayal.cfg:522
 msgid ""
 "We have purged the stain of the thinskin!\n"
 "The flight is pure again!"
 msgstr ""
 
 #. [message]: speaker=Malakar
-#: Flight_Freedom/scenarios/13a_Betrayal.cfg:530
+#: Flight_Freedom/scenarios/13a_Betrayal.cfg:531
 msgid ""
 "We have lost too many!\n"
 "Even if I win this fight, the flight cannot continue!"
@@ -12886,9 +12892,9 @@ msgstr ""
 #: Flight_Freedom/units/nagas/Spellcrafter.cfg:181
 #: Flight_Freedom/units/nagas/Warlock.cfg:24
 #: Flight_Freedom/units/nagas/Warlock.cfg:121
-#: Flight_Freedom/units/saurians/Juggler.cfg:35
-#: Flight_Freedom/units/saurians/Knifethrower.cfg:37
-#: Flight_Freedom/units/saurians/Skald.cfg:35
+#: Flight_Freedom/units/saurians/Juggler.cfg:41
+#: Flight_Freedom/units/saurians/Knifethrower.cfg:43
+#: Flight_Freedom/units/saurians/Skald.cfg:41
 msgid "dagger"
 msgstr ""
 
@@ -13024,9 +13030,9 @@ msgid "More experienced Skalds, the Jugglers can throw more daggers. They have a
 msgstr ""
 
 #. [attack]: type=blade
-#: Flight_Freedom/units/saurians/Juggler.cfg:23
-#: Flight_Freedom/units/saurians/Knifethrower.cfg:25
-#: Flight_Freedom/units/saurians/Skald.cfg:23
+#: Flight_Freedom/units/saurians/Juggler.cfg:29
+#: Flight_Freedom/units/saurians/Knifethrower.cfg:31
+#: Flight_Freedom/units/saurians/Skald.cfg:29
 msgid "teeth"
 msgstr ""
 
