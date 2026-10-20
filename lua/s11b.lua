@@ -1291,27 +1291,6 @@ function wesnoth.wml_actions.handle_orb(cfg)
 	if #orb_colors == 0 then
 		local machine_x = wml.variables["machine_x"]
 		local machine_y = wml.variables["machine_y"]
-		-- remove their halos since they'll be replaced by terrain overlay
-		wesnoth.interface.remove_item(machine_x - 2, machine_y)
-		wesnoth.interface.remove_item(machine_x + 2, machine_y)
-		wesnoth.interface.remove_item(machine_x, machine_y - 1)
-		wesnoth.interface.remove_item(machine_x, machine_y + 1)
-		local q, r, s = table.unpack(get_cubic({machine_x, machine_y}))
-		local thingy_x, thingy_y = table.unpack(from_cubic(q-1, r+1, s))
-		wesnoth.interface.remove_item(thingy_x, thingy_y)
-		wesnoth.interface.remove_item(thingy_x, thingy_y - 1)
-		thingy_x, thingy_y = table.unpack(from_cubic(q+1, r, s-1))
-		wesnoth.interface.remove_item(thingy_x, thingy_y)
-		wesnoth.interface.remove_item(thingy_x, thingy_y - 1)
-		wesnoth.wml_actions.terrain_mask({
-			mask = filesystem.read_file("~add-ons/Flight_Freedom/masks/11b_control_room_unblocker.mask"),
-			x = machine_x - 2,
-			y = machine_y - 2,
-			border = true,
-			wml.tag.rule {
-				layer = "overlay",
-			},
-		})
 		for i = 1, 3 do
 			for j = 1, 5 do
 				wesnoth.interface.color_adjust(-2*j, -2*j, 20*j)
@@ -1338,6 +1317,27 @@ function wesnoth.wml_actions.handle_orb(cfg)
 		else
 			wesnoth.interface.remove_item(machine_x, machine_y, "scenery/engine-shield.png")
 		end
+		-- remove their halos since they'll be replaced by terrain overlay
+		wesnoth.interface.remove_item(machine_x - 2, machine_y)
+		wesnoth.interface.remove_item(machine_x + 2, machine_y)
+		wesnoth.interface.remove_item(machine_x, machine_y - 1)
+		wesnoth.interface.remove_item(machine_x, machine_y + 1)
+		local q, r, s = table.unpack(get_cubic({machine_x, machine_y}))
+		local thingy_x, thingy_y = table.unpack(from_cubic(q-1, r+1, s))
+		wesnoth.interface.remove_item(thingy_x, thingy_y)
+		wesnoth.interface.remove_item(thingy_x, thingy_y - 1)
+		thingy_x, thingy_y = table.unpack(from_cubic(q+1, r, s-1))
+		wesnoth.interface.remove_item(thingy_x, thingy_y)
+		wesnoth.interface.remove_item(thingy_x, thingy_y - 1)
+		wesnoth.wml_actions.terrain_mask({
+			mask = filesystem.read_file("~add-ons/Flight_Freedom/masks/11b_control_room_unblocker.mask"),
+			x = machine_x - 2,
+			y = machine_y - 2,
+			border = true,
+			wml.tag.rule {
+				layer = "overlay",
+			},
+		})
 	end
 end
 
